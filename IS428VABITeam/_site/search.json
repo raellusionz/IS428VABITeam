@@ -12,5 +12,243 @@
     "title": "IS428VABITeam",
     "section": "",
     "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+  },
+  {
+    "objectID": "overview.html",
+    "href": "overview.html",
+    "title": "Project Overview",
+    "section": "",
+    "text": "Describe the problem context and why this project is important. What gap does it address?"
+  },
+  {
+    "objectID": "overview.html#background",
+    "href": "overview.html#background",
+    "title": "Project Overview",
+    "section": "",
+    "text": "Describe the problem context and why this project is important. What gap does it address?"
+  },
+  {
+    "objectID": "overview.html#objectives",
+    "href": "overview.html#objectives",
+    "title": "Project Overview",
+    "section": "Objectives",
+    "text": "Objectives\n\nObjective 1\nObjective 2\nObjective 3"
+  },
+  {
+    "objectID": "overview.html#dataset",
+    "href": "overview.html#dataset",
+    "title": "Project Overview",
+    "section": "Dataset",
+    "text": "Dataset\nDescribe the dataset(s) used — source, size, time period, key variables.\n\n\n\nDataset\nSource\nRecords\nPeriod\n\n\n\n\nDataset 1\nSource A\n~10,000\n2020–2024"
+  },
+  {
+    "objectID": "overview.html#project-scope",
+    "href": "overview.html#project-scope",
+    "title": "Project Overview",
+    "section": "Project Scope",
+    "text": "Project Scope\nWhat is in scope and out of scope for this project?"
+  },
+  {
+    "objectID": "overview.html#timeline",
+    "href": "overview.html#timeline",
+    "title": "Project Overview",
+    "section": "Timeline",
+    "text": "Timeline\n\n\n\nMilestone\nDate\n\n\n\n\nProject Kickoff\nWeek 1\n\n\nData Preparation\nWeek 3\n\n\nPrototype v1\nWeek 6\n\n\nFinal Submission\nWeek 13"
+  },
+  {
+    "objectID": "userguide.html",
+    "href": "userguide.html",
+    "title": "User Guide",
+    "section": "",
+    "text": "This guide explains how to use the IS428 VABITeam interactive dashboard."
+  },
+  {
+    "objectID": "userguide.html#getting-started",
+    "href": "userguide.html#getting-started",
+    "title": "User Guide",
+    "section": "",
+    "text": "This guide explains how to use the IS428 VABITeam interactive dashboard."
+  },
+  {
+    "objectID": "userguide.html#system-requirements",
+    "href": "userguide.html#system-requirements",
+    "title": "User Guide",
+    "section": "System Requirements",
+    "text": "System Requirements\n\nModern web browser (Chrome, Firefox, Safari, Edge)\nInternet connection\nNo installation required"
+  },
+  {
+    "objectID": "userguide.html#accessing-the-dashboard",
+    "href": "userguide.html#accessing-the-dashboard",
+    "title": "User Guide",
+    "section": "Accessing the Dashboard",
+    "text": "Accessing the Dashboard\n\nGo to your dashboard link\nThe dashboard will load automatically in your browser"
+  },
+  {
+    "objectID": "userguide.html#dashboard-features",
+    "href": "userguide.html#dashboard-features",
+    "title": "User Guide",
+    "section": "Dashboard Features",
+    "text": "Dashboard Features\n\n1. Filters Panel\n\n\n\nFilters Panel\n\n\nUse the left-hand panel to filter data by:\n\nDate Range — Select a start and end date\nCategory — Choose one or multiple categories\nRegion — Filter by geographic region\n\n\n\n2. Main Chart Area\n\n\n\nMain Chart\n\n\n\nHover over any data point to see detailed tooltips\nClick a bar/point to drill down into that segment\nUse the legend to show/hide specific series\n\n\n\n3. Summary Cards\n\n\n\nSummary Cards\n\n\nThe top row shows key metrics that update dynamically based on your filter selections.\n\n\n4. Export\n\nClick the Download button to export the current view as PNG or CSV"
+  },
+  {
+    "objectID": "userguide.html#troubleshooting",
+    "href": "userguide.html#troubleshooting",
+    "title": "User Guide",
+    "section": "Troubleshooting",
+    "text": "Troubleshooting\n\n\n\n\n\n\n\nIssue\nSolution\n\n\n\n\nDashboard not loading\nRefresh the page or clear browser cache\n\n\nFilters not responding\nTry resetting filters using the Reset button\n\n\nCharts appear blank\nCheck your internet connection"
+  },
+  {
+    "objectID": "userguide.html#contact",
+    "href": "userguide.html#contact",
+    "title": "User Guide",
+    "section": "Contact",
+    "text": "Contact\nFor questions or feedback, contact the team at is428vabiteam@smu.edu.sg"
+  },
+  {
+    "objectID": "analysis.html",
+    "href": "analysis.html",
+    "title": "Analysis & Results",
+    "section": "",
+    "text": "Describe the analytical approach — data cleaning, transformation, statistical methods, and tools used (e.g. R, Python, Tableau)."
+  },
+  {
+    "objectID": "analysis.html#methodology",
+    "href": "analysis.html#methodology",
+    "title": "Analysis & Results",
+    "section": "",
+    "text": "Describe the analytical approach — data cleaning, transformation, statistical methods, and tools used (e.g. R, Python, Tableau)."
+  },
+  {
+    "objectID": "analysis.html#data-preparation",
+    "href": "analysis.html#data-preparation",
+    "title": "Analysis & Results",
+    "section": "Data Preparation",
+    "text": "Data Preparation\nKey steps taken to prepare the data:\n\nRemoved duplicates and null values\nNormalised date formats\nJoined multiple datasets on key ID\nDerived new features (e.g. rolling averages)"
+  },
+  {
+    "objectID": "analysis.html#exploratory-data-analysis",
+    "href": "analysis.html#exploratory-data-analysis",
+    "title": "Analysis & Results",
+    "section": "Exploratory Data Analysis",
+    "text": "Exploratory Data Analysis\n\nDistribution of Key Variable\nInsert chart here\nKey observations: - Observation 1 - Observation 2\n\n\nTrends Over Time\nInsert time series chart here\nKey observations: - Observation 1 - Observation 2\n\n\nCorrelation Analysis\nInsert heatmap or scatter matrix here"
+  },
+  {
+    "objectID": "analysis.html#key-findings",
+    "href": "analysis.html#key-findings",
+    "title": "Analysis & Results",
+    "section": "Key Findings",
+    "text": "Key Findings\n\n\n\n\n\n\nNoteFinding 1\n\n\n\nDescribe the first major insight from your analysis.\n\n\n\n\n\n\n\n\nNoteFinding 2\n\n\n\nDescribe the second major insight from your analysis.\n\n\n\n\n\n\n\n\nNoteFinding 3\n\n\n\nDescribe the third major insight from your analysis."
+  },
+  {
+    "objectID": "analysis.html#limitations",
+    "href": "analysis.html#limitations",
+    "title": "Analysis & Results",
+    "section": "Limitations",
+    "text": "Limitations\n\nLimitation 1\nLimitation 2"
+  },
+  {
+    "objectID": "analysis.html#future-work",
+    "href": "analysis.html#future-work",
+    "title": "Analysis & Results",
+    "section": "Future Work",
+    "text": "Future Work\n\nWhat could be improved or extended in future iterations?"
+  },
+  {
+    "objectID": "poster.html",
+    "href": "poster.html",
+    "title": "Poster",
+    "section": "",
+    "text": "Our project poster summarises the motivation, approach, and key findings of this project.\n\n\n\nIf the PDF does not load, download the poster here."
+  },
+  {
+    "objectID": "poster.html#project-poster",
+    "href": "poster.html#project-poster",
+    "title": "Poster",
+    "section": "",
+    "text": "Our project poster summarises the motivation, approach, and key findings of this project.\n\n\n\nIf the PDF does not load, download the poster here."
+  },
+  {
+    "objectID": "poster.html#poster-highlights",
+    "href": "poster.html#poster-highlights",
+    "title": "Poster",
+    "section": "Poster Highlights",
+    "text": "Poster Highlights\n\n\n\nSection\nSummary\n\n\n\n\nProblem\nBrief description of the problem\n\n\nData\nDataset used\n\n\nApproach\nMethods applied\n\n\nResults\nKey findings\n\n\nImpact\nWho benefits and how"
+  },
+  {
+    "objectID": "prototypes.html",
+    "href": "prototypes.html",
+    "title": "Prototypes",
+    "section": "",
+    "text": "This page showcases our interactive prototypes and dashboards built for the project."
+  },
+  {
+    "objectID": "prototypes.html#overview",
+    "href": "prototypes.html#overview",
+    "title": "Prototypes",
+    "section": "",
+    "text": "This page showcases our interactive prototypes and dashboards built for the project."
+  },
+  {
+    "objectID": "prototypes.html#prototype-v1",
+    "href": "prototypes.html#prototype-v1",
+    "title": "Prototypes",
+    "section": "Prototype v1",
+    "text": "Prototype v1\nScreenshot or embedded iframe of prototype v1\n\n\n\nPrototype v1\n\n\nKey features:\n\nFeature A\nFeature B\nFeature C\n\n🔗 View Live Prototype"
+  },
+  {
+    "objectID": "prototypes.html#prototype-v2",
+    "href": "prototypes.html#prototype-v2",
+    "title": "Prototypes",
+    "section": "Prototype v2",
+    "text": "Prototype v2\nScreenshot or embedded iframe of prototype v2\n\n\n\nPrototype v2\n\n\nImprovements from v1:\n\nImprovement A\nImprovement B\n\n🔗 View Live Prototype"
+  },
+  {
+    "objectID": "prototypes.html#final-dashboard",
+    "href": "prototypes.html#final-dashboard",
+    "title": "Prototypes",
+    "section": "Final Dashboard",
+    "text": "Final Dashboard\nEmbed or link the final interactive dashboard here."
+  },
+  {
+    "objectID": "storyboard.html",
+    "href": "storyboard.html",
+    "title": "Storyboard",
+    "section": "",
+    "text": "The storyboard walks through the narrative of our visual analytics solution — from the user’s perspective."
+  },
+  {
+    "objectID": "storyboard.html#introduction",
+    "href": "storyboard.html#introduction",
+    "title": "Storyboard",
+    "section": "",
+    "text": "The storyboard walks through the narrative of our visual analytics solution — from the user’s perspective."
+  },
+  {
+    "objectID": "storyboard.html#scene-1-landing-page",
+    "href": "storyboard.html#scene-1-landing-page",
+    "title": "Storyboard",
+    "section": "Scene 1: Landing Page",
+    "text": "Scene 1: Landing Page\n\n\n\nScene 1\n\n\nUser Goal: Understand the overall summary at a glance.\nWhat the user sees: A high-level dashboard with key metrics and filters."
+  },
+  {
+    "objectID": "storyboard.html#scene-2-exploratory-view",
+    "href": "storyboard.html#scene-2-exploratory-view",
+    "title": "Storyboard",
+    "section": "Scene 2: Exploratory View",
+    "text": "Scene 2: Exploratory View\n\n\n\nScene 2\n\n\nUser Goal: Drill down into a specific category or time period.\nWhat the user sees: Interactive charts that respond to filter selections."
+  },
+  {
+    "objectID": "storyboard.html#scene-3-comparative-analysis",
+    "href": "storyboard.html#scene-3-comparative-analysis",
+    "title": "Storyboard",
+    "section": "Scene 3: Comparative Analysis",
+    "text": "Scene 3: Comparative Analysis\n\n\n\nScene 3\n\n\nUser Goal: Compare two or more groups side-by-side.\nWhat the user sees: A split-panel view with synchronized tooltips."
+  },
+  {
+    "objectID": "storyboard.html#scene-4-insights-export",
+    "href": "storyboard.html#scene-4-insights-export",
+    "title": "Storyboard",
+    "section": "Scene 4: Insights & Export",
+    "text": "Scene 4: Insights & Export\n\n\n\nScene 4\n\n\nUser Goal: Extract insights and share findings.\nWhat the user sees: A summary panel with download/export options."
   }
 ]

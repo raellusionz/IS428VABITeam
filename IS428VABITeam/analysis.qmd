@@ -1,0 +1,64 @@
+---
+title: "Analysis & Results"
+---
+
+## Methodology
+
+Describe the analytical approach — data cleaning, transformation, statistical methods, and tools used (e.g. R, Python, Tableau).
+
+## Data Preparation
+
+Key steps taken to prepare the data:
+
+1. Removed duplicates and null values
+2. Normalised date formats
+3. Joined multiple datasets on key ID
+4. Derived new features (e.g. rolling averages)
+
+## Exploratory Data Analysis
+
+### Distribution of Key Variable
+
+*Insert chart here*
+
+Key observations:
+- Observation 1
+- Observation 2
+
+### Trends Over Time
+
+*Insert time series chart here*
+
+Key observations:
+- Observation 1
+- Observation 2
+
+### Correlation Analysis
+
+*Insert heatmap or scatter matrix here*
+
+## Key Findings
+
+::: {.callout-note}
+## Finding 1
+Describe the first major insight from your analysis.
+:::
+
+::: {.callout-note}
+## Finding 2
+Describe the second major insight from your analysis.
+:::
+
+::: {.callout-note}
+## Finding 3
+Describe the third major insight from your analysis.
+:::
+
+## Limitations
+
+- Limitation 1
+- Limitation 2
+
+## Future Work
+
+- What could be improved or extended in future iterations?

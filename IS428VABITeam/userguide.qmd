@@ -1,0 +1,66 @@
+---
+title: "User Guide"
+---
+
+## Getting Started
+
+This guide explains how to use the IS428 VABITeam interactive dashboard.
+
+## System Requirements
+
+- Modern web browser (Chrome, Firefox, Safari, Edge)
+- Internet connection
+- No installation required
+
+## Accessing the Dashboard
+
+1. Go to [your dashboard link](https://your-dashboard-link.com)
+2. The dashboard will load automatically in your browser
+
+---
+
+## Dashboard Features
+
+### 1. Filters Panel
+
+![Filters Panel](images/guide_filters.png)
+
+Use the left-hand panel to filter data by:
+
+- **Date Range** — Select a start and end date
+- **Category** — Choose one or multiple categories
+- **Region** — Filter by geographic region
+
+### 2. Main Chart Area
+
+![Main Chart](images/guide_chart.png)
+
+- Hover over any data point to see detailed tooltips
+- Click a bar/point to drill down into that segment
+- Use the legend to show/hide specific series
+
+### 3. Summary Cards
+
+![Summary Cards](images/guide_cards.png)
+
+The top row shows key metrics that update dynamically based on your filter selections.
+
+### 4. Export
+
+- Click the **Download** button to export the current view as PNG or CSV
+
+---
+
+## Troubleshooting
+
+| Issue | Solution |
+|-------|----------|
+| Dashboard not loading | Refresh the page or clear browser cache |
+| Filters not responding | Try resetting filters using the Reset button |
+| Charts appear blank | Check your internet connection |
+
+---
+
+## Contact
+
+For questions or feedback, contact the team at **is428vabiteam@smu.edu.sg**

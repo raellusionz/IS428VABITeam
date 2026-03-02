@@ -1,0 +1,46 @@
+---
+title: "Prototypes"
+---
+
+## Overview
+
+This page showcases our interactive prototypes and dashboards built for the project.
+
+## Prototype v1
+
+*Screenshot or embedded iframe of prototype v1*
+
+![Prototype v1](images/prototype_v1.png)
+
+**Key features:**
+
+- Feature A
+- Feature B
+- Feature C
+
+[🔗 View Live Prototype](https://your-shiny-app-or-tableau-link.com)
+
+---
+
+## Prototype v2
+
+*Screenshot or embedded iframe of prototype v2*
+
+![Prototype v2](images/prototype_v2.png)
+
+**Improvements from v1:**
+
+- Improvement A
+- Improvement B
+
+[🔗 View Live Prototype](https://your-shiny-app-or-tableau-link.com)
+
+---
+
+## Final Dashboard
+
+Embed or link the final interactive dashboard here.
+
+```{=html}
+<iframe src="https://your-final-dashboard-link.com" width="100%" height="600px"></iframe>
+```

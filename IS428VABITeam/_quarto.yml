@@ -7,15 +7,30 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
+      - href: about.qmd
+        text: About
+      - href: overview.qmd
+        text: Overview
+      - href: prototypes.qmd
+        text: Prototypes
+      - href: storyboard.qmd
+        text: Storyboard
+      - href: analysis.qmd
+        text: Analysis & Results
+      - href: poster.qmd
+        text: Poster
+      - href: userguide.qmd
+        text: User Guide
+    right:
+      - icon: github
+        href: https://github.com/YOUR_GITHUB_REPO
+        text: GitHub
+  page-footer:
+    left: "© 2026 IS428 VABITeam"
+    right: "Built with [Quarto](https://quarto.org)"
 
 format:
   html:
-    theme:
-      - cosmo
-      - brand
+    theme: cosmo
     css: styles.css
     toc: true
-
-
-
