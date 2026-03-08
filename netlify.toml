@@ -1,4 +1,3 @@
 [build]
-  base = "IS428VABITeam"
-  command = "quarto render"
   publish = "IS428VABITeam/_site"
+  command = "echo 'No build needed'"
