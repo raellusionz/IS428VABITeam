@@ -1,7 +1,9 @@
 ---
 title: "IS428VABITeam"
+format:
+  html:
+    include-in-header:
+      text: '<meta http-equiv="refresh" content="0; url=project%20proposal.html">'
 ---
 
-This is a Quarto website.
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+### Project Name : SugarShift
