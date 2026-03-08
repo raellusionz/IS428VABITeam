@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>About – IS428VABITeam</title>
+<title>Project Proposal – IS428VABITeam</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -99,7 +99,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./about.html" aria-current="page"> 
+    <a class="nav-link" href="./about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
@@ -129,7 +129,7 @@ ul.task-list li input[type="checkbox"] {
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="https://github.com/raellusionz/IS428VABITeam"> <i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/YOUR_GITHUB_REPO"> <i class="bi bi-github" role="img">
 </i> 
 <span class="menu-text">GitHub</span></a>
   </li>  
@@ -144,15 +144,26 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#background" id="toc-background" class="nav-link active" data-scroll-target="#background">Background</a></li>
+  <li><a href="#objectives" id="toc-objectives" class="nav-link" data-scroll-target="#objectives">Objectives</a></li>
+  <li><a href="#dataset" id="toc-dataset" class="nav-link" data-scroll-target="#dataset">Dataset</a></li>
+  <li><a href="#project-scope" id="toc-project-scope" class="nav-link" data-scroll-target="#project-scope">Project Scope</a></li>
+  <li><a href="#methodology" id="toc-methodology" class="nav-link" data-scroll-target="#methodology">Methodology</a></li>
+  <li><a href="#timeline" id="toc-timeline" class="nav-link" data-scroll-target="#timeline">Timeline</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">About</h1>
+<h1 class="title">Project Proposal</h1>
 </div>
 
 
@@ -169,9 +180,127 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>About this site</p>
+<section id="background" class="level2">
+<h2 class="anchored" data-anchor-id="background">Background</h2>
+<p>Diabetes is a growing health concern worldwide, and Singapore is no exception. According to the Singapore Ministry of Health, approximately 1 in 9 adults in Singapore has diabetes, with the majority being Type 2 diabetes. This chronic disease is linked to serious long-term complications — including cardiovascular disease, kidney failure, and visual impairment — which impact quality of life and strain the healthcare system. In response, the Ministry of Health (MOH) launched the <strong>“War on Diabetes”</strong> initiative in 2016, targeting early prevention, screening, and management through policy, education, and healthier lifestyle choices.</p>
+<p>Despite ongoing interventions, over 500,000 Singaporeans aged 18–69 were living with diabetes as of 2020, with the number continuing to rise due to factors such as an ageing population, urbanisation, socioeconomic conditions, and lifestyle behaviours. Existing reports are often presented in aggregated formats, making it difficult to identify patterns across demographic groups, time periods, or lifestyle risk factors — creating an information gap that hinders policymakers and healthcare professionals from designing targeted and effective interventions.</p>
+</section>
+<section id="objectives" class="level2">
+<h2 class="anchored" data-anchor-id="objectives">Objectives</h2>
+<ul>
+<li>Uncover trends in diabetes prevalence, associated risk factors, and demographic patterns in Singapore over the past three years</li>
+<li>Explore relationships between contributing factors (e.g., BMI, physical activity, diet, socioeconomic status) through interactive visualisations</li>
+<li>Translate complex health data into accessible insights that support public awareness, early detection, and evidence-based policymaking</li>
+</ul>
+</section>
+<section id="dataset" class="level2">
+<h2 class="anchored" data-anchor-id="dataset">Dataset</h2>
+<p>Two primary datasets sourced from <strong>data.gov.sg</strong> and <strong>singstat.gov.sg</strong> are used in this project.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 36%">
+<col style="width: 32%">
+<col style="width: 32%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Dataset</th>
+<th>Source</th>
+<th>Period</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Mortality Rates Attributed to Suicide, Cardiovascular Disease, Cancer, Diabetes or Chronic Respiratory Disease</td>
+<td>data.gov.sg / singstat.gov.sg</td>
+<td>Annual</td>
+</tr>
+<tr class="even">
+<td>Prevalence of Overweight, Obesity, Daily Smoking, Hypertension, Diabetes Mellitus, Hyperlipidaemia, Sufficient Total Physical Activity and Binge Drinking Among Residents Aged 18–74 Years</td>
+<td>data.gov.sg / singstat.gov.sg</td>
+<td>Annual</td>
+</tr>
+</tbody>
+</table>
+<p>Key variables of interest include:</p>
+<ul>
+<li><strong>Patient demographics:</strong> Age, sex, ethnicity</li>
+<li><strong>Clinical indicators:</strong> Diabetes status, cholesterol levels, BMI, blood pressure</li>
+<li><strong>Lifestyle factors:</strong> Physical activity frequency, smoking status, food and drink consumption (carbohydrates, protein, sugar/calorie intake)</li>
+</ul>
+</section>
+<section id="project-scope" class="level2">
+<h2 class="anchored" data-anchor-id="project-scope">Project Scope</h2>
+<p><strong>In scope:</strong></p>
+<ul>
+<li>Analysis of diabetes prevalence trends in Singapore across demographic groups (age, gender, ethnicity, region)</li>
+<li>Exploration of lifestyle and socioeconomic risk factors and their relationship with diabetes incidence</li>
+<li>Development of interactive Tableau dashboards and geospatial visualisations</li>
+</ul>
+<p><strong>Out of scope:</strong></p>
+<ul>
+<li>Clinical treatment outcomes or medication efficacy</li>
+<li>Individual patient-level data or personally identifiable information</li>
+<li>Comparative analysis with countries outside Singapore</li>
+</ul>
+</section>
+<section id="methodology" class="level2">
+<h2 class="anchored" data-anchor-id="methodology">Methodology</h2>
+<p>This project uses <strong>Tableau Desktop</strong> as the primary tool for data analysis and visualisation, following a structured five-step workflow:</p>
+<ol type="1">
+<li><strong>Data Collection</strong> — Gather diabetes prevalence and lifestyle datasets from data.gov.sg and singstat.gov.sg</li>
+<li><strong>Data Preparation</strong> — Import, clean, and transform data in Tableau (handling duplicates, missing values, and creating calculated fields such as age groups and BMI categories)</li>
+<li><strong>Data Analysis</strong> — Conduct exploratory data analysis (EDA), trend analysis, demographic segmentation, and correlation analysis using Tableau’s interactive features</li>
+<li><strong>Data Visualisation</strong> — Build interactive dashboards, geospatial maps, and trend charts to communicate insights visually</li>
+<li><strong>Insight Generation</strong> — Interpret findings and share dashboards on Tableau Public with actionable recommendations for targeted interventions</li>
+</ol>
+</section>
+<section id="timeline" class="level2">
+<h2 class="anchored" data-anchor-id="timeline">Timeline</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 39%">
+<col style="width: 39%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Week</th>
+<th>Milestone</th>
+<th>Key Tasks</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>9</td>
+<td>Data Collection &amp; Setup</td>
+<td>Download datasets, review consistency, set up Tableau</td>
+</tr>
+<tr class="even">
+<td>10</td>
+<td>Data Preparation</td>
+<td>Import and clean data, create calculated fields and hierarchies</td>
+</tr>
+<tr class="odd">
+<td>11</td>
+<td>Exploratory Analysis</td>
+<td>Create basic visualisations, line charts for trend analysis, initial dashboards</td>
+</tr>
+<tr class="even">
+<td>12</td>
+<td>Advanced Analysis</td>
+<td>Create geospatial visualisations and more detailed dashboards</td>
+</tr>
+<tr class="odd">
+<td>13</td>
+<td>Finalisation</td>
+<td>Create Tableau story, update project website, produce user guide and poster</td>
+</tr>
+</tbody>
+</table>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

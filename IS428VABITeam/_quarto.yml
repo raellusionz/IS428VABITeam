@@ -5,6 +5,8 @@ website:
   title: "IS428VABITeam"
   navbar:
     left:
+      - href: project proposal.qmd
+        text: Project Proposal
       - href: index.qmd
         text: Home
       - href: about.qmd
@@ -23,7 +25,7 @@ website:
         text: User Guide
     right:
       - icon: github
-        href: https://github.com/YOUR_GITHUB_REPO
+        href: https://github.com/raellusionz/IS428VABITeam
         text: GitHub
   page-footer:
     left: "© 2026 IS428 VABITeam"
@@ -34,3 +36,5 @@ format:
     theme: cosmo
     css: styles.css
     toc: true
+    page-layout: full
+    max-width: 1400px
