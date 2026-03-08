@@ -7,21 +7,21 @@ website:
     left:
       - href: project proposal.qmd
         text: Project Proposal
-      #- href: index.qmd
+      # - href: index.qmd
       #  text: Home
-      #- href: about.qmd
+      # - href: about.qmd
       #  text: About
-      #- href: overview.qmd
+      # - href: overview.qmd
       #  text: Overview
-      #- href: prototypes.qmd
+      # - href: prototypes.qmd
       #  text: Prototypes
-      #- href: storyboard.qmd
+      # - href: storyboard.qmd
       #  text: Storyboard
-      #- href: analysis.qmd
+      # - href: analysis.qmd
       #  text: Analysis & Results
-      #- href: poster.qmd
+      # - href: poster.qmd
       #  text: Poster
-      #- href: userguide.qmd
+      # - href: userguide.qmd
       #  text: User Guide
     right:
       - icon: github
