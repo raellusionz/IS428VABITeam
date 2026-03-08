@@ -7,22 +7,22 @@ website:
     left:
       - href: project proposal.qmd
         text: Project Proposal
-      - href: index.qmd
-        text: Home
-      - href: about.qmd
-        text: About
-      - href: overview.qmd
-        text: Overview
-      - href: prototypes.qmd
-        text: Prototypes
-      - href: storyboard.qmd
-        text: Storyboard
-      - href: analysis.qmd
-        text: Analysis & Results
-      - href: poster.qmd
-        text: Poster
-      - href: userguide.qmd
-        text: User Guide
+      #- href: index.qmd
+      #  text: Home
+      #- href: about.qmd
+      #  text: About
+      #- href: overview.qmd
+      #  text: Overview
+      #- href: prototypes.qmd
+      #  text: Prototypes
+      #- href: storyboard.qmd
+      #  text: Storyboard
+      #- href: analysis.qmd
+      #  text: Analysis & Results
+      #- href: poster.qmd
+      #  text: Poster
+      #- href: userguide.qmd
+      #  text: User Guide
     right:
       - icon: github
         href: https://github.com/raellusionz/IS428VABITeam
