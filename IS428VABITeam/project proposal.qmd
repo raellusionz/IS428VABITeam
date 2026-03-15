@@ -4,151 +4,118 @@ title: "Project Overview"
 
 ## Introduction/Problem Statement
 
-Diabetes is a growing health concern worldwide, and Singapore is no exception. As one of the most developed nations in Southeast Asia, Singapore has seen a sharp rise in diabetes cases in recent years, posing significant challenges to public health and the healthcare system. According to the Singapore Ministry of Health, approximately 1 in 9 adults in Singapore has diabetes, with the majority of these cases being Type 2 diabetes. This chronic disease is linked to a range of serious long-term complications, including cardiovascular disease, kidney failure, and visual impairment, which not only impact the quality of life for individuals but also contribute to rising healthcare costs and strain the healthcare system. In response to this, the Ministry of Health (MOH) launched the "War on Diabetes" initiative in 2016 to combat the rise in diabetic cases, targeting early prevention, screening and management through policy, education and healthier lifestyle choices.
+Sailor Shift, a native of the small island nation of Oceanus, has risen from humble beginnings to become one of the most celebrated artists in contemporary music. Her journey began within the niche genre of Oceanus Folk, a style deeply rooted in the cultural identity of her homeland, before evolving into a globally recognised sound that has captivated audiences worldwide.
 
-Despite the ongoing interventions, over the past 3 years, the number of diabetes diagnoses in Singapore has continued to rise, due to multiple contributing factors, such as aging population, urbanization, socioeconomic conditions, demographic differences and lifestyle factors - poor diet and lack of physical activity. A 2020 report by the Ministry of Health revealed that more than 500,000 Singaporeans aged 18 to 69 were living with diabetes, and the country faces an increasing trend in the incidence of diabetes-related complications, such as amputations and dialysis treatments. The significant burden placed on the healthcare system, coupled with the economic costs of managing diabetes, makes it crucial to gain a deeper understanding of how this disease affects various populations in Singapore.
+In 2023, Sailor joined the Ivy Echoes, an all-female Oceanus Folk band. Although the group disbanded by 2026, it served as the launchpad for Sailor's solo career. Her breakthrough came in 2028 when a single went viral, becoming the first Oceanus Folk song ever to top the global charts. Since then, she has released a new album nearly every year, each one outperforming the last, while also collaborating with established artists in Indie Pop and Indie Folk. This spirit of collaboration is driven by two core passions: (1) spreading the Oceanus Folk genre onto the world stage, and (2) providing a platform for emerging artists to break into the industry. Her influence has had a ripple effect, drawing renewed attention to her former bandmates, all of whom have continued to shape the music world in their own right, and inspiring a new generation of Oceanus Folk artists.
 
-Existing reports and health statistics are often presented in aggregated formats, making it difficult for pattern identification across demographic groups, time periods, or even lifestyle risk factors. This creates an information gap that hinders policy makers and healthcare professionals from easily identifying relationships between contributing factors and translating these insights into targeted and effective interventions.
-
-To address these challenges, understanding the patterns, risk factors, and behaviors that contribute to the rise in diabetes cases is essential for designing targeted interventions, improving patient care, and managing healthcare costs more effectively. Gaining deeper insights into these factors can aid in the development of targeted interventions, improved patient care strategies, and enable more effective management of healthcare resources. This research aims to shed light on these trends through interactive dashboards that uncover patterns, trends, and potential correlations. The study seeks to enhance understanding of diabetes risk factors in Singapore and support better understanding and decision making regarding diabetes early intervention and prevention.
+Existing analyses of musical influence are often siloed, focusing on individual artists, individual albums, or narrow time slices, and fail to capture the interconnected web of collaborations, influences, and genre crossovers that underlie Sailor's rise and the broader diffusion of Oceanus Folk. This project addresses this gap. By leveraging a comprehensive dataset encompassing artists, producers, albums, songs, and influence relationships, we aim to unlock the full potential of that dataset and develop interactive visual analytics that reveal Sailor Shift's career development, the spread of Oceanus Folk across the global music world, and the characteristics that define a rising star in today's industry.
 
 ## Motivation
 
-The motivation behind this project stems from the need to better understand the factors contributing to the increasing prevalence of diabetes in Singapore. Diabetes is a complex chronic condition influenced by multiple interacting variables, including age, gender, physical activity, diet, obesity, and socioeconomic conditions. However, traditional statistical reports often present these variables separately, making it difficult to explore relationships between them.
+The motivation for this project stems from three interconnected needs: journalistic storytelling, cultural documentation, and predictive insight into the music industry.
 
-With the knowledge that diabetes has profound social, economic, and health impacts, there is a strong need for analytical approaches that can provide clever insights into these contributing factors. Visual analytics offer a powerful way to address this challenge by transforming complex datasets into visual representations that allow for uncovering critical insights and pattern discovery that can support public health strategies and empower individuals to make healthier lifestyle choices.
+Firstly, Silas Reed's article *Oceanus Folk: Then-and-Now* requires more than anecdotal accounts of Sailor's rise. To make a compelling and evidence-based case for the cultural impact of Oceanus Folk, Silas needs visualisations that explore a complex dataset intuitively — tracing influence chains, identifying pivotal collaborations, and spotting turning points in the genre's trajectory.
 
-Despite ongoing public health initiatives, such as the National Steps Challenge and Diabetes Prevention Program, many people in Singapore still have limited awareness of how lifestyle, socioeconomic factors, and demographics intersect to collectively influence diabetes risk.
+Secondly, cultural value is added when documenting the spread of a small island's musical tradition onto the world stage. Oceanus Folk's journey mirrors broader stories of how regional music cultures are absorbed, transformed, and transmitted globally. Understanding which genres adopted Oceanus Folk elements, which artists acted as bridges, and how the genre itself changed will contribute meaningfully to music history.
 
-This project intends to address this gap by making sense of diabetes-related data from recent years to uncover trends in disease prevalence, associated risk factors, and demographic patterns. Through development of visualizations to present findings, will uncover meaningful insights that can help make complex health information more accessible and understandable to the public, and allow healthcare providers and policymakers to make more informed decisions.
+Lastly, the music industry will benefit from analysing what distinguishes artists who break through from those who do not. By modelling the career trajectories of Sailor and comparing them with rising Oceanus Folk artists, this project aims to surface actionable patterns that could help emerging musicians make better-informed decisions.
 
-By analyzing diabetes data from the past three years, including trends in disease incidence, risk factors, and geographic distribution, the project aims to identify key patterns that could inform prevention strategies, early detection programs, and healthcare interventions. The goal is to use these findings to contribute to ongoing discussions about how to reduce the prevalence of diabetes in Singapore and improve the quality of life for those affected by the disease.
+Therefore, this project aims to use visual analytics to transform the dataset into accessible and interactive narratives, providing readers with insights when seeking to understand one of music's most compelling modern stories.
 
-In summary, this project leverages data-driven insights to promote a better understanding of diabetes in Singapore and assist in the development of evidence-based policies that will reduce the burden of diabetes on individuals and the healthcare system.
+## Dataset
 
-## Related Works
+The primary dataset for this project is a knowledge graph assembled by Silas Reed, containing structured relational data on the Oceanus music ecosystem. The graph includes the following entity and relationship types:
 
-### Study 1: Pre-Diabetes Interventions and Continued Tracking to Ease-out Diabetes (Pre-DICTED)
-
-**Objective:** To study the effectiveness of lifestyle intervention with addition of anti-diabetic medication such as metformin, when required, in stopping or reversing the progression from pre-diabetes to type 2 diabetes (HealthXchange, 2017).
-
-**Key Findings:**
-
-- Over 3 years, 34.8% of the intervention participants developed type 2 diabetes compared to 47.3% in the control group - an absolute risk reduction of 12.5 percentage points (Bee et al., 2025).
-- Stepped-care intervention - group lifestyle changes with financial incentives and metformin added for 26% of the participants at persistent high risk - reduced type 2 diabetes risk by 26% (Bee et al., 2025).
-- The study provided strong evidence that early intervention could significantly prevent diabetes in high-risk individuals.
-
-**References:**
-
-Bee, Y. M., Awasthi, N., Gandhi, M., Lam, A. Y. R., Julianty, S., Tan, G. C. S., Ho, E. T. L., Goh, S.-Y., Tan, G. S. W., Shum, E. J. W., Lee, Y. Q., Chong, M. F. F., Jafar, T. H., van Dam, R. M., Teoh, Y. L., Thumboo, J., & Finkelstein, E. A. (2025). Effectiveness of an Incentives-Enhanced Stepped Care Intervention Program in Diabetes Prevention in a Multiethnic Asian Prediabetes Cohort: Results From the Pre-DICTED Randomized Controlled Trial. *Diabetes Care, 48*(11), 1951–1959. <https://doi.org/10.2337/dc25-1555>
-
-HealthXchange. (2017, October 19). Pre-diabetes FAQs. <https://www.healthxchange.sg/how-to-manage/diabetes-management/pre-diabetes-faqs>
-
----
-
-### Study 2: Action to Control Cardiovascular Risk in Diabetes (ACCORD)
-
-**Objective:** The ACCORD trial assessed the effects of tight glucose control on cardiovascular events and overall mortality in type 2 diabetes patients at high risk for heart disease.
-
-**Key Findings:**
-
-- Intensive glucose control (targeting A1c below 6%) did not significantly reduce major cardiovascular events.
-- It was associated with an increased risk of mortality, leading to the termination of this arm of the trial.
-- The findings challenged the benefits of very tight glucose control in high-risk cardiovascular patients.
-
-**References:**
-
-Action to Control Cardiovascular Risk in Diabetes (ACCORD) Study Group, Effects of intensive glucose lowering in type 2 diabetes. *N Engl J Med.* 2008. <https://www.nejm.org/doi/full/10.1056/NEJMoa0802743>
-
----
-
-### Current Limitations of the 2 Studies
-
-**Limited Exploration of Multiple Risk Factors Together**
-
-Many landmark diabetes studies focus on specific clinical variables, such as blood glucose control or medication effectiveness. While these studies provide valuable medical insights, they often examine a limited set of variables within controlled environments. This approach may not fully capture the complex interactions between lifestyle, demographic, and physiological factors in real-world settings.
-
-*Our Approach:* To address this gap, our project will analyze datasets containing multiple variables, such as BMI, glucose levels, and lifestyle indicators. By leveraging data visualization tools such as Tableau, we can simultaneously explore the relationships between these factors and uncover patterns that may not be easily observed through traditional clinical analysis.
-
-**Limited Focus on Public Awareness and Preventive Insights**
-
-Many studies concentrate on clinical outcomes and treatment strategies, but they may place less emphasis on presenting findings in ways that promote public awareness and preventive action.
-
-*Our Approach:* Our analysis aims to translate data findings into insights that can help raise awareness about diabetes-related patterns and encourage informed discussions around prevention and early detection. By presenting data in a clear and engaging format, the project can help highlight important health trends that may support better decision-making within society.
-
-## Possible Datasets
-
-- [Mortality Rates Attributed To Suicide, Cardiovascular Disease, Cancer, Diabetes Or Chronic Respiratory Disease, Annual](https://data.gov.sg/datasets?q=&query=diabetes&groups=&organization=&resultId=d_12f48e794a60ef400d9193d2177a9d37)
-- [Prevalence Of Overweight, Obesity, Daily Smoking, Hypertension, Diabetes Mellitus, Hyperlipidaemia, Sufficient Total Physical Activity And Binge Drinking Among Residents Aged 18-74 Years](https://data.gov.sg/datasets?q=&groups=&organization=&query=diabetes&resultId=d_711586488b23182801c94bd7b6807833)
+| Entity / Relationship Type | Description |
+|---|---|
+| Artists | Named musicians, vocalists, instrumentalists, and producers active in Oceanus and globally |
+| Albums & Songs | Discography records linked to artists and release years |
+| Influence Relationships | Directed edges indicating which artists influenced which others, with time context |
+| Collaboration Relationships | Edges representing joint works, featured appearances, and production credits |
+| Genre Labels | Genre tags associated with artists and works (e.g., Oceanus Folk, Indie Pop, Indie Folk) |
+| Producers | Production credits linking songs/albums to producers such as Sophie Ramirez |
 
 **Variables Required:**
 
-- Patient ID: Unique identifier for each patient
-- Age: Age of the patient
-- Sex: Gender of the patient (Male/Female)
-- Diabetes: Diabetic Patients
-- Cholesterol: Cholesterol levels of Patients
-- Obesity Rates: BMI of Patients
-- Physical Activity Levels: Frequency in Exercising
-- Blood Pressure: Blood pressure of the patient (systolic/diastolic)
-- Smoking: Smoking
-- Food & Drink Consumption: Type of Food Intake (Carbs, Protein), Sugar/Calories Count
+- Artist: Unique identifier and name for each musician
+- Genre: Primary and secondary genre affiliations over time
+- Release Year: Temporal anchoring of albums and songs
+- Influence Source / Target: Directional influence relationships between artists
+- Collaboration Partners: Co-artists on recorded works
+- Popularity / Chart Performance: Where available, commercial success metrics
+- Network Position: Derived measures such as degree centrality, betweenness, and PageRank within the influence graph
 
 ## Methodology
 
-This project will primarily use Tableau as the main tool for data analysis and visualization. The process will involve gathering relevant diabetes-related datasets, followed by cleaning and preprocessing the data to ensure accuracy and consistency. The prepared data is then used to build interactive visualizations and dashboards in Tableau, enabling visual analytics that uncover trends, patterns, and insights related to diabetes. The steps involved are as follows:
+This project will use Tableau as the primary platform for data analysis and visualization, supplemented by network analysis tools where appropriate. The process is structured in five steps:
 
-**Step 1: Data Collection**
+**Step 1: Data Collection and Graph Parsing**
 
-- **Diabetes Prevalence Data:** The first step will involve collecting relevant datasets from sources like [data.gov.sg](https://www.data.gov.sg) and [singstat.gov.sg](https://www.singstat.gov.sg). The dataset will include information on diabetes prevalence, complications, and healthcare usage.
-- **Socioeconomic and Behavioral Data:** We will also gather data on lifestyle factors, such as smoking habits, exercise habits, and socioeconomic status, from [data.gov.sg](https://www.data.gov.sg) and [singstat.gov.sg](https://www.singstat.gov.sg).
+- Parse Silas Reed's knowledge graph from its source format (JSON/CSV/GraphML) to extract node and edge tables suitable for Tableau and network analysis.
+- Supplement the graph with any publicly available metadata (e.g., genre classifications, chart positions) to enrich the dataset.
+- Document the schema and validate completeness — identifying any missing influence edges or artist records that may affect analysis quality.
 
 **Step 2: Data Preparation in Tableau**
 
-- **Data Import:** Tableau will be used to connect and import data from various sources, including Excel spreadsheets and CSV files, serving as the foundation for analysis and visualization.
-- **Data Cleaning:** We will use Tableau data preparation tools such as filtering, grouping, transforming, and pivoting fields to clean and preprocess the data by removing duplicates, handling missing values, and correcting any inconsistencies, and restructuring the data into more analysis-ready format.
-- **Data Transformation:** Using Tableau's built-in features, we will create calculated fields and hierarchies (e.g., age groups, regions, BMI categories, etc.) to structure the data, making the data more meaningful and insightful for analysis.
+- Import node and edge tables into Tableau, establishing artist records as the primary analysis unit.
+- Create calculated fields for derived network metrics (e.g., collaboration count, influence in-degree, career span).
+- Build time-aware dimensions by segmenting data into career phases: pre-2028 (pre-breakthrough), 2028–2032 (early stardom), and 2033–2040 (established global artist).
+- Categorize genres into a simplified taxonomy to enable cross-genre influence analysis.
 
 **Step 3: Data Analysis in Tableau**
 
-- **Exploratory Data Analysis (EDA):** Using Tableau's interactive features such as filters, sorting, trend lines, and various chart types, we will explore the dataset to identify patterns, distributions, outliers, and relationships within the diabetes-related data. We will use Tableau's drag-and-drop functionality to conduct an exploratory analysis by creating basic visualizations (e.g., bar charts, line graphs, pie charts) to observe trends such as the rise in diabetes prevalence across different age groups, genders, and regions in Singapore.
-- **Trend Analysis:** Using time series analysis in Tableau, we will track the yearly trends of diabetes prevalence over the past three years, identifying any significant increases or fluctuations in the data.
-- **Segmentation:** We will analyze the data by segmenting it based on age, ethnicity, geographic region, and socioeconomic factors to uncover insights on which populations are most affected by diabetes.
-- **Correlation Analysis:** Tableau's correlation matrix and scatter plot capabilities will allow us to explore relationships between diabetes incidence and factors like physical activity, diet, socioeconomic status, and other behavioral factors.
+- **Career Profile Analysis:** Trace Sailor Shift's full career arc — influences received, collaborations formed, and influence exerted on others — across each career phase.
+- **Influence Diffusion Analysis:** Map the spread of Oceanus Folk through the broader music network, identifying which genres and artists acted as conduits.
+- **Comparative Rising Star Analysis:** Select three artists at varying stages of career development and compare their trajectory metrics (collaboration rate, influence growth, genre reach).
+- **Predictive Profiling:** Apply the rising star characterization to current emerging Oceanus Folk artists to identify the three most likely future breakouts.
 
-**Step 4: Data Visualization in Tableau**
+**Step 4: Visualization Development in Tableau**
 
-- **Interactive Dashboards:** Using Tableau's dashboard feature, we will create interactive visualizations that allow users to explore data in more depth. For example, users could filter data by age group, gender, or region to examine specific trends related to diabetes.
-- **Geospatial Analysis:** Tableau will be used to map the geographic distribution of diabetes cases across Singapore, allowing for a visual representation of areas with higher or lower diabetic prevalence.
-- **Trend Visualizations:** We will present time-based trends with line charts to show the progression of diabetes prevalence over the past three years, and use heat maps to highlight areas or demographics with the highest rates of diabetes.
+- **Network / Force-Directed Diagrams:** Visualize the collaboration and influence graph with Sailor Shift at the center, color-coded by genre and sized by influence weight.
+- **Timeline Charts:** Show the temporal evolution of Sailor's influences, collaborations, and chart performance from 2023 to 2040.
+- **Chord Diagrams / Sankey Charts:** Illustrate cross-genre influence flows — how Oceanus Folk influenced other genres and what genres have in turn influenced Oceanus Folk.
+- **Comparative Career Dashboards:** Side-by-side visualizations of three selected artists' career trajectories using normalized metrics.
+- **Rising Star Radar Charts:** Multi-axis profiles for emerging artists, scored against the characteristics identified in the rising star framework.
 
 **Step 5: Insight Generation and Reporting**
 
-- **Dashboard Sharing:** After developing the interactive dashboards, the findings will be shared on Tableau Public. These visualizations will help communicate key insights in an intuitive way.
-- **Insight Interpretation:** The final step will involve interpreting the insights generated by the visualizations and providing actionable recommendations. For example, identifying high-risk areas or populations and suggesting targeted intervention strategies, such as lifestyle campaigns or early screening programs.
+- Publish interactive dashboards to Tableau Public for Silas Reed's use and broader public access.
+- Document key findings: inflection points in Sailor's career, the most influential Oceanus Folk conduit artists, and the predicted next generation of stars.
+- Produce a written narrative synthesis to accompany the dashboards, suitable for inclusion in Silas's article.
 
 ## Tools and Resources
 
+**(A) Primary Tools**
+
 **Tableau Desktop**
 
-Primary Tool for Data Analysis and Visualization: All aspects of data preparation, analysis, and visualization will be conducted within Tableau Desktop. It will be used for importing, cleaning, transforming, and analyzing the data, as well as for creating interactive dashboards and visualizations.
+Core platform for all data preparation, analysis, and dashboard development. All aspects of data import, cleaning, transformation, analysis, and interactive dashboard creation will be conducted within Tableau Desktop.
 
-**Data Sources:**
+**Tableau Public**
 
-- [data.gov.sg](https://www.data.gov.sg)
-- [singstat.gov.sg](https://www.singstat.gov.sg)
+For publishing and sharing final interactive dashboards with Silas Reed and the broader public.
 
-**Tableau Features:**
+**Tableau Prep**
 
-- **Tableau Prep:** If additional data cleaning or transformation is needed beyond what Tableau Desktop can handle, Tableau Prep will be used for more advanced data preparation tasks.
-- **Tableau Public:** For sharing and distributing the final interactive dashboards.
+For advanced data cleaning and graph-to-table transformation workflows beyond what Tableau Desktop handles natively.
+
+**(B) Supplementary Tools**
+
+**Gephi or NetworkX (Python)**
+
+For computing network centrality metrics (degree, betweenness, PageRank) to feed back into Tableau as enriched data columns.
+
+**Python (pandas)**
+
+For parsing the knowledge graph source files and preparing edge/node tables.
+
+**(C) Data Sources**
+
+- **Primary:** Silas Reed's knowledge graph dataset (artists, albums, songs, influences, collaborations, producers).
+- **Supplementary:** Publicly available music metadata and chart data where applicable to enrich popularity metrics.
 
 ## Project Timeline
 
-| Week | Objectives | Tasks |
-|------|------------|-------|
-| 9 | Gather and organise all relevant datasets for analysis, and set up Tableau environment | Download all relevant datasets; Review datasets to ensure consistency; Set up Tableau |
-| 10 | Clean and prepare data for analysis in Tableau | Import datasets into Tableau; Clean data using Tableau tools; Create calculated fields, group and filter data |
-| 11 | Perform EDA and create initial visualisations to uncover trends | Create basic visualisations; Create line charts for trend analysis; Create dashboards |
-| 12 | Conduct more detailed analysis and incorporate more advanced charts to visualise geographic trends | Create geospatial visualisations; Create dashboards |
-| 13 | Finalise graphs and prepare final deliverables | Create story; Update project website; Create user guide; Create project poster |
+The Gantt chart below illustrates the project schedule across Weeks 9 to 14, organized into five categories: Brainstorming, Analysis, Deliverables, Submissions, and Consultations.
+
+![Project Gantt Chart](gantt_chart.png)

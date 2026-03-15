@@ -2,7 +2,7 @@ project:
   type: website
 
 website:
-  title: "IS428VABITeam - SugarShift"
+  title: "IS428VABITeam"
   navbar:
     left:
       - href: project proposal.qmd
