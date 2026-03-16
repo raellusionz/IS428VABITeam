@@ -187,11 +187,11 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 <tr class="odd">
 <td>Influence Relationships</td>
-<td>Directed edges indicating which artists influenced which others, with time context</td>
+<td>Directed edges indicating stylistic and compositional influence between artists, captured through relationship types such as InStyleOf, InterpolatesFrom, CoverOf, DirectlySamples, and LyricalReferenceTo, with time context derived from associated node release dates</td>
 </tr>
 <tr class="even">
 <td>Collaboration Relationships</td>
-<td>Edges representing joint works, featured appearances, and production credits</td>
+<td>Edges representing joint works, featured appearances, and production credits, inferred from shared PerformerOf, MemberOf, LyricistOf, and ComposerOf connections</td>
 </tr>
 <tr class="odd">
 <td>Genre Labels</td>
@@ -201,16 +201,20 @@ ul.task-list li input[type="checkbox"] {
 <td>Producers</td>
 <td>Production credits linking songs/albums to producers such as Sophie Ramirez</td>
 </tr>
+<tr class="odd">
+<td>Record Labels</td>
+<td>Record label entities linked to artists and songs through RecordedBy and DistributedBy relationships</td>
+</tr>
 </tbody>
 </table>
 <p><strong>Variables Required:</strong></p>
 <ul>
 <li>Artist: Unique identifier and name for each musician</li>
 <li>Genre: Primary and secondary genre affiliations over time</li>
-<li>Release Year: Temporal anchoring of albums and songs</li>
-<li>Influence Source / Target: Directional influence relationships between artists</li>
-<li>Collaboration Partners: Co-artists on recorded works</li>
-<li>Popularity / Chart Performance: Where available, commercial success metrics</li>
+<li>Release Year: Temporal anchoring of albums and songs (release_date and written_date fields)</li>
+<li>Influence Source / Target: Directional influence relationships between artists (InStyleOf, InterpolatesFrom, CoverOf, DirectlySamples, and LyricalReferenceTo)</li>
+<li>Collaboration Partners: Co-artists on recorded works (derived from PerformerOf, MemberOf, LyricistOf, and ComposerOf relationships)</li>
+<li>Notoriety: Where available, the notable flag (boolean) and notoriety_date field serve as proxies for commercial success and breakthrough timing</li>
 <li>Network Position: Derived measures such as degree centrality, betweenness, and PageRank within the influence graph</li>
 </ul>
 </section>
@@ -219,7 +223,7 @@ ul.task-list li input[type="checkbox"] {
 <p>This project will use Tableau as the primary platform for data analysis and visualization, supplemented by network analysis tools where appropriate. The process is structured in five steps:</p>
 <p><strong>Step 1: Data Collection and Graph Parsing</strong></p>
 <ul>
-<li>Parse Silas Reed’s knowledge graph from its source format (JSON/CSV/GraphML) to extract node and edge tables suitable for Tableau and network analysis.</li>
+<li>Parse Silas Reed’s knowledge graph from its source format (JSON/CSV) to extract node and edge tables suitable for Tableau and network analysis.</li>
 <li>Supplement the graph with any publicly available metadata (e.g., genre classifications, chart positions) to enrich the dataset.</li>
 <li>Document the schema and validate completeness — identifying any missing influence edges or artist records that may affect analysis quality.</li>
 </ul>

@@ -30,19 +30,20 @@ The primary dataset for this project is a knowledge graph assembled by Silas Ree
 |---|---|
 | Artists | Named musicians, vocalists, instrumentalists, and producers active in Oceanus and globally |
 | Albums & Songs | Discography records linked to artists and release years |
-| Influence Relationships | Directed edges indicating which artists influenced which others, with time context |
-| Collaboration Relationships | Edges representing joint works, featured appearances, and production credits |
+| Influence Relationships | Directed edges indicating stylistic and compositional influence between artists, captured through relationship types such as InStyleOf, InterpolatesFrom, CoverOf, DirectlySamples, and LyricalReferenceTo, with time context derived from associated node release dates |
+| Collaboration Relationships | Edges representing joint works, featured appearances, and production credits, inferred from shared PerformerOf, MemberOf, LyricistOf, and ComposerOf connections |
 | Genre Labels | Genre tags associated with artists and works (e.g., Oceanus Folk, Indie Pop, Indie Folk) |
 | Producers | Production credits linking songs/albums to producers such as Sophie Ramirez |
+| Record Labels | Record label entities linked to artists and songs through RecordedBy and DistributedBy relationships |
 
 **Variables Required:**
 
 - Artist: Unique identifier and name for each musician
 - Genre: Primary and secondary genre affiliations over time
-- Release Year: Temporal anchoring of albums and songs
-- Influence Source / Target: Directional influence relationships between artists
-- Collaboration Partners: Co-artists on recorded works
-- Popularity / Chart Performance: Where available, commercial success metrics
+- Release Year: Temporal anchoring of albums and songs (release_date and written_date fields)
+- Influence Source / Target: Directional influence relationships between artists (InStyleOf, InterpolatesFrom, CoverOf, DirectlySamples, and LyricalReferenceTo)
+- Collaboration Partners: Co-artists on recorded works (derived from PerformerOf, MemberOf, LyricistOf, and ComposerOf relationships)
+- Notoriety: Where available, the notable flag (boolean) and notoriety_date field serve as proxies for commercial success and breakthrough timing
 - Network Position: Derived measures such as degree centrality, betweenness, and PageRank within the influence graph
 
 ## Methodology
@@ -51,7 +52,7 @@ This project will use Tableau as the primary platform for data analysis and visu
 
 **Step 1: Data Collection and Graph Parsing**
 
-- Parse Silas Reed's knowledge graph from its source format (JSON/CSV/GraphML) to extract node and edge tables suitable for Tableau and network analysis.
+- Parse Silas Reed's knowledge graph from its source format (JSON/CSV) to extract node and edge tables suitable for Tableau and network analysis.
 - Supplement the graph with any publicly available metadata (e.g., genre classifications, chart positions) to enrich the dataset.
 - Document the schema and validate completeness — identifying any missing influence edges or artist records that may affect analysis quality.
 
