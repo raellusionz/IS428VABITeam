@@ -5,7 +5,7 @@ website:
   title: "IS428VABITeam"
   navbar:
     left:
-      - href: project_proposal.qmd
+      - href: project proposal.qmd
         text: Project Proposal
       # - href: index.qmd
       #  text: Home
