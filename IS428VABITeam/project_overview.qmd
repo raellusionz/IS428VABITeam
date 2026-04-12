@@ -1,0 +1,37 @@
+---
+title: "Oceanus Folk: Then-and-Now"
+---
+The rise of Sailor and the influence of Oceanus Folk on the rest of the music world
+
+## Overview 
+
+This project is a Visual Analytics prototype developed for the IS428 Visual Analytics with Business Intelligence module, leveraging the VAST 2025 Mini-Challenge 1 dataset to examine the artistic evolution of Sailor Shift and the broader influence of Oceanus Folk on the global music landscape.
+Through interactive dashboards and network visualisations, the prototype enables users to explore how artists form, evolve, and spread across songs, albums, and genres over time. It is designed to help Silas Reed (a local journalist) in his article, and more importantly support music analysts and cultural researchers in uncovering trends, understanding genre dynamics, and identifying emerging artists through a data-driven lens.
+
+
+## Project Goals
+
+- Analyse how Sailor Shift’s musical identity is formed and how it evolves over time through influences, collaborations, and career development
+- Examine how Oceanus Folk grows and declines, and identify the key factors in driving these changes
+- Understand how musical influence spreads through networks of artists, songs, and genres, including direct and indirect relationships
+Identify and evaluate future rising stars using data-driven indicators 
+
+
+## Dataset
+- mc1_edges.csv
+- mc1_nodes.csv
+- edges_prepped.csv (Refer to Data Preparation for more details)
+
+
+## Built With
+1. Tableau
+2. Gephi
+3. Python
+4. Quarto
+
+
+<!-- Describe the dataset(s) used — source, size, time period, key variables.
+
+| Dataset | Source | Records | Period |
+|---------|--------|---------|--------|
+| Dataset 1 | Source A | ~10,000 | 2020–2024 | -->

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Project Overview – IS428VABITeam</title>
+<title>Oceanus Folk: Then-and-Now – IS428VABITeam</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -91,11 +91,11 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./project proposal.html" aria-current="page"> 
+    <a class="nav-link" href="./project proposal.html"> 
 <span class="menu-text">Project Proposal</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./project_overview.html"> 
+    <a class="nav-link active" href="./project_overview.html" aria-current="page"> 
 <span class="menu-text">Project Overview</span></a>
   </li>  
 </ul>
@@ -121,12 +121,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#introductionproblem-statement" id="toc-introductionproblem-statement" class="nav-link active" data-scroll-target="#introductionproblem-statement">Introduction/Problem Statement</a></li>
-  <li><a href="#motivation" id="toc-motivation" class="nav-link" data-scroll-target="#motivation">Motivation</a></li>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#project-goals" id="toc-project-goals" class="nav-link" data-scroll-target="#project-goals">Project Goals</a></li>
   <li><a href="#dataset" id="toc-dataset" class="nav-link" data-scroll-target="#dataset">Dataset</a></li>
-  <li><a href="#methodology" id="toc-methodology" class="nav-link" data-scroll-target="#methodology">Methodology</a></li>
-  <li><a href="#tools-and-resources" id="toc-tools-and-resources" class="nav-link" data-scroll-target="#tools-and-resources">Tools and Resources</a></li>
-  <li><a href="#project-timeline" id="toc-project-timeline" class="nav-link" data-scroll-target="#project-timeline">Project Timeline</a></li>
+  <li><a href="#built-with" id="toc-built-with" class="nav-link" data-scroll-target="#built-with">Built With</a></li>
   </ul>
 </nav>
     </div>
@@ -135,7 +133,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Project Overview</h1>
+<h1 class="title">Oceanus Folk: Then-and-Now</h1>
 </div>
 
 
@@ -152,143 +150,40 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="introductionproblem-statement" class="level2">
-<h2 class="anchored" data-anchor-id="introductionproblem-statement">Introduction/Problem Statement</h2>
-<p>Sailor Shift, a native of the small island nation of Oceanus, has risen from humble beginnings to become one of the most celebrated artists in contemporary music. Her journey began within the niche genre of Oceanus Folk, a style deeply rooted in the cultural identity of her homeland, before evolving into a globally recognised sound that has captivated audiences worldwide.</p>
-<p>In 2023, Sailor joined the Ivy Echoes, an all-female Oceanus Folk band. Although the group disbanded by 2026, it served as the launchpad for Sailor’s solo career. Her breakthrough came in 2028 when a single went viral, becoming the first Oceanus Folk song ever to top the global charts. Since then, she has released a new album nearly every year, each one outperforming the last, while also collaborating with established artists in Indie Pop and Indie Folk. This spirit of collaboration is driven by two core passions: (1) spreading the Oceanus Folk genre onto the world stage, and (2) providing a platform for emerging artists to break into the industry. Her influence has had a ripple effect, drawing renewed attention to her former bandmates, all of whom have continued to shape the music world in their own right, and inspiring a new generation of Oceanus Folk artists.</p>
-<p>Existing analyses of musical influence are often siloed, focusing on individual artists, individual albums, or narrow time slices, and fail to capture the interconnected web of collaborations, influences, and genre crossovers that underlie Sailor’s rise and the broader diffusion of Oceanus Folk. This project addresses this gap. By leveraging a comprehensive dataset encompassing artists, producers, albums, songs, and influence relationships, we aim to unlock the full potential of that dataset and develop interactive visual analytics that reveal Sailor Shift’s career development, the spread of Oceanus Folk across the global music world, and the characteristics that define a rising star in today’s industry.</p>
+<p>The rise of Sailor and the influence of Oceanus Folk on the rest of the music world</p>
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>This project is a Visual Analytics prototype developed for the IS428 Visual Analytics with Business Intelligence module, leveraging the VAST 2025 Mini-Challenge 1 dataset to examine the artistic evolution of Sailor Shift and the broader influence of Oceanus Folk on the global music landscape. Through interactive dashboards and network visualisations, the prototype enables users to explore how artists form, evolve, and spread across songs, albums, and genres over time. It is designed to help Silas Reed (a local journalist) in his article, and more importantly support music analysts and cultural researchers in uncovering trends, understanding genre dynamics, and identifying emerging artists through a data-driven lens.</p>
 </section>
-<section id="motivation" class="level2">
-<h2 class="anchored" data-anchor-id="motivation">Motivation</h2>
-<p>The motivation for this project stems from three interconnected needs: journalistic storytelling, cultural documentation, and predictive insight into the music industry.</p>
-<p>Firstly, Silas Reed’s article <em>Oceanus Folk: Then-and-Now</em> requires more than anecdotal accounts of Sailor’s rise. To make a compelling and evidence-based case for the cultural impact of Oceanus Folk, Silas needs visualisations that explore a complex dataset intuitively — tracing influence chains, identifying pivotal collaborations, and spotting turning points in the genre’s trajectory.</p>
-<p>Secondly, cultural value is added when documenting the spread of a small island’s musical tradition onto the world stage. Oceanus Folk’s journey mirrors broader stories of how regional music cultures are absorbed, transformed, and transmitted globally. Understanding which genres adopted Oceanus Folk elements, which artists acted as bridges, and how the genre itself changed will contribute meaningfully to music history.</p>
-<p>Lastly, the music industry will benefit from analysing what distinguishes artists who break through from those who do not. By modelling the career trajectories of Sailor and comparing them with rising Oceanus Folk artists, this project aims to surface actionable patterns that could help emerging musicians make better-informed decisions.</p>
-<p>Therefore, this project aims to use visual analytics to transform the dataset into accessible and interactive narratives, providing readers with insights when seeking to understand one of music’s most compelling modern stories.</p>
+<section id="project-goals" class="level2">
+<h2 class="anchored" data-anchor-id="project-goals">Project Goals</h2>
+<ul>
+<li>Analyse how Sailor Shift’s musical identity is formed and how it evolves over time through influences, collaborations, and career development</li>
+<li>Examine how Oceanus Folk grows and declines, and identify the key factors in driving these changes</li>
+<li>Understand how musical influence spreads through networks of artists, songs, and genres, including direct and indirect relationships Identify and evaluate future rising stars using data-driven indicators</li>
+</ul>
 </section>
 <section id="dataset" class="level2">
 <h2 class="anchored" data-anchor-id="dataset">Dataset</h2>
-<p>The primary dataset for this project is a knowledge graph assembled by Silas Reed, containing structured relational data on the Oceanus music ecosystem. The graph includes the following entity and relationship types:</p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Entity / Relationship Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Artists</td>
-<td>Named musicians, vocalists, instrumentalists, and producers active in Oceanus and globally</td>
-</tr>
-<tr class="even">
-<td>Albums &amp; Songs</td>
-<td>Discography records linked to artists and release years</td>
-</tr>
-<tr class="odd">
-<td>Influence Relationships</td>
-<td>Directed edges indicating stylistic and compositional influence between artists, captured through relationship types such as InStyleOf, InterpolatesFrom, CoverOf, DirectlySamples, and LyricalReferenceTo, with time context derived from associated node release dates</td>
-</tr>
-<tr class="even">
-<td>Collaboration Relationships</td>
-<td>Edges representing joint works, featured appearances, and production credits, inferred from shared PerformerOf, MemberOf, LyricistOf, and ComposerOf connections</td>
-</tr>
-<tr class="odd">
-<td>Genre Labels</td>
-<td>Genre tags associated with artists and works (e.g., Oceanus Folk, Indie Pop, Indie Folk)</td>
-</tr>
-<tr class="even">
-<td>Producers</td>
-<td>Production credits linking songs/albums to producers such as Sophie Ramirez</td>
-</tr>
-<tr class="odd">
-<td>Record Labels</td>
-<td>Record label entities linked to artists and songs through RecordedBy and DistributedBy relationships</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Variables Required:</strong></p>
 <ul>
-<li>Artist: Unique identifier and name for each musician</li>
-<li>Genre: Primary and secondary genre affiliations over time</li>
-<li>Release Year: Temporal anchoring of albums and songs (release_date and written_date fields)</li>
-<li>Influence Source / Target: Directional influence relationships between artists (InStyleOf, InterpolatesFrom, CoverOf, DirectlySamples, and LyricalReferenceTo)</li>
-<li>Collaboration Partners: Co-artists on recorded works (derived from PerformerOf, MemberOf, LyricistOf, and ComposerOf relationships)</li>
-<li>Notoriety: Where available, the notable flag (boolean) and notoriety_date field serve as proxies for commercial success and breakthrough timing</li>
-<li>Network Position: Derived measures such as degree centrality, betweenness, and PageRank within the influence graph</li>
+<li>mc1_edges.csv</li>
+<li>mc1_nodes.csv</li>
+<li>edges_prepped.csv (Refer to Data Preparation for more details)</li>
 </ul>
 </section>
-<section id="methodology" class="level2">
-<h2 class="anchored" data-anchor-id="methodology">Methodology</h2>
-<p>This project will use Tableau as the primary platform for data analysis and visualization, supplemented by network analysis tools where appropriate. The process is structured in five steps:</p>
-<p><strong>Step 1: Data Collection and Graph Parsing</strong></p>
-<ul>
-<li>Parse Silas Reed’s knowledge graph from its source format (JSON/CSV) to extract node and edge tables suitable for Tableau and network analysis.</li>
-<li>Supplement the graph with any publicly available metadata (e.g., genre classifications, chart positions) to enrich the dataset.</li>
-<li>Document the schema and validate completeness — identifying any missing influence edges or artist records that may affect analysis quality.</li>
-</ul>
-<p><strong>Step 2: Data Preparation in Tableau</strong></p>
-<ul>
-<li>Import node and edge tables into Tableau, establishing artist records as the primary analysis unit.</li>
-<li>Create calculated fields for derived network metrics (e.g., collaboration count, influence in-degree, career span).</li>
-<li>Build time-aware dimensions by segmenting data into career phases: pre-2028 (pre-breakthrough), 2028–2032 (early stardom), and 2033–2040 (established global artist).</li>
-<li>Categorize genres into a simplified taxonomy to enable cross-genre influence analysis.</li>
-</ul>
-<p><strong>Step 3: Data Analysis in Tableau</strong></p>
-<ul>
-<li><strong>Career Profile Analysis:</strong> Trace Sailor Shift’s full career arc — influences received, collaborations formed, and influence exerted on others — across each career phase.</li>
-<li><strong>Influence Diffusion Analysis:</strong> Map the spread of Oceanus Folk through the broader music network, identifying which genres and artists acted as conduits.</li>
-<li><strong>Comparative Rising Star Analysis:</strong> Select three artists at varying stages of career development and compare their trajectory metrics (collaboration rate, influence growth, genre reach).</li>
-<li><strong>Predictive Profiling:</strong> Apply the rising star characterization to current emerging Oceanus Folk artists to identify the three most likely future breakouts.</li>
-</ul>
-<p><strong>Step 4: Visualization Development in Tableau</strong></p>
-<ul>
-<li><strong>Network / Force-Directed Diagrams:</strong> Visualize the collaboration and influence graph with Sailor Shift at the center, color-coded by genre and sized by influence weight.</li>
-<li><strong>Timeline Charts:</strong> Show the temporal evolution of Sailor’s influences, collaborations, and chart performance from 2023 to 2040.</li>
-<li><strong>Chord Diagrams / Sankey Charts:</strong> Illustrate cross-genre influence flows — how Oceanus Folk influenced other genres and what genres have in turn influenced Oceanus Folk.</li>
-<li><strong>Comparative Career Dashboards:</strong> Side-by-side visualizations of three selected artists’ career trajectories using normalized metrics.</li>
-<li><strong>Rising Star Radar Charts:</strong> Multi-axis profiles for emerging artists, scored against the characteristics identified in the rising star framework.</li>
-</ul>
-<p><strong>Step 5: Insight Generation and Reporting</strong></p>
-<ul>
-<li>Publish interactive dashboards to Tableau Public for Silas Reed’s use and broader public access.</li>
-<li>Document key findings: inflection points in Sailor’s career, the most influential Oceanus Folk conduit artists, and the predicted next generation of stars.</li>
-<li>Produce a written narrative synthesis to accompany the dashboards, suitable for inclusion in Silas’s article.</li>
-</ul>
-</section>
-<section id="tools-and-resources" class="level2">
-<h2 class="anchored" data-anchor-id="tools-and-resources">Tools and Resources</h2>
-<p><strong>(A) Primary Tools</strong></p>
-<p><strong>Tableau Desktop</strong></p>
-<p>Core platform for all data preparation, analysis, and dashboard development. All aspects of data import, cleaning, transformation, analysis, and interactive dashboard creation will be conducted within Tableau Desktop.</p>
-<p><strong>Tableau Public</strong></p>
-<p>For publishing and sharing final interactive dashboards with Silas Reed and the broader public.</p>
-<p><strong>Tableau Prep</strong></p>
-<p>For advanced data cleaning and graph-to-table transformation workflows beyond what Tableau Desktop handles natively.</p>
-<p><strong>(B) Supplementary Tools</strong></p>
-<p><strong>Gephi or NetworkX (Python)</strong></p>
-<p>For computing network centrality metrics (degree, betweenness, PageRank) to feed back into Tableau as enriched data columns.</p>
-<p><strong>Python (pandas)</strong></p>
-<p>For parsing the knowledge graph source files and preparing edge/node tables.</p>
-<p><strong>(C) Data Sources</strong></p>
-<ul>
-<li><strong>Primary:</strong> Silas Reed’s knowledge graph dataset (artists, albums, songs, influences, collaborations, producers).</li>
-<li><strong>Supplementary:</strong> Publicly available music metadata and chart data where applicable to enrich popularity metrics.</li>
-</ul>
-</section>
-<section id="project-timeline" class="level2">
-<h2 class="anchored" data-anchor-id="project-timeline">Project Timeline</h2>
-<p>The Gantt chart below illustrates the project schedule across Weeks 9 to 14, organized into five categories: Brainstorming, Analysis, Deliverables, Submissions, and Consultations.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="gantt_chart.png" class="img-fluid figure-img"></p>
-<figcaption>Project Gantt Chart</figcaption>
-</figure>
-</div>
+<section id="built-with" class="level2">
+<h2 class="anchored" data-anchor-id="built-with">Built With</h2>
+<ol type="1">
+<li>Tableau</li>
+<li>Gephi</li>
+<li>Python</li>
+<li>Quarto</li>
+</ol>
+<!-- Describe the dataset(s) used — source, size, time period, key variables.
+
+| Dataset | Source | Records | Period |
+|---------|--------|---------|--------|
+| Dataset 1 | Source A | ~10,000 | 2020–2024 | -->
 
 
 </section>

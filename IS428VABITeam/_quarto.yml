@@ -7,6 +7,8 @@ website:
     left:
       - href: project proposal.qmd
         text: Project Proposal
+      - href : project_overview.qmd
+        text : Project Overview
       # - href: index.qmd
       #  text: Home
       # - href: about.qmd

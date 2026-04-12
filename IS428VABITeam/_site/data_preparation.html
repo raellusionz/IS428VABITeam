@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>About – IS428VABITeam</title>
+<title>Data Preparation – IS428VABITeam</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -94,6 +94,10 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="./project proposal.html"> 
 <span class="menu-text">Project Proposal</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./project_overview.html"> 
+<span class="menu-text">Project Overview</span></a>
+  </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
@@ -112,20 +116,31 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#dataset-overview" id="toc-dataset-overview" class="nav-link active" data-scroll-target="#dataset-overview">Dataset Overview</a></li>
+  <li><a href="#graph-schema" id="toc-graph-schema" class="nav-link" data-scroll-target="#graph-schema">Graph Schema</a>
+  <ul class="collapse">
+  <li><a href="#node-variables" id="toc-node-variables" class="nav-link" data-scroll-target="#node-variables">Node Variables</a></li>
+  <li><a href="#edge-variables" id="toc-edge-variables" class="nav-link" data-scroll-target="#edge-variables">Edge Variables</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content column-page-left" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">About</h1>
+<h1 class="title">Data Preparation</h1>
 </div>
 
 
 
-<div class="quarto-title-meta column-page">
+<div class="quarto-title-meta column-page-left">
 
     
   
@@ -137,9 +152,183 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>About this site</p>
+<section id="dataset-overview" class="level2">
+<h2 class="anchored" data-anchor-id="dataset-overview">Dataset Overview</h2>
+<p>The dataset used for this analysis is drawn from the VAST 2025 Mini Challenge 1 (MC1), a synthetic music industry knowledge graph modelling relationship among songs, albums, musical groups, and record labels. It was sourced from two origins: a crowdsourced repository of musical influence, and a journalist-compiled record of chart performance.</p>
+</section>
+<section id="graph-schema" class="level2">
+<h2 class="anchored" data-anchor-id="graph-schema">Graph Schema</h2>
+<section id="node-variables" class="level3">
+<h3 class="anchored" data-anchor-id="node-variables">Node Variables</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 26%">
+<col style="width: 23%">
+<col style="width: 26%">
+<col style="width: 23%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variables</th>
+<th>Type</th>
+<th>Applicable Node Types</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Node Type</td>
+<td>String</td>
+<td>All</td>
+<td>Categorical type of the node</td>
+</tr>
+<tr class="even">
+<td>name</td>
+<td>String</td>
+<td>All</td>
+<td>Full name of the person, group, label, song, or album</td>
+</tr>
+<tr class="odd">
+<td>stage_name</td>
+<td>String</td>
+<td>Person</td>
+<td>Artist/stage name if different from legal name (near-complete nulls, ~97–99%)</td>
+</tr>
+<tr class="even">
+<td>genre</td>
+<td>String</td>
+<td>Song, Album</td>
+<td>Musical genre of the work</td>
+</tr>
+<tr class="odd">
+<td>release_date</td>
+<td>Integer (year)</td>
+<td>Song, Album</td>
+<td>Year the work was released</td>
+</tr>
+<tr class="even">
+<td>written_date</td>
+<td>Integer (year)</td>
+<td>Song, Album</td>
+<td>Year the work was written</td>
+</tr>
+<tr class="odd">
+<td>notable</td>
+<td>Boolean</td>
+<td>Song, Album</td>
+<td>Whether the work appeared on a top record chart</td>
+</tr>
+<tr class="even">
+<td>notoriety_date</td>
+<td>Integer (year)</td>
+<td>Song, Album</td>
+<td>Year the work first appeared on a top chart (only present if notable = True)</td>
+</tr>
+<tr class="odd">
+<td>single</td>
+<td>Boolean</td>
+<td>Song</td>
+<td>Whether the song was released as a standalone single rather than as part of an album</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="edge-variables" class="level3">
+<h3 class="anchored" data-anchor-id="edge-variables">Edge Variables</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 26%">
+<col style="width: 23%">
+<col style="width: 26%">
+<col style="width: 23%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Edge Type</th>
+<th>Source</th>
+<th>Target</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>PerformerOf</td>
+<td>Person / MusicalGroup</td>
+<td>Song / Album</td>
+<td>Source node performed the target work</td>
+</tr>
+<tr class="even">
+<td>ComposerOf</td>
+<td>Person</td>
+<td>Song / Album</td>
+<td>Source node composed the target work</td>
+</tr>
+<tr class="odd">
+<td>LyricistOf</td>
+<td>Person</td>
+<td>Song / Album</td>
+<td>Source node wrote lyrics for the target work</td>
+</tr>
+<tr class="even">
+<td>ProducerOf</td>
+<td>Person / RecordLabel</td>
+<td>Song / Album / Person / MusicalGroup</td>
+<td>Source node participated in the production of the target</td>
+</tr>
+<tr class="odd">
+<td>RecordedOf</td>
+<td>Song / Album</td>
+<td>RecordLabel</td>
+<td>Target label aided in recording the source work</td>
+</tr>
+<tr class="even">
+<td>DistributedBy</td>
+<td>Song / Album</td>
+<td>RecordLabel</td>
+<td>Target label aided in distributing the source work</td>
+</tr>
+<tr class="odd">
+<td>MemberOf</td>
+<td>Person</td>
+<td>MusicalGroup</td>
+<td>Source node is / was a member of the target group</td>
+</tr>
+<tr class="even">
+<td>InStyleOf</td>
+<td>Song / Album</td>
+<td>Song / Album / Person / MusicalGroup</td>
+<td>Source node was performed at least partly in the style of the target</td>
+</tr>
+<tr class="odd">
+<td>InterpolatesFrom</td>
+<td>Song / Album</td>
+<td>Song / Album</td>
+<td>Source node interpolated a melody from the target</td>
+</tr>
+<tr class="even">
+<td>CoverOf</td>
+<td>Song / Album</td>
+<td>Song / Album</td>
+<td>Source node is a cover version of the target</td>
+</tr>
+<tr class="odd">
+<td>LyricalReferenceTo</td>
+<td>Song / Album</td>
+<td>Song / Album</td>
+<td>Source node makes a lyrical reference to the target</td>
+</tr>
+<tr class="even">
+<td>DirectlySamples</td>
+<td>Song / Album</td>
+<td>Song / Album</td>
+<td>Source node directly reuses an audio recording from the target via sampling</td>
+</tr>
+</tbody>
+</table>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

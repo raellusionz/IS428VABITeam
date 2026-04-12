@@ -1,0 +1,41 @@
+---
+title: "Data Preparation"
+---
+
+## Dataset Overview
+The dataset used for this analysis is drawn from the VAST 2025 Mini Challenge 1 (MC1), a synthetic music industry knowledge graph modelling relationship among songs, albums, musical groups, and record labels. It was sourced from two origins: a crowdsourced repository of musical influence, and a journalist-compiled record of chart performance.
+
+
+## Graph Schema
+
+### Node Variables
+
+| Variables | Type | Applicable Node Types | Description |
+|---------|--------|---------|--------|
+|Node Type |String |All |Categorical type of the node|
+|name|String|All|Full name of the person, group, label, song, or album
+|stage_name|String|Person|Artist/stage name if different from legal name (near-complete nulls, ~97–99%)
+|genre|String|Song, Album|Musical genre of the work|
+|release_date|Integer (year)|Song, Album|Year the work was released|
+|written_date|Integer (year)|Song, Album|Year the work was written|
+|notable|Boolean|Song, Album|Whether the work appeared on a top record chart|
+|notoriety_date|Integer (year)|Song, Album|Year the work first appeared on a top chart (only present if notable = True)|
+|single|Boolean|Song|Whether the song was released as a standalone single rather than as part of an album|
+
+### Edge Variables
+
+|Edge Type|Source|Target|Description|
+|---------|--------|---------|--------|
+|PerformerOf|Person / MusicalGroup|Song / Album|Source node performed the target work|
+|ComposerOf|Person|Song / Album|Source node composed the target work|
+|LyricistOf|Person|Song / Album|Source node wrote lyrics for the target work|
+|ProducerOf|Person / RecordLabel|Song / Album / Person / MusicalGroup|Source node participated in the production of the target|
+|RecordedOf|Song / Album|RecordLabel|Target label aided in recording the source work|
+|DistributedBy|Song / Album|RecordLabel|Target label aided in distributing the source work|
+|MemberOf|Person|MusicalGroup|Source node is / was a member of the target group|
+|InStyleOf|Song / Album|Song / Album / Person / MusicalGroup|Source node was performed at least partly in the style of the target|
+|InterpolatesFrom|Song / Album|Song / Album|Source node interpolated a melody from the target|
+|CoverOf|Song / Album|Song / Album|Source node is a cover version of the target|
+|LyricalReferenceTo|Song / Album|Song / Album |Source node makes a lyrical reference to the target|
+DirectlySamples|Song / Album|Song / Album|Source node directly reuses an audio recording from the target via sampling|
+

@@ -107,7 +107,7 @@
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "Data Preparation",
     "section": "",
     "text": "About this site"
   },
@@ -313,5 +313,110 @@
     "title": "Project Overview",
     "section": "Dataset",
     "text": "Dataset\nThe primary dataset for this project is a knowledge graph assembled by Silas Reed, containing structured relational data on the Oceanus music ecosystem. The graph includes the following entity and relationship types:\n\n\n\n\n\n\n\nEntity / Relationship Type\nDescription\n\n\n\n\nArtists\nNamed musicians, vocalists, instrumentalists, and producers active in Oceanus and globally\n\n\nAlbums & Songs\nDiscography records linked to artists and release years\n\n\nInfluence Relationships\nDirected edges indicating stylistic and compositional influence between artists, captured through relationship types such as InStyleOf, InterpolatesFrom, CoverOf, DirectlySamples, and LyricalReferenceTo, with time context derived from associated node release dates\n\n\nCollaboration Relationships\nEdges representing joint works, featured appearances, and production credits, inferred from shared PerformerOf, MemberOf, LyricistOf, and ComposerOf connections\n\n\nGenre Labels\nGenre tags associated with artists and works (e.g., Oceanus Folk, Indie Pop, Indie Folk)\n\n\nProducers\nProduction credits linking songs/albums to producers such as Sophie Ramirez\n\n\nRecord Labels\nRecord label entities linked to artists and songs through RecordedBy and DistributedBy relationships\n\n\n\nVariables Required:\n\nArtist: Unique identifier and name for each musician\nGenre: Primary and secondary genre affiliations over time\nRelease Year: Temporal anchoring of albums and songs (release_date and written_date fields)\nInfluence Source / Target: Directional influence relationships between artists (InStyleOf, InterpolatesFrom, CoverOf, DirectlySamples, and LyricalReferenceTo)\nCollaboration Partners: Co-artists on recorded works (derived from PerformerOf, MemberOf, LyricistOf, and ComposerOf relationships)\nNotoriety: Where available, the notable flag (boolean) and notoriety_date field serve as proxies for commercial success and breakthrough timing\nNetwork Position: Derived measures such as degree centrality, betweenness, and PageRank within the influence graph"
+  },
+  {
+    "objectID": "project_overview.html",
+    "href": "project_overview.html",
+    "title": "Oceanus Folk: Then-and-Now",
+    "section": "",
+    "text": "The rise of Sailor and the influence of Oceanus Folk on the rest of the music world"
+  },
+  {
+    "objectID": "project_overview.html#background",
+    "href": "project_overview.html#background",
+    "title": "Oceanus Folk: Then-and-Now",
+    "section": "Background",
+    "text": "Background\nDescribe the problem context and why this project is important. What gap does it address?"
+  },
+  {
+    "objectID": "project_overview.html#objectives",
+    "href": "project_overview.html#objectives",
+    "title": "Oceanus Folk: Then-and-Now",
+    "section": "Objectives",
+    "text": "Objectives\n\nObjective 1\nObjective 2\nObjective 3"
+  },
+  {
+    "objectID": "project_overview.html#dataset",
+    "href": "project_overview.html#dataset",
+    "title": "Oceanus Folk: Then-and-Now",
+    "section": "Dataset",
+    "text": "Dataset\n\nmc1_edges.csv\nmc1_nodes.csv\nedges_prepped.csv (Refer to Data Preparation for more details)"
+  },
+  {
+    "objectID": "project_overview.html#project-scope",
+    "href": "project_overview.html#project-scope",
+    "title": "Oceanus Folk: Then-and-Now",
+    "section": "Project Scope",
+    "text": "Project Scope\nWhat is in scope and out of scope for this project?"
+  },
+  {
+    "objectID": "project_overview.html#timeline",
+    "href": "project_overview.html#timeline",
+    "title": "Oceanus Folk: Then-and-Now",
+    "section": "Timeline",
+    "text": "Timeline\n\n\n\nMilestone\nDate\n\n\n\n\nProject Kickoff\nWeek 1\n\n\nData Preparation\nWeek 3\n\n\nPrototype v1\nWeek 6\n\n\nFinal Submission\nWeek 13\n\n\n\nDescribe the dataset(s) used — source, size, time period, key variables.\n\n\n\nDataset\nSource\nRecords\nPeriod\n\n\n\n\nDataset 1\nSource A\n~10,000\n2020–2024"
+  },
+  {
+    "objectID": "project_overview.html#oceanus-folk-then-and-now",
+    "href": "project_overview.html#oceanus-folk-then-and-now",
+    "title": "Project Overview",
+    "section": "",
+    "text": "The rise of Sailor and the influence of Oceanus Folk on the rest of the music world"
+  },
+  {
+    "objectID": "project_overview.html#section",
+    "href": "project_overview.html#section",
+    "title": "Oceanus Folk: Then-and-Now",
+    "section": "",
+    "text": "The rise of Sailor and the influence of Oceanus Folk on the rest of the music world"
+  },
+  {
+    "objectID": "project_overview.html#overview",
+    "href": "project_overview.html#overview",
+    "title": "Oceanus Folk: Then-and-Now",
+    "section": "Overview",
+    "text": "Overview\nThis project is a Visual Analytics prototype developed for the IS428 Visual Analytics with Business Intelligence module, leveraging the VAST 2025 Mini-Challenge 1 dataset to examine the artistic evolution of Sailor Shift and the broader influence of Oceanus Folk on the global music landscape. Through interactive dashboards and network visualisations, the prototype enables users to explore how artists form, evolve, and spread across songs, albums, and genres over time. It is designed to help Silas Reed (a local journalist) in his article, and more importantly support music analysts and cultural researchers in uncovering trends, understanding genre dynamics, and identifying emerging artists through a data-driven lens."
+  },
+  {
+    "objectID": "project_overview.html#oproject-goals",
+    "href": "project_overview.html#oproject-goals",
+    "title": "Oceanus Folk: Then-and-Now",
+    "section": "OProject Goals",
+    "text": "OProject Goals\n\nObjective 1\nObjective 2\nObjective 3"
+  },
+  {
+    "objectID": "project_overview.html#project-goals",
+    "href": "project_overview.html#project-goals",
+    "title": "Oceanus Folk: Then-and-Now",
+    "section": "Project Goals",
+    "text": "Project Goals\n\nAnalyse how Sailor Shift’s musical identity is formed and how it evolves over time through influences, collaborations, and career development\nExamine how Oceanus Folk grows and declines, and identify the key factors in driving these changes\nUnderstand how musical influence spreads through networks of artists, songs, and genres, including direct and indirect relationships Identify and evaluate future rising stars using data-driven indicators"
+  },
+  {
+    "objectID": "project_overview.html#built-with",
+    "href": "project_overview.html#built-with",
+    "title": "Oceanus Folk: Then-and-Now",
+    "section": "Built With",
+    "text": "Built With\n\nTableau\nGephi\nPython\nQuarto"
+  },
+  {
+    "objectID": "data_preparation.html",
+    "href": "data_preparation.html",
+    "title": "Data Preparation",
+    "section": "",
+    "text": "The dataset used for this analysis is drawn from the VAST 2025 Mini Challenge 1 (MC1), a synthetic music industry knowledge graph modelling relationship among songs, albums, musical groups, and record labels. It was sourced from two origins: a crowdsourced repository of musical influence, and a journalist-compiled record of chart performance."
+  },
+  {
+    "objectID": "data_preparation.html#dataset-overview",
+    "href": "data_preparation.html#dataset-overview",
+    "title": "Data Preparation",
+    "section": "",
+    "text": "The dataset used for this analysis is drawn from the VAST 2025 Mini Challenge 1 (MC1), a synthetic music industry knowledge graph modelling relationship among songs, albums, musical groups, and record labels. It was sourced from two origins: a crowdsourced repository of musical influence, and a journalist-compiled record of chart performance."
+  },
+  {
+    "objectID": "data_preparation.html#graph-schema",
+    "href": "data_preparation.html#graph-schema",
+    "title": "Data Preparation",
+    "section": "Graph Schema",
+    "text": "Graph Schema\n\nNode Variables\n\n\n\n\n\n\n\n\n\nVariables\nType\nApplicable Node Types\nDescription\n\n\n\n\nNode Type\nString\nAll\nCategorical type of the node\n\n\nname\nString\nAll\nFull name of the person, group, label, song, or album\n\n\nstage_name\nString\nPerson\nArtist/stage name if different from legal name (near-complete nulls, ~97–99%)\n\n\ngenre\nString\nSong, Album\nMusical genre of the work\n\n\nrelease_date\nInteger (year)\nSong, Album\nYear the work was released\n\n\nwritten_date\nInteger (year)\nSong, Album\nYear the work was written\n\n\nnotable\nBoolean\nSong, Album\nWhether the work appeared on a top record chart\n\n\nnotoriety_date\nInteger (year)\nSong, Album\nYear the work first appeared on a top chart (only present if notable = True)\n\n\nsingle\nBoolean\nSong\nWhether the song was released as a standalone single rather than as part of an album\n\n\n\n\n\nEdge Variables\n\n\n\n\n\n\n\n\n\nEdge Type\nSource\nTarget\nDescription\n\n\n\n\nPerformerOf\nPerson / MusicalGroup\nSong / Album\nSource node performed the target work\n\n\nComposerOf\nPerson\nSong / Album\nSource node composed the target work\n\n\nLyricistOf\nPerson\nSong / Album\nSource node wrote lyrics for the target work\n\n\nProducerOf\nPerson / RecordLabel\nSong / Album / Person / MusicalGroup\nSource node participated in the production of the target\n\n\nRecordedOf\nSong / Album\nRecordLabel\nTarget label aided in recording the source work\n\n\nDistributedBy\nSong / Album\nRecordLabel\nTarget label aided in distributing the source work\n\n\nMemberOf\nPerson\nMusicalGroup\nSource node is / was a member of the target group\n\n\nInStyleOf\nSong / Album\nSong / Album / Person / MusicalGroup\nSource node was performed at least partly in the style of the target\n\n\nInterpolatesFrom\nSong / Album\nSong / Album\nSource node interpolated a melody from the target\n\n\nCoverOf\nSong / Album\nSong / Album\nSource node is a cover version of the target\n\n\nLyricalReferenceTo\nSong / Album\nSong / Album\nSource node makes a lyrical reference to the target\n\n\nDirectlySamples\nSong / Album\nSong / Album\nSource node directly reuses an audio recording from the target via sampling"
   }
 ]
