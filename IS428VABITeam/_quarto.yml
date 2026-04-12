@@ -9,6 +9,23 @@ website:
         text: Project Proposal
       - href : project_overview.qmd
         text : Project Overview
+      - href : data_preparation.qmd
+        text : Data Preparation
+      - href: storyboard.qmd
+        text: Storyboard
+      - href : analysis.qmd
+        text: Analysis & Results
+        menu:
+          - text: Question 1
+            file: question1_analysis.qmd
+          - text: Question 2
+            file: question2_analysis.qmd
+          - text: Question 3
+            file: question3_analysis.qmd
+      - href: poster.qmd
+        text: Poster
+      
+          
       # - href: index.qmd
       #  text: Home
       # - href: about.qmd
@@ -17,12 +34,7 @@ website:
       #  text: Overview
       # - href: prototypes.qmd
       #  text: Prototypes
-      # - href: storyboard.qmd
-      #  text: Storyboard
-      # - href: analysis.qmd
-      #  text: Analysis & Results
-      # - href: poster.qmd
-      #  text: Poster
+     
       # - href: userguide.qmd
       #  text: User Guide
     right:

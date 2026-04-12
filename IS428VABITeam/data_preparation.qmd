@@ -39,3 +39,20 @@ The dataset used for this analysis is drawn from the VAST 2025 Mini Challenge 1 
 |LyricalReferenceTo|Song / Album|Song / Album |Source node makes a lyrical reference to the target|
 DirectlySamples|Song / Album|Song / Album|Source node directly reuses an audio recording from the target via sampling|
 
+## Cleaning and Preparation Pipeline
+The raw graph was exported as separate CSVs for nodes (mc1_nodes.csv) and edges (mc1_edges.csv) and processed through the following pipeline, producing a final enriched edge table edges_prepped.csv with 37,857 rows and 23 columns. <br><br>
+**Step 1: Data Loading**
+The node list, edge list, and raw JSON graph were loaded and inspected for structure and field coverage.<br><br>
+**Step 2: Node–Edge Join**
+The raw edge list contained only source and target node IDs with no contextual information. Node attributes were joined onto the edge table twice via pandas left merge — once for the source endpoint and once for the target — producing a flat, denormalised table where each row carries full metadata about both connected entities.<br><br>
+**Step 3: Type Casting**
+Date columns were coerced from mixed-type floats to numeric. Boolean fields (notable, single) had nulls filled with False, as the absence of a positive label in this context implies the attribute does not apply.<br><br>
+**Step 4: Year Derivation**
+Unified source_year and target_year columns were created using release_date as the primary source, falling back to written_date when release information was absent. Both are stored as nullable Int64 to correctly preserve missing values as NaN rather than converting them to zero.<br><br>
+**Step 5: Integer Conversion**
+Remaining float year values (e.g. 2026.0) were cleaned to proper integers using pandas Int64 dtype across all date columns.<br><br>
+**Step 6: Column Pruning**
+Four columns were dropped: stage_name (source and target) due to near-complete nulls, and written_date (source and target) as their values were already subsumed by the derived year columns.<br><br>
+**Step 7: Column Reordering**
+The final 23 columns were reordered for readability: edge metadata first, then source node attributes, then target node attributes.
+

@@ -98,6 +98,14 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="./project_overview.html"> 
 <span class="menu-text">Project Overview</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./data_preparation.html" aria-current="page"> 
+<span class="menu-text">Data Preparation</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./storyboard.html"> 
+<span class="menu-text">Storyboard</span></a>
+  </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
@@ -127,6 +135,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#node-variables" id="toc-node-variables" class="nav-link" data-scroll-target="#node-variables">Node Variables</a></li>
   <li><a href="#edge-variables" id="toc-edge-variables" class="nav-link" data-scroll-target="#edge-variables">Edge Variables</a></li>
   </ul></li>
+  <li><a href="#cleaning-and-preparation-pipeline" id="toc-cleaning-and-preparation-pipeline" class="nav-link" data-scroll-target="#cleaning-and-preparation-pipeline">Cleaning and Preparation Pipeline</a></li>
   </ul>
 </nav>
     </div>
@@ -325,9 +334,13 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </tbody>
 </table>
-
-
 </section>
+</section>
+<section id="cleaning-and-preparation-pipeline" class="level2">
+<h2 class="anchored" data-anchor-id="cleaning-and-preparation-pipeline">Cleaning and Preparation Pipeline</h2>
+<p>The raw graph was exported as separate CSVs for nodes (mc1_nodes.csv) and edges (mc1_edges.csv) and processed through the following pipeline, producing a final enriched edge table edges_prepped.csv with 37,857 rows and 23 columns. <br><br> <strong>Step 1: Data Loading</strong> The node list, edge list, and raw JSON graph were loaded and inspected for structure and field coverage.<br><br> <strong>Step 2: Node–Edge Join</strong> The raw edge list contained only source and target node IDs with no contextual information. Node attributes were joined onto the edge table twice via pandas left merge — once for the source endpoint and once for the target — producing a flat, denormalised table where each row carries full metadata about both connected entities.<br><br> <strong>Step 3: Type Casting</strong> Date columns were coerced from mixed-type floats to numeric. Boolean fields (notable, single) had nulls filled with False, as the absence of a positive label in this context implies the attribute does not apply.<br><br> <strong>Step 4: Year Derivation</strong> Unified source_year and target_year columns were created using release_date as the primary source, falling back to written_date when release information was absent. Both are stored as nullable Int64 to correctly preserve missing values as NaN rather than converting them to zero.<br><br> <strong>Step 5: Integer Conversion</strong> Remaining float year values (e.g.&nbsp;2026.0) were cleaned to proper integers using pandas Int64 dtype across all date columns.<br><br> <strong>Step 6: Column Pruning</strong> Four columns were dropped: stage_name (source and target) due to near-complete nulls, and written_date (source and target) as their values were already subsumed by the derived year columns.<br><br> <strong>Step 7: Column Reordering</strong> The final 23 columns were reordered for readability: edge metadata first, then source node attributes, then target node attributes.</p>
+
+
 </section>
 
 </main> <!-- /main -->

@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.27">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Question 3 Analysis – IS428VABITeam</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-5b4ad623e5705c0698d39aec6f10cf02.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">IS428VABITeam</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./project proposal.html"> 
+<span class="menu-text">Project Proposal</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./project_overview.html"> 
+<span class="menu-text">Project Overview</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./data_preparation.html"> 
+<span class="menu-text">Data Preparation</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./storyboard.html"> 
+<span class="menu-text">Storyboard</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./analysis.html"> 
+<span class="menu-text">Analysis &amp; Results</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./poster.html"> 
+<span class="menu-text">Poster</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="https://github.com/raellusionz/IS428VABITeam"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text">GitHub</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#what-makes-a-rising-star-in-the-music-industry" id="toc-what-makes-a-rising-star-in-the-music-industry" class="nav-link active" data-scroll-target="#what-makes-a-rising-star-in-the-music-industry">What makes a rising star in the music industry?</a>
+  <ul class="collapse">
+  <li><a href="#career-arc-line-graph" id="toc-career-arc-line-graph" class="nav-link" data-scroll-target="#career-arc-line-graph">Career Arc Line Graph</a></li>
+  <li><a href="#notable-ratio-horizontal-bar-chart" id="toc-notable-ratio-horizontal-bar-chart" class="nav-link" data-scroll-target="#notable-ratio-horizontal-bar-chart">Notable Ratio Horizontal Bar Chart</a></li>
+  <li><a href="#craft-depth" id="toc-craft-depth" class="nav-link" data-scroll-target="#craft-depth">Craft Depth</a></li>
+  <li><a href="#radar-chart" id="toc-radar-chart" class="nav-link" data-scroll-target="#radar-chart">Radar Chart</a></li>
+  <li><a href="#overall-dashboard-analysis" id="toc-overall-dashboard-analysis" class="nav-link" data-scroll-target="#overall-dashboard-analysis">Overall Dashboard Analysis</a></li>
+  </ul></li>
+  <li><a href="#who-are-the-next-oceanus-folk-rising-stars" id="toc-who-are-the-next-oceanus-folk-rising-stars" class="nav-link" data-scroll-target="#who-are-the-next-oceanus-folk-rising-stars">Who are the next oceanus folk rising stars?</a>
+  <ul class="collapse">
+  <li><a href="#prediction-score-bar-chart" id="toc-prediction-score-bar-chart" class="nav-link" data-scroll-target="#prediction-score-bar-chart">Prediction Score Bar Chart</a></li>
+  <li><a href="#rising-star-scatter-plot" id="toc-rising-star-scatter-plot" class="nav-link" data-scroll-target="#rising-star-scatter-plot">Rising Star Scatter Plot</a></li>
+  <li><a href="#gantt-chart" id="toc-gantt-chart" class="nav-link" data-scroll-target="#gantt-chart">Gantt Chart</a></li>
+  <li><a href="#overall-dashboard-analysis-1" id="toc-overall-dashboard-analysis-1" class="nav-link" data-scroll-target="#overall-dashboard-analysis-1">Overall Dashboard Analysis</a></li>
+  </ul></li>
+  <li><a href="#overall-in-the-music-industry" id="toc-overall-in-the-music-industry" class="nav-link" data-scroll-target="#overall-in-the-music-industry">Overall in the Music industry</a>
+  <ul class="collapse">
+  <li><a href="#music-industry-trajectory-line-chart" id="toc-music-industry-trajectory-line-chart" class="nav-link" data-scroll-target="#music-industry-trajectory-line-chart">Music Industry Trajectory Line Chart</a></li>
+  <li><a href="#the-ranking-bar-chart" id="toc-the-ranking-bar-chart" class="nav-link" data-scroll-target="#the-ranking-bar-chart">The Ranking Bar Chart</a></li>
+  <li><a href="#overall-dashboard-analysis-2" id="toc-overall-dashboard-analysis-2" class="nav-link" data-scroll-target="#overall-dashboard-analysis-2">Overall Dashboard Analysis</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content column-page-left" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Question 3 Analysis</h1>
+</div>
+
+
+
+<div class="quarto-title-meta column-page-left">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="what-makes-a-rising-star-in-the-music-industry" class="level2">
+<h2 class="anchored" data-anchor-id="what-makes-a-rising-star-in-the-music-industry">What makes a rising star in the music industry?</h2>
+<p><img src="question3a_chart.png" class="img-fluid"></p>
+<section id="career-arc-line-graph" class="level3">
+<h3 class="anchored" data-anchor-id="career-arc-line-graph">Career Arc Line Graph</h3>
+<p>How has each artist’s recognised output grown over time?</p>
+<hr>
+<p>Sailor Shift shows the benchmark rising star trajectory — a steady upward climb from 2 notable works in 2028 to 14 by 2040, releasing consistently every 1–2 years with no gaps longer than 2 years. This sustained momentum across 12 years is what defines a true rising star versus a one-album wonder. Orla Seabloom’s line reveals the opposite pattern — an explosive debut of 8 notable works in 2029 which is impressive; however it was followed by a complete flatline reveals the risk of a burst-and-disappear pattern. Beatrice Albright sits between these two — a strong debut of 6 notable works in 2031, incremental growth in 2034–2035, then silence. Her trajectory most closely mirrors Sailor’s early years, making her the most credible comparison subject. The key insight is that the shape of the line matters more than where it ends: a gradual upward slope signals a sustainable career, while a spike followed by a flat line signals an artist who has not yet proven longevity.</p>
+</section>
+<section id="notable-ratio-horizontal-bar-chart" class="level3">
+<h3 class="anchored" data-anchor-id="notable-ratio-horizontal-bar-chart">Notable Ratio Horizontal Bar Chart</h3>
+<p>What proportion of each artist’s total output achieved recognition?</p>
+<hr>
+<p>Orla and Beatrice both score 100% notable ratio — every work they released achieved recognition. However, this should be interpreted with caution. Orla’s 100% comes from 8 works released in a single debut year with no further releases recorded, meaning her ratio has never been stress-tested over time. Beatrice similarly achieves 100% across a small concentrated output window before activity slows. A perfect ratio on a small, short burst of releases is easier to maintain than sustaining notability across a long, active career. Sailor scores 53.8%, which is the harder achievement — maintaining over half her works as notable across 26 releases spanning 12 years of consistent output is a far stronger signal of sustained artistic relevance than a frozen 100% that was never challenged again.</p>
+</section>
+<section id="craft-depth" class="level3">
+<h3 class="anchored" data-anchor-id="craft-depth">Craft Depth</h3>
+<p>Does each artist write their own material and what type?</p>
+<hr>
+<p>Craft depth is the dimension where Sailor most clearly separates from the other two. Sailor Shift has 21 craft credits — she writes 80.8% of her own performed material, spanning both composition and lyrics means her music carries a consistent creative voice. This creative ownership is a key differentiator: artists who control their own songwriting build a distinct voice that audiences recognise and follow across a long career. Orla’s 12.5% ratio (1 craft credit) is the weakest signal in her profile: an artist who does not write their own material is heavily dependent on collaborators to define their sound, which makes sustained career growth harder. Beatrice’s 37.5% (3 craft credit) shows she is investing in creative ownership. The trajectory from 12.5% to 80.8% is achievable, but it requires deliberate growth.</p>
+</section>
+<section id="radar-chart" class="level3">
+<h3 class="anchored" data-anchor-id="radar-chart">Radar Chart</h3>
+<p>How does each artist score across all 5 rising star dimensions?</p>
+<hr>
+<p>The radar chart synthesises all five dimensions into a single visual. Sailor Shift’s polygon is the most balanced — strong across singles (100), craft (100), and influence (100), with moderate output volume (25) and notable ratio (54), confirming her position as the benchmark rising star who combines viral breakout potential, creative ownership, and broad industry connectivity. Orla Seabloom leads on output volume and notable ratio, demonstrating exceptional debut quality, but her lower craft ratio and network influence score suggest she is still building the infrastructure for a sustained career. Beatrice Albright presents the most balanced emerging profile — strong notable ratio, growing craft ownership, and moderate network influence — making her trajectory most comparable to Sailor’s early career arc. While Orla’s quality metrics are impressive, Beatrice’s balance across all five dimensions more closely mirrors the profile of an artist positioned for long-term rising star status.</p>
+<p>Explanation on the 5 dimensions: Output volume — Is this artist building a career, or did they just show up? Measures years of active releases. The purpose isn’t to reward prolific artists — it’s to filter out one-moment artists. Sustained output is the baseline signal of long-term commitment.</p>
+<p>Notable ratio — When they release, does it land? Measures what proportion of works achieved recognition. A 100% notable ratio signals strong creative judgment. On its own it can be misleading — one lucky song scores perfectly — which is why it only means something when read alongside output volume.</p>
+<p>Singles and viral moments — Has this artist broken through publicly, not just critically? Notable works can stay inside an OF bubble. A viral single crosses a different threshold entirely — it’s the ignition event that moves an artist from “respected locally” to “known globally.” This dimension is most directly tied to Sailor’s own story.</p>
+<p>Craft depth — Does this artist own their creative identity, or are they executing someone else’s? Measures composer, lyricist, and producer credits beyond just performer credits. Artists who write and produce their own work have a distinct voice that persists over time. Artists with only performer credits are dependent on collaborators, making their trajectory far less predictable.</p>
+<p>Influence draw — Is this artist genuinely part of the OF tradition, or just adjacent to it? Measures how deliberately an artist references or draws from existing OF works. Without this dimension the framework would identify any rising star in any genre. This is what makes the scoring OF-specific — rewarding artists who are consciously carrying the tradition forward.</p>
+<p>Together, the five dimensions cross-check each other across three career phases: craft depth and influence draw describe the foundation built before anyone is paying attention; output volume and notable ratio describe the momentum of the build-up; singles capture the ignition event that converts momentum into mainstream recognition. A high overall score requires strength across all three phases simultaneously — which is rare, and exactly what makes it a reliable filter for predicting the next OF star rather than just identifying who is good right now.</p>
+</section>
+<section id="overall-dashboard-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="overall-dashboard-analysis">Overall Dashboard Analysis</h3>
+<p>Across all four charts, a consistent profile of a rising star emerges: sustained output over multiple years (not a single burst), a high proportion of recognised works, creative ownership through self-writing, and deliberate roots in the genre canon. Sailor Shift scores highest on craft depth, singles output, and influence draw — the three dimensions most associated with long-term career sustainability. Orla Seabloom scores highest on raw quality metrics but has yet to demonstrate the sustained output that would confirm her as a rising star rather than a debut phenomenon. Beatrice Albright’s trajectory most closely mirrors Sailor’s early career shape, making her the most analytically credible comparison subject.</p>
+<hr>
+</section>
+</section>
+<section id="who-are-the-next-oceanus-folk-rising-stars" class="level2">
+<h2 class="anchored" data-anchor-id="who-are-the-next-oceanus-folk-rising-stars">Who are the next oceanus folk rising stars?</h2>
+<p><img src="question3b_chart.png" class="img-fluid"></p>
+<section id="prediction-score-bar-chart" class="level3">
+<h3 class="anchored" data-anchor-id="prediction-score-bar-chart">Prediction Score Bar Chart</h3>
+<p>Who scores highest across all post-2028 Oceanus Folk artists?</p>
+<hr>
+<p>The prediction score bar immediately reveals a dramatic gap between the top 3 and the rest of the field. Orla Seabloom leads with 32, Beatrice Albright and Daniel O’Connell follow at 30, and every other post-2028 Oceanus Folk artist scores 5 or less. This is not a marginal prediction — the top 3 are categorically separated from the field by a factor of 6. The reference line at 26 marks the threshold above which an artist has demonstrated both sustained notable output and meaningful canon connections. Only three artists cross it.</p>
+<p>Why these three dimensions were chosen The formula uses Notable Works, Singles, and Influence Draw — and deliberately excludes Output Volume and Craft Ratio. Here is the reasoning for each decision: Notable Works × 3 — highest weight Notable works is the closest proxy to demonstrated market validation in the dataset. A work marked notable has already proven it resonated beyond just being released — it achieved recognition. The weight of 3 reflects that sustained quality output is the single strongest predictor of rising star status. One notable work could be luck. Multiple notable works across a career signals repeatable craft. An artist who consistently produces recognised work has already demonstrated the core requirement of stardom — the ability to connect with an audience. Singles × 2 — medium weight Singles represent intentional breakout attempts — the artist and their team believed a specific work had viral or radio potential and positioned it accordingly. A single is a strategic signal, not just an output metric. Weight of 2 reflects that singles matter but are secondary to overall notable output. A single can be released and fail. A notable single that succeeds is already captured by the Notable Works dimension. Singles here specifically rewards the strategic behaviour of attempting a breakout, which is a necessary step in the rising star trajectory even if the outcome is uncertain. Influence Draw × 2 — medium weight Influence draw measures how deeply an artist roots their work in the existing genre canon — through covers, interpolations, style references, lyrical references, and direct samples. For Oceanus Folk specifically, this signals genre authenticity and community belonging. Artists who reference the canon are signalling to existing fans and gatekeepers that they understand and respect the tradition. Weight of 2 reflects that genre authenticity is important for niche genre stardom but is not the primary driver of mainstream success. Why Output Volume and Craft Ratio were excluded Output Volume measures career infrastructure — how consistently an artist releases. This is important for the rising star profile (Dashboard 1) but is a leading indicator of future potential rather than evidence of current trajectory. An artist can release prolifically with zero notable works. Volume without quality does not predict stardom. Craft Ratio measures creative ownership — the percentage of performed works the artist also wrote. Again important for long-term sustainability but not directly predictive of near-term breakthrough. An artist can write all their own material and remain completely unknown. Craft ratio rewards process, not outcomes.</p>
+</section>
+<section id="rising-star-scatter-plot" class="level3">
+<h3 class="anchored" data-anchor-id="rising-star-scatter-plot">Rising Star Scatter Plot</h3>
+<p>Do the top 3 stand apart from all other candidates on the two most important dimensions?</p>
+<hr>
+<p>The scatter plot provides visual confirmation that the top 3 predictions are not borderline calls. Every other post-2028 Oceanus Folk artist sits in the bottom-left quadrant — one notable work, zero influence edges. The three predicted stars occupy the top-right rising star zone completely alone. The dot size adds a third dimension: all three predicted stars have released at least one single (larger dots), while the gray cluster is made up of tiny dots with no single releases. This three-dimensional separation across notable output, canon connection, and singles releases makes the prediction analytically robust.</p>
+</section>
+<section id="gantt-chart" class="level3">
+<h3 class="anchored" data-anchor-id="gantt-chart">Gantt Chart</h3>
+<p>Does breakthrough year relative to Sailor’s breakthrough matter?</p>
+<hr>
+<p>The Gantt chart reveals that timing of entry is a meaningful differentiator. Beatrice Albright and Daniel O’Connell both entered the scene right at Sailor’s 2028 breakthrough year, positioning them to ride the wave of global attention that Sailor’s viral single generated — their longer career bars extending toward 2035 confirm they sustained momentum rather than burning out early. Most other candidates entered before 2028 but show short career spans, suggesting they emerged too early to benefit from Sailor’s influence and failed to maintain activity long enough to break through. The red star markers scattered across several artists indicate notable single releases mid-career, and the top 3 predicted stars each carry at least one of these markers, reinforcing that a well-timed single within an already-active career is a consistent pattern among breakout candidates.</p>
+</section>
+<section id="overall-dashboard-analysis-1" class="level3">
+<h3 class="anchored" data-anchor-id="overall-dashboard-analysis-1">Overall Dashboard Analysis</h3>
+<p>Dashboard 2 takes the rising star benchmark established in Dashboard 1 and stress-tests it against every post-2028 Oceanus Folk artist to produce a data-driven prediction of who breaks out next. The three charts work together as a funnel — the ranking bar chart identifies who scores highest, the scatter plot confirms those same three artists are genuinely separated from the field on the two most critical dimensions, and the Gantt chart validates that their career timing aligns with the window of opportunity created by Sailor’s breakthrough. Orla Seabloom, Beatrice Albright, and Daniel O’Connell score well, occupy the rising star zone exclusively, and entered the scene at the right moment to capitalise on Sailor’s growing global influence. Every other candidate fails on at least one of these three dimensions, making the separation between the top 3 and the rest of the field not a close call but a consistent pattern across all three lenses of analysis.</p>
+<hr>
+</section>
+</section>
+<section id="overall-in-the-music-industry" class="level2">
+<h2 class="anchored" data-anchor-id="overall-in-the-music-industry">Overall in the Music industry</h2>
+<p><img src="question3c_chart.png" class="img-fluid"></p>
+<section id="music-industry-trajectory-line-chart" class="level3">
+<h3 class="anchored" data-anchor-id="music-industry-trajectory-line-chart">Music Industry Trajectory Line Chart</h3>
+<p>Which genres have grown and which have stagnated?</p>
+<hr>
+<p>The line chart spanning 1981 to 2032 shows one genre pulling dramatically away from the rest — the teal line representing Dream Pop surges past 1,100 by 2032, accelerating sharply after 2016 while all other genres grow at a far more gradual pace. Most genres cluster between 100 and 600, showing steady but unremarkable growth. A handful of genres remain flat near the bottom throughout the entire period, never gaining significant industry traction. The chart makes clear that genre growth is not linear or uniform — breakout moments exist where a genre suddenly accelerates, often coinciding with a breakthrough artist driving mainstream attention toward it. Oceanus Folk’s own trajectory, while not the dominant line, shows a visible uptick correlating with Sailor’s 2028 breakthrough.</p>
+</section>
+<section id="the-ranking-bar-chart" class="level3">
+<h3 class="anchored" data-anchor-id="the-ranking-bar-chart">The Ranking Bar Chart</h3>
+<p>Where does every artist stand?</p>
+<hr>
+<p>Sailor Shift’s bar stands alone at over 60, creating a visible gap between her and every other artist in the industry. The next tier — Orla Seabloom, Beatrice Albright, Daniel O’Connell, and Julia Carter — clusters between 28 and 32, highlighted in purple as the top predicted breakouts. Below them, the remaining artists form a long grey tail scoring under 25, confirming that genuine breakout potential is rare and concentrated in a small group. The chart also confirms that Sailor’s score is not just the highest — it is categorically in a different tier, validating her status as the benchmark ceiling against which all rising artists are measured.</p>
+</section>
+<section id="overall-dashboard-analysis-2" class="level3">
+<h3 class="anchored" data-anchor-id="overall-dashboard-analysis-2">Overall Dashboard Analysis</h3>
+<p>Dashboard 3 zooms out from the Oceanus Folk focus of Dashboards 1 and 2 to place everything in full industry context. It confirms two things simultaneously: that certain genres experience explosive growth driven by breakthrough moments rather than gradual accumulation, and that Sailor Shift’s dominance is not just an Oceanus Folk story but an industry-wide phenomenon. The combination of the genre trajectory chart and the ranking chart together show that Sailor did not simply rise within Oceanus Folk — she pulled an entire genre upward with her, and the next wave of artists most likely to replicate that pattern are already identifiable through their scores, their genre positioning, and the timing of their entry into the scene.</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2026 IS428 VABITeam</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>Built with <a href="https://quarto.org">Quarto</a></p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.27">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Question 1 Analysis – IS428VABITeam</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-5b4ad623e5705c0698d39aec6f10cf02.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">IS428VABITeam</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./project proposal.html"> 
+<span class="menu-text">Project Proposal</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./project_overview.html"> 
+<span class="menu-text">Project Overview</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./data_preparation.html"> 
+<span class="menu-text">Data Preparation</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./storyboard.html"> 
+<span class="menu-text">Storyboard</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./analysis.html"> 
+<span class="menu-text">Analysis &amp; Results</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./poster.html"> 
+<span class="menu-text">Poster</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="https://github.com/raellusionz/IS428VABITeam"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text">GitHub</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#influences-on-sailor" id="toc-influences-on-sailor" class="nav-link active" data-scroll-target="#influences-on-sailor">Influences On Sailor</a>
+  <ul class="collapse">
+  <li><a href="#what-did-sailor-draw-from-bar-chart" id="toc-what-did-sailor-draw-from-bar-chart" class="nav-link" data-scroll-target="#what-did-sailor-draw-from-bar-chart">What did Sailor draw from Bar Chart</a></li>
+  <li><a href="#songs-and-albums-network-graph" id="toc-songs-and-albums-network-graph" class="nav-link" data-scroll-target="#songs-and-albums-network-graph">Songs and Albums Network Graph</a></li>
+  <li><a href="#people-and-musical-groups-network-graph" id="toc-people-and-musical-groups-network-graph" class="nav-link" data-scroll-target="#people-and-musical-groups-network-graph">People and Musical Groups Network Graph</a></li>
+  <li><a href="#overall-dashboard-analysis" id="toc-overall-dashboard-analysis" class="nav-link" data-scroll-target="#overall-dashboard-analysis">Overall Dashboard Analysis</a></li>
+  </ul></li>
+  <li><a href="#sailors-collaboration" id="toc-sailors-collaboration" class="nav-link" data-scroll-target="#sailors-collaboration">Sailor’s Collaboration</a>
+  <ul class="collapse">
+  <li><a href="#collaborations-bar-chart" id="toc-collaborations-bar-chart" class="nav-link" data-scroll-target="#collaborations-bar-chart">Collaborations Bar Chart</a></li>
+  <li><a href="#collaborations-network-graph" id="toc-collaborations-network-graph" class="nav-link" data-scroll-target="#collaborations-network-graph">Collaborations Network Graph</a></li>
+  <li><a href="#overall-dashboard-analysis-1" id="toc-overall-dashboard-analysis-1" class="nav-link" data-scroll-target="#overall-dashboard-analysis-1">Overall Dashboard Analysis</a></li>
+  </ul></li>
+  <li><a href="#sailors-influence-network" id="toc-sailors-influence-network" class="nav-link" data-scroll-target="#sailors-influence-network">Sailors Influence Network</a>
+  <ul class="collapse">
+  <li><a href="#direct-influence-bar-chart" id="toc-direct-influence-bar-chart" class="nav-link" data-scroll-target="#direct-influence-bar-chart">Direct Influence Bar Chart</a></li>
+  <li><a href="#sailors-influence-network-graph" id="toc-sailors-influence-network-graph" class="nav-link" data-scroll-target="#sailors-influence-network-graph">Sailor’s Influence Network Graph</a></li>
+  <li><a href="#overall-dashboard-analysis-2" id="toc-overall-dashboard-analysis-2" class="nav-link" data-scroll-target="#overall-dashboard-analysis-2">Overall Dashboard Analysis</a></li>
+  </ul></li>
+  <li><a href="#sailors-influence-on-broader-oceanus-folk-community" id="toc-sailors-influence-on-broader-oceanus-folk-community" class="nav-link" data-scroll-target="#sailors-influence-on-broader-oceanus-folk-community">Sailor’s Influence On Broader Oceanus Folk Community</a>
+  <ul class="collapse">
+  <li><a href="#oceanus-folk-line-chart" id="toc-oceanus-folk-line-chart" class="nav-link" data-scroll-target="#oceanus-folk-line-chart">Oceanus Folk Line Chart</a></li>
+  <li><a href="#sailors-influence-on-oceanus-folk-network-graph" id="toc-sailors-influence-on-oceanus-folk-network-graph" class="nav-link" data-scroll-target="#sailors-influence-on-oceanus-folk-network-graph">Sailor’s Influence on Oceanus Folk Network Graph</a></li>
+  <li><a href="#overall-dashboard-analysis-3" id="toc-overall-dashboard-analysis-3" class="nav-link" data-scroll-target="#overall-dashboard-analysis-3">Overall Dashboard Analysis</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content column-page-left" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Question 1 Analysis</h1>
+</div>
+
+
+
+<div class="quarto-title-meta column-page-left">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="influences-on-sailor" class="level2">
+<h2 class="anchored" data-anchor-id="influences-on-sailor">Influences On Sailor</h2>
+<p><img src="question1a_chart.png" class="img-fluid"></p>
+<section id="what-did-sailor-draw-from-bar-chart" class="level3">
+<h3 class="anchored" data-anchor-id="what-did-sailor-draw-from-bar-chart">What did Sailor draw from Bar Chart</h3>
+<p>Breakdown of influence sources by type</p>
+<hr>
+<p>The graph shows that Sailor draws inspiration from a diverse mix of songs, albums, musical groups, and persons, with different influence types (eg. PerformerOf, LyricistOf, DirectlySamples). Albums are the dominant influence source, with around 30 connections, splitting between LyricistOf(yellow, the majority) and PerformerOf (purple). Songs follow as a significant source, with connections almost entirely from PerformerOf (purple), suggesting Sailor was heavily shaped by the performing styles of specific songs. MusicalGroups show the most diverse influence types. The influence types are relating to DirectlySamples (blue), InStyleOf (orange), LyricalReferenceTo (teal), MemberOf (pink), and PerformerOf (purple). This suggests that Sailor’s relationship with bands is the most multidimensional.</p>
+<p>By filtering through Target Release Date, the chart reveals how Sailor’s influences shift across time. This helps identify which influences had the greatest pull on Sailor’s development. After Sailor joined Ivy Echos in 2023, the number of influences increased. By filtering through Target Notable, the chart adds a commercial dimension, separating influences that achieved recognition (True) from those that did not (False). This tells us whether Sailor deliberately drew from high-profile works or was shaped by under-the-radar influences that never topped the charts. Sailor drew from a mix of notable and non-notable influences which means that there is more independent artistic sensibility. Together, the two filters transform the bar chart from a static snapshot into a dynamic tool for understanding the timeline and commercial weight behind Sailor’s musical influences. This not only reveals what shaped Sailor, but when and how prominently those influences are in the broader musical landscape.</p>
+</section>
+<section id="songs-and-albums-network-graph" class="level3">
+<h3 class="anchored" data-anchor-id="songs-and-albums-network-graph">Songs and Albums Network Graph</h3>
+<p>The albums (orange nodes), songs (light green nodes), and record labels (blue nodes) influencing Sailor’s music</p>
+<hr>
+<p>Looking at the 1st Network Depth: Sailor is LyricalReferenceTo Drowned Harbor, InStyleOf The Saltwater Weavers and The Fiddle &amp; The Fjord, and takes DirectSamples from Ivy Echos. Oceanus Records is the ProducerOf Sailor. Ivy Echos and The Fiddler &amp; The Fjord are the two most heavily connected nodes. They act as primary nodes, meaning they either directly influenced Sailor or serve as connectors between many other songs and albums. The Saltwater Weavers and Drowned Harbor are secondary nodes with notable clusters of songs and albums connected to them via PerformerOf edges.</p>
+<p>Looking at the 2nd Network Depth: We can gain a better understanding of how Sailor has been influenced by the albums and songs relating to the 1st Network Depth. The graph is densely interconnected in the center, with many albums and songs connected to the 1st Network Depth nodes. This suggests that Sailor wasn’t just influenced by the musical groups in the 1st Network Depth, but the entire ecosystem of works associated with them.</p>
+</section>
+<section id="people-and-musical-groups-network-graph" class="level3">
+<h3 class="anchored" data-anchor-id="people-and-musical-groups-network-graph">People and Musical Groups Network Graph</h3>
+<p>The musicians (pink nodes) and bands (dark green nodes) influencing Sailor’s music</p>
+<hr>
+<p>Looking at the 1st Network Depth: Its insights are the same as the Songs and Albums Network Graph.</p>
+<p>Looking at the 2nd Network Depth: We can gain a better understanding of who Sailor has been influenced by relating to the 1st Network Depth. We can see which musical group or persons InterpolatesFrom, is InStyleOf, or takes LyricalReferenceTo each of the 1st Network Depth nodes. This suggests that Sailor is implicitly absorbing the broader stylistic and lyrical tradition those artists represent and belong to. Therefore, Sailor’s musical identity is shaped not just by who she directly drew from, but by the entire relational web of artistic lineage surrounding the 1st Network Depth nodes, making the influences richer, more layered, and more interconnected.</p>
+</section>
+<section id="overall-dashboard-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="overall-dashboard-analysis">Overall Dashboard Analysis</h3>
+<p>Sailor’s musical identity is not simply a collection of influences, but a continuously evolving system of inspiration. Rather than relying on any single source, she integrates different creative inputs into a cohesive style that reflects both intentional choice and organic discovery. The patterns suggest that her development is shaped by how she utilises the influences, turning them into something uniquely her own rather than directly reflecting them. This shows that Sailor is not just influenced by the musical landscape but actively interprets and redefines it, resulting in a sound that is both grounded in existing traditions and distinctly original.</p>
+<hr>
+</section>
+</section>
+<section id="sailors-collaboration" class="level2">
+<h2 class="anchored" data-anchor-id="sailors-collaboration">Sailor’s Collaboration</h2>
+<p><img src="question1b_chart.png" class="img-fluid"></p>
+<section id="collaborations-bar-chart" class="level3">
+<h3 class="anchored" data-anchor-id="collaborations-bar-chart">Collaborations Bar Chart</h3>
+<p>Yearly collaboration activity, with Ivy Echos membership (2023-2026) and breakthrough year marked</p>
+<hr>
+<p><strong>Pre-Breakthrough (2024–2027) : </strong> The collaboration counts are low, hovering mostly at 1 per year. LyricistOf activity begins in this period, suggesting she was developing her songwriting identity before her breakthrough.</p>
+<p><strong>Breakthrough Year (2028) : </strong> There is a sharp spike, with collaboration count jumping to 6. LyricistOf and PerformerOf both surge simultaneously. Her breakthrough had an immediate effect on her collaborative output.</p>
+<p><strong>Post-Breakthrough (2029–2040) : </strong> Collaboration volume sustains at a higher level, with around 4–6 per year compared to the near-zero pre-breakthrough baseline. PerformerOf (purple) becomes the dominant relationship type, suggesting Sailor’s post-breakthrough identity is primarily as a performer. LyricistOf (gold) remains consistently present, showing she maintained her songwriting role even as her performing profile grew. There is also no significant drop-off toward 2040, suggesting Sailor’s collaborative momentum has been sustained in the long-run.</p>
+<p>By filtering through Target Notable, the chart adds a commercial dimension, separating influences that achieved recognition (True) from those that did not (False). This tells us whether Sailor deliberately collaborated with high-profile works or collaborated with under-the-radar influences that never topped the charts. Sailor mainly collaborated for songs or albums that top the charts. This shows that Sailor either actively sought out collaboration with top chart artists or that her growing reputation naturally attracted them.</p>
+</section>
+<section id="collaborations-network-graph" class="level3">
+<h3 class="anchored" data-anchor-id="collaborations-network-graph">Collaborations Network Graph</h3>
+<p>The songs (light green nodes) and albums (orange nodes) Sailor has written and performed with.</p>
+<hr>
+<p>The density and spread of nodes around Sailor Shift reflects extensive and diverse songs and albums from 2023-2040. The network graph’s line thickness suggests Sailor’s creative output has a directional bias towards Submerged Sonatas, Tidesworn Ballads, The Current &amp; The Chord, Tidal Pop Waves, Coral Beats, Salty Dreams, Oceanbound, Tides &amp; Ballads, and Echoes of the Deep. She has contributed more to these songs or albums.</p>
+</section>
+<section id="overall-dashboard-analysis-1" class="level3">
+<h3 class="anchored" data-anchor-id="overall-dashboard-analysis-1">Overall Dashboard Analysis</h3>
+<hr>
+<p>Sailor’s career is defined by positioning and artistic consolidation rather than just activity levels. Instead of simply increasing songs and albums output, she transitions into a role where her contributions become more central and influential within the broader music landscape. Her collaborations reflect a shift from exploration to clear creative direction, indicating that she has established a recognizable artistic identity that others align with. The patterns across the dashboard also imply that her growth is not temporary, but structurally sustained. Overall, Sailor emerges not just as a participant in collaborations, but as a consistent driver of creative value and industry presence over time.</p>
+<hr>
+</section>
+</section>
+<section id="sailors-influence-network" class="level2">
+<h2 class="anchored" data-anchor-id="sailors-influence-network">Sailors Influence Network</h2>
+<p><img src="question1c_chart.png" class="img-fluid"></p>
+<section id="direct-influence-bar-chart" class="level3">
+<h3 class="anchored" data-anchor-id="direct-influence-bar-chart">Direct Influence Bar Chart</h3>
+<p>Types of direct influence Sailor has</p>
+<hr>
+<p>Hovering on the Bar Chart, Copper Canyon Ghosts is DirectlySamples of Sailor, Cassette Future and The Hollow Monarchs are InStyleOf Sailor, Claire Homes and The Phantom Operators InterpolatesFrom Sailor, and Cassian Storm and Sliver Veil are LyricalReferenceTo Sailor. The distribution is almost balanced across all four influence types. It tells us that Sailor’s influence is not one-dimensional. This breadth of influence shows that Sailor is a truly impactful artist.</p>
+</section>
+<section id="sailors-influence-network-graph" class="level3">
+<h3 class="anchored" data-anchor-id="sailors-influence-network-graph">Sailor’s Influence Network Graph</h3>
+<p>Who was shaped by those Sailor influenced first (Pink nodes: Person; Blue nodes: Record Label; Dark Green nodes: Musical Group)</p>
+<hr>
+<p><strong>Looking at the 1st Network Depth: </strong> The insights are the same as in the Direct Influence Bar Chart.</p>
+<p><strong>Looking at the 2nd Network Depth: </strong> We can gain a better understanding of who Sailor has indirectly influenced by relating to the 1st Network Depth. We can see which musical group or persons is a ProducerOf or MemberOf each of the 1st Network Depth nodes. These members or producers might not be directly aware of how Sailor shaped the music that shaped them.</p>
+</section>
+<section id="overall-dashboard-analysis-2" class="level3">
+<h3 class="anchored" data-anchor-id="overall-dashboard-analysis-2">Overall Dashboard Analysis</h3>
+<p>Sailor’s impact extends beyond direct influence into shaping the structure of the creative ecosystem around her. Rather than influencing in a single clear path, her presence creates ripple effects that influences multiple layers of artists This indicates that her influence has become embedded and self-propagating, where ideas associated with her continue to evolve independently across the network. As a result, Sailor’s significance lies not just in who she directly influences, but in how she contributes to a broader, ongoing cycle of musical evolution, reinforcing her position as a lasting artist within the industry.</p>
+<hr>
+</section>
+</section>
+<section id="sailors-influence-on-broader-oceanus-folk-community" class="level2">
+<h2 class="anchored" data-anchor-id="sailors-influence-on-broader-oceanus-folk-community">Sailor’s Influence On Broader Oceanus Folk Community</h2>
+<p><img src="question1d_chart.png" class="img-fluid"></p>
+<section id="oceanus-folk-line-chart" class="level3">
+<h3 class="anchored" data-anchor-id="oceanus-folk-line-chart">Oceanus Folk Line Chart</h3>
+<p>Genre output over time, peaking around Sailor’s breakthrough and Ivy Echos years.</p>
+<hr>
+<p><strong>Pre-2020 (Baseline Era): </strong> Oceanus Folk genre output for both songs and albums remains consistently low initially and slowly increases to around 40-50 songs yearly. This shows that the Oceanus Folk genre was a niche, slow-growing community before Sailor’s emergence. The occasional green spikes suggest songs were always slightly more active than albums in this genre, but neither showed sustained momentum.</p>
+<p><strong>Ivy Echos Period (2023–2026):</strong> There is a sudden surge in song output, reaching the peak of 105 songs. This shows that Sailor’s membership in Ivy Echos acted as a catalyst for the entire genre, not just her own career.</p>
+<p><strong>Breakthrough Year (2028) and Post-Breakthrough (2029–2039):</strong> The songs and albums output drops sharply after the Sailor’s breakthrough as she has moved away from Oceanus Folk into Indie Pop and Indie Folk. The genre loses its primary engine of growth and returns toward lower, more sustainable output levels. However, output does not fully return to pre-2020 baseline levels, suggesting Sailor’s influence left a permanent impact on the genre’s overall activity.</p>
+<p>By filtering through Source Notable, the chart adds a commercial dimension, separating influences that achieved recognition (True) from those that did not (False). This tells us whether Oceanus Folk genre consists of high-profile works or under-the-radar works that never topped the charts. Oceanus Folk genre songs or albums mainly top the charts. This shows that the Oceanus Folk genre is doing well and people enjoy listening to it.</p>
+</section>
+<section id="sailors-influence-on-oceanus-folk-network-graph" class="level3">
+<h3 class="anchored" data-anchor-id="sailors-influence-on-oceanus-folk-network-graph">Sailor’s Influence on Oceanus Folk Network Graph</h3>
+<p>The albums (orange nodes), songs (light green nodes), and people (dark green nodes: Musical Group; pink nodes: Person) which Sailor influenced.</p>
+<hr>
+<p>Looking at the 1st Network Depth: Cassian Storm is LyricalReferenceTo Sailor, The Hollow Monarchs and Cassette Future are InStyleOf Sailor, Claire Holmes and The Phantom Operators InterpolatesFrom Sailor and Copper Canyon Ghosts takes DirectSamples from Sailor. Copper Canyon Ghosts emerges as the second major hub, with a number of songs and albums that it is a PerformerOf</p>
+<p>Looking at the 2nd Network Depth: We can gain a better understanding of who Sailor has indirectly influenced in the Oceanus Folk community by relating to the 1st Network Depth. Daniel O’Connell and Beatrice Albright form a secondary influence tier, each connected to multiple songs and albums via PerformerOf edges. This indicates that they are active members of the community who have absorbed Sailor’s musical impact.</p>
+<p>The graph features a rich diversity of edge types throughout - purple (MemberOf), pink (PerformerOf), orange (InStyleOf), red (InterpolatesFrom), green (LyricalReferenceTo) - highlighting that Sailor’s influence on the Oceanus Folk community operates across every possible relational dimension.</p>
+</section>
+<section id="overall-dashboard-analysis-3" class="level3">
+<h3 class="anchored" data-anchor-id="overall-dashboard-analysis-3">Overall Dashboard Analysis</h3>
+<p>Sailor’s role in Oceanus Folk reflects her influence on the genre’s trajectory and identity. Rather than simply contributing to its growth, she acts as a pivotal force that reshapes how the genre evolves, leaving behind benefits that persist even after she switched her genre focus elsewhere. The patterns suggest that her impact is enduring, creating momentum that other artists continue to build upon while redefining the creative direction of the space. This positions Sailor not just as a key artist within Oceanus Folk, but as someone whose presence reconfigures the genre’s long-term development and legacy.</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2026 IS428 VABITeam</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>Built with <a href="https://quarto.org">Quarto</a></p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

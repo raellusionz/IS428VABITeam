@@ -2,7 +2,15 @@
 title: "Analysis & Results"
 ---
 
-## Methodology
+Insights into Sailor Shift, Oceanus Folk, and Future Rising Stars in the Industry
+Through a series of visual analytics using Tableau, Gephi, and Python, we have uncovered insights into Sailor Shift’s career, how the influence of Oceanus Folk has spread through the musical world, and the future rising stars in the industry. 
+
+### Links to Each Question's Analysis and Findings
+
+[Question 1 Analysis](question1_analysis.qmd) <br>
+[Question 2 Analysis](question2_analysis.qmd) <br>
+[Question 3 Analysis](question3_analysis.qmd) <br>
+<!-- ## Methodology
 
 Describe the analytical approach — data cleaning, transformation, statistical methods, and tools used (e.g. R, Python, Tableau).
 
@@ -61,4 +69,4 @@ Describe the third major insight from your analysis.
 
 ## Future Work
 
-- What could be improved or extended in future iterations?
+- What could be improved or extended in future iterations? -->

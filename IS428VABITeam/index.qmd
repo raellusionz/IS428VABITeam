@@ -5,5 +5,3 @@ format:
     include-in-header:
       text: '<meta http-equiv="refresh" content="0; url=project%20proposal.html">'
 ---
-
-### Project Name : SugarShift

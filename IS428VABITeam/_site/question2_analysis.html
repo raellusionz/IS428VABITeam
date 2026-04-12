@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.27">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Question 2 Analysis – IS428VABITeam</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-5b4ad623e5705c0698d39aec6f10cf02.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">IS428VABITeam</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./project proposal.html"> 
+<span class="menu-text">Project Proposal</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./project_overview.html"> 
+<span class="menu-text">Project Overview</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./data_preparation.html"> 
+<span class="menu-text">Data Preparation</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./storyboard.html"> 
+<span class="menu-text">Storyboard</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./poster.html"> 
+<span class="menu-text">Poster</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./analysis.html"> 
+<span class="menu-text">Analysis &amp; Results</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="https://github.com/raellusionz/IS428VABITeam"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text">GitHub</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#oceanus-folk-influence-spread" id="toc-oceanus-folk-influence-spread" class="nav-link active" data-scroll-target="#oceanus-folk-influence-spread">Oceanus Folk Influence Spread</a>
+  <ul class="collapse">
+  <li><a href="#influence-trajectory-line-chart" id="toc-influence-trajectory-line-chart" class="nav-link" data-scroll-target="#influence-trajectory-line-chart">Influence Trajectory Line Chart</a></li>
+  <li><a href="#mechanisms-of-influence-line-chart" id="toc-mechanisms-of-influence-line-chart" class="nav-link" data-scroll-target="#mechanisms-of-influence-line-chart">Mechanisms of Influence Line Chart</a></li>
+  <li><a href="#overall-dashboard-analysis" id="toc-overall-dashboard-analysis" class="nav-link" data-scroll-target="#overall-dashboard-analysis">Overall Dashboard Analysis</a></li>
+  </ul></li>
+  <li><a href="#oceanus-folks-footprint" id="toc-oceanus-folks-footprint" class="nav-link" data-scroll-target="#oceanus-folks-footprint">Oceanus Folk’s Footprint</a>
+  <ul class="collapse">
+  <li><a href="#influence-network-of-genres-and-songs-chart" id="toc-influence-network-of-genres-and-songs-chart" class="nav-link" data-scroll-target="#influence-network-of-genres-and-songs-chart">Influence Network of Genres and Songs Chart</a></li>
+  <li><a href="#artist-level-impact-bar-chart" id="toc-artist-level-impact-bar-chart" class="nav-link" data-scroll-target="#artist-level-impact-bar-chart">Artist Level Impact Bar Chart</a></li>
+  <li><a href="#origins-of-influence-bar-chart" id="toc-origins-of-influence-bar-chart" class="nav-link" data-scroll-target="#origins-of-influence-bar-chart">Origins of Influence Bar Chart</a></li>
+  <li><a href="#overall-dashboard-analysis-1" id="toc-overall-dashboard-analysis-1" class="nav-link" data-scroll-target="#overall-dashboard-analysis-1">Overall Dashboard Analysis</a></li>
+  </ul></li>
+  <li><a href="#oceanus-folk-influence-spread-1" id="toc-oceanus-folk-influence-spread-1" class="nav-link" data-scroll-target="#oceanus-folk-influence-spread-1">Oceanus Folk Influence Spread</a>
+  <ul class="collapse">
+  <li><a href="#temporal-genre-dynamics-line-chart" id="toc-temporal-genre-dynamics-line-chart" class="nav-link" data-scroll-target="#temporal-genre-dynamics-line-chart">Temporal Genre Dynamics Line Chart:</a></li>
+  <li><a href="#inspiration-shift-stacked-bar-chart" id="toc-inspiration-shift-stacked-bar-chart" class="nav-link" data-scroll-target="#inspiration-shift-stacked-bar-chart">Inspiration Shift Stacked Bar Chart</a></li>
+  <li><a href="#temporal-dynamics-of-influence-line-chart" id="toc-temporal-dynamics-of-influence-line-chart" class="nav-link" data-scroll-target="#temporal-dynamics-of-influence-line-chart">Temporal Dynamics of Influence Line Chart</a></li>
+  <li><a href="#overall-dashboard-analysis-2" id="toc-overall-dashboard-analysis-2" class="nav-link" data-scroll-target="#overall-dashboard-analysis-2">Overall Dashboard Analysis</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content column-page-left" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Question 2 Analysis</h1>
+</div>
+
+
+
+<div class="quarto-title-meta column-page-left">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="oceanus-folk-influence-spread" class="level2">
+<h2 class="anchored" data-anchor-id="oceanus-folk-influence-spread">Oceanus Folk Influence Spread</h2>
+<p><img src="question2a_chart.png" class="img-fluid"></p>
+<section id="influence-trajectory-line-chart" class="level3">
+<h3 class="anchored" data-anchor-id="influence-trajectory-line-chart">Influence Trajectory Line Chart</h3>
+<p>How did Oceanus Folk’s influence evolve over time, and what factors might explain its rise, peak, and eventual decline?</p>
+<hr>
+<p>The Influence trajectory line chart tracks how Oceanus Folk rises, peaks, and eventually settles into a more stable phase over time. From the mid-1990s up until around 2010, the line is almost flat, which suggests the genre either hadn’t really formed yet or was sitting in small, niche spaces without much visibility. Around 2010–2014, there’s a clear lift, pointing to early adoption—probably when a few artists or scenes started pushing the sound into wider circulation.</p>
+<p>After that, things get uneven. The dips and spikes from 2017 onward feel like moments of sudden attention—maybe viral releases, standout albums, or influential artists briefly pulling the genre into the spotlight. The peak around 2023 stands out as the moment it fully breaks through. After that, the drop makes sense: once something becomes widely used, it stops feeling fresh. By the 2030s, the line flattened again, but not to zero but more likely the genre has settled into a niche, still present but no longer leading trends.</p>
+</section>
+<section id="mechanisms-of-influence-line-chart" class="level3">
+<h3 class="anchored" data-anchor-id="mechanisms-of-influence-line-chart">Mechanisms of Influence Line Chart</h3>
+<p>Through which mechanisms did Oceanus Folk spread its influence, and how did the importance of these mechanisms change over time?</p>
+<hr>
+<p>The mechanism of influence line chart explains how that influence actually spread. Early on, all four mechanisms are pretty quiet, reinforcing that initial adoption required deliberate discovery rather than passive exposure. As things pick up after 2010, more activities can be seen across the board, but each pathway behaves a bit differently.“CoverOf” stays relatively steady, which suggests people were consistently engaging with existing Oceanus Folk tracks rather than constantly reinventing them. It’s less explosive, more sustained. “LyricalReferenceTo” builds more gradually and peaks around 2023, which feels important—it shows that the themes or ideas behind the genre were resonating, not just the sound. The most noticeable change is in “InStyleOf,” which spikes much later and more sharply. This probably occurred due to the genre becoming more familiar enough that artists can imitate it without referencing specific songs. At that point, it’s not just influence—it’s identity. “InterpolatesFrom” comes and goes in bursts, suggesting selective borrowing rather than widespread use. After the late 2020s, everything tapers off, which lines up with the idea of saturation.</p>
+</section>
+<section id="overall-dashboard-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="overall-dashboard-analysis">Overall Dashboard Analysis</h3>
+<p>Oceanus Folk’s success was driven less by a single breakthrough and more by a gradual cultural buildup that culminated in a tipping point. Its rise reflects wider trends like easier music discovery and a shift toward more organic, authentic sounds. The peak around 2023 likely represents a moment where multiple factors converged such as audience demand, artist experimentation, and algorithmic amplification. However, those same factors also led to its decline, especially the heavy imitation “InStyleOf” caused saturation, making the genre feel less unique and imapctful over time, prompting artists and listeners to move on. Despite all these occurrences, Oceanus Folk didn’t really disappear completely from the map but it transitioned into a background influence. Its continued presence in covers, references, and stylistic echoes shows it achieved something more lasting than trend status.</p>
+<hr>
+</section>
+</section>
+<section id="oceanus-folks-footprint" class="level2">
+<h2 class="anchored" data-anchor-id="oceanus-folks-footprint">Oceanus Folk’s Footprint</h2>
+<p><img src="question2b_chart.png" class="img-fluid"></p>
+<section id="influence-network-of-genres-and-songs-chart" class="level3">
+<h3 class="anchored" data-anchor-id="influence-network-of-genres-and-songs-chart">Influence Network of Genres and Songs Chart</h3>
+<p>How does Oceanus Folk spread its influence across different genres and songs, and why does it have a stronger impact on some genres than others?</p>
+<hr>
+<p>The Influence Network Chart shows how Oceanus Folk spreads outward into other genres and individual works, with Oceanus Folk sitting at the center of the network. A genre that stands out most is Indie Folk which has noticeably more links, suggesting that it absorbs a larger share of the influence. This likely happened because Oceanus Folk shares similar acoustic styles and themes with Indie Folk, making it easier for its elements to spread and blend into that genre. Other genres, like Synthwave or Dream Pop are influenced by Oceanus Folk but only in small ways over overall style. There’s also a clear mix of larger and smaller nodes. The smaller nodes, representing individual songs, appear more frequently, which suggests that influence happens gradually at the track level rather than through major genre-wide shifts. Instead of reshaping entire genres, Oceanus Folk seeps into specific works, accumulating influence over time, suggesting broader reach but uneven impact. The genre spreads widely, but it tends to take hold more strongly in genres that already align with its sound, rather than transforming completely different ones.</p>
+</section>
+<section id="artist-level-impact-bar-chart" class="level3">
+<h3 class="anchored" data-anchor-id="artist-level-impact-bar-chart">Artist Level Impact Bar Chart</h3>
+<p>How is Oceanus Folk’s influence distributed among artists, and what does this suggest about whether the genre is driven by key individuals or collective adoption?</p>
+<hr>
+<p>The artist level impact chart looks at how individual artists engage with Oceanus Folk. The most noticeable thing is how closely grouped the values are. Most artists sit within a narrow range, with only small differences between them, and even the highest values don’t stand far above the rest. This shows that there isn’t a single dominant artist pushing the genre forward. Instead, influence is spread across many artists, each contributing at a similar level. This probably happened due to the genre being widely accepted, rather than being driven by a few key trendsetters. It suggests that Oceanus Folk isn’t tied to specific names, but instead exists as a shared pool of ideas that many artists independently adopt similar stylistic elements which explains how the genre becomes recognizable over time.</p>
+</section>
+<section id="origins-of-influence-bar-chart" class="level3">
+<h3 class="anchored" data-anchor-id="origins-of-influence-bar-chart">Origins of Influence Bar Chart</h3>
+<p>Which genres contribute most to the formation of Oceanus Folk, and what does this reveal about its core identity and stylistic foundation?</p>
+<hr>
+<p>The Origin of Influence Chart flips the perspective and looks at where Oceanus Folk comes from, and here the pattern is much more concentrated. Indie Folk clearly dominates with far more connections than any other genre. This suggests Oceanus Folk is built on a strong core foundation, likely inheriting its acoustic textures, storytelling style, and overall aesthetic from Indie Folk. However, genres like Synthwave or Psychedelic Rock still show some influence to Oceanus Folk, but at much lower levels. These influences probably contribute specific elements, such as atmospheric layers or experimental sounds, rather than shaping the genre’s core identity. The sharp drop-off from the genre Indie Folk shows that most of the genre’s defining characteristics come from a single primary source, with only limited external input. In contrast to the first chart, Oceanus Folk draws from a narrow base but spreads outward much more widely, suggesting it takes a clear, established sound and adapts it across different contexts, rather than constantly reinventing itself from multiple influences.</p>
+</section>
+<section id="overall-dashboard-analysis-1" class="level3">
+<h3 class="anchored" data-anchor-id="overall-dashboard-analysis-1">Overall Dashboard Analysis</h3>
+<p>Oceanus Folk comes across as a genre with a strong foundation but flexible reach. It starts from a clearly defined base, mainly Indie Folk, that then expands outward into a range of related genres and artists. This combination of a stable core and adaptable edges makes it easy to spread without losing its identity. Oceanus Folk also stands out by how evenly that influence is distributed. Instead of being driven by a few major artists, it spreads across many, which makes it feel less like a short-lived trend and more like a shared creative approach. That kind of diffusion tends to produce steady, organic growth rather than sudden spikes. However, since many artists adopt similar elements, the genre risks becoming saturated. Once the sound becomes too familiar, it starts to lose its distinctiveness. Even so, the wide spread of influence suggests it doesn’t disappear—it simply blends into the background, continuing to shape music in more subtle and lasting ways.</p>
+<hr>
+</section>
+</section>
+<section id="oceanus-folk-influence-spread-1" class="level2">
+<h2 class="anchored" data-anchor-id="oceanus-folk-influence-spread-1">Oceanus Folk Influence Spread</h2>
+<p><img src="question2c_chart.png" class="img-fluid"></p>
+<section id="temporal-genre-dynamics-line-chart" class="level3">
+<h3 class="anchored" data-anchor-id="temporal-genre-dynamics-line-chart">Temporal Genre Dynamics Line Chart:</h3>
+<p>How do the genres influencing Oceanus Folk change over time, and what does this suggest about its development before and after the 2028 breakthrough?</p>
+<hr>
+<p>The Temporal Genre Dynamics Line Chart depicts how genres that once influenced Oceanus Folk changed over time, especially around the 2028 breakthrough. Before 2028, Indie Folk clearly dominated, consistently showing the highest number of influence connections and peaking around 2023. This suggests that Oceanus Folk was heavily reliant on Indie Folk as its core inspiration during its early and peak phases. Other genres like Synthwave and Dream Pop appear, but at much lower levels, indicating they played supporting roles rather than shaping the genre. However, after 2028, there is a noticeable drop across all genres. The lines flatten significantly, showing that Oceanus Folk becomes less dependent on external genre influences. This likely reflects a shift where the genre matures and develops its own identity instead of drawing heavily from others. However, it can also suggest a decline in innovation, as fewer new influences are being integrated. Overall, the chart highlights a transition from strong external inspiration to a more self-contained but less dynamic phase.</p>
+</section>
+<section id="inspiration-shift-stacked-bar-chart" class="level3">
+<h3 class="anchored" data-anchor-id="inspiration-shift-stacked-bar-chart">Inspiration Shift Stacked Bar Chart</h3>
+<p>How genre influences evolved following Sailor Shift’s Breakthrough?</p>
+<hr>
+<p>Inspiration Shift Stacked Bar Chart compares how different genres influence Oceanus Folk before and after 2028, revealing a clear structural shift. Before 2028, Indie Folk dominated by a large margin, with significantly higher connections than any other genre. This reinforces the idea that Oceanus Folk’s identity was strongly rooted in Indie Folk during its rise. However, after 2028, the overall number of connections drops sharply across nearly all genres. Even Indie Folk sees a major decline, suggesting that its influence weakens significantly in the post-breakthrough period. While some genres show slight increases in adoption after 2028, these are relatively small and do not compensate for the overall decline. This suggests that Oceanus Folk loses much of its external inspiration after its peak. Rather than continuously evolving through new influences, it becomes more static. The chart points to a post-peak phase where the genre is no longer actively shaped by a wide range of influences, which may contribute to its reduced impact over time.</p>
+</section>
+<section id="temporal-dynamics-of-influence-line-chart" class="level3">
+<h3 class="anchored" data-anchor-id="temporal-dynamics-of-influence-line-chart">Temporal Dynamics of Influence Line Chart</h3>
+<p>How does Oceanus Folk’s influence change after 2028, and what explains the rise and decline in its popularity over time?</p>
+<hr>
+<p>The Temporal Dynamics of Influence Line Chart shows how Oceanus Folk’s influence changes after 2028. The most noticeable feature is the sharp rise around 2029, where the genre reaches its highest level of influence after Sailor Shift’s breakthrough. This likely happens because Sailor Shift brought strong attention to the genre, introducing it to a wider audience and making more artists and listeners engage with it. As a result, Oceanus Folk suddenly became popular around that time, as more people started noticing and engaging with it. However, this increase in popularity does not last long. After 2029, the influence drops rapidly, reaching very low levels by 2031. This suggests that the attention it gained was only temporary. Afterwards, the trend remains relatively flat, with only minor fluctuations. A slight rise appears again around 2035, but it is not significant enough to indicate a real recovery. By 2037, the influence reaches one of its lowest points, showing that Oceanus Folk is no longer as impactful as it once was. Overall, the chart reflects a typical post-peak pattern: a brief spike following success, followed by a steady decline and eventual stabilization at low levels.</p>
+</section>
+<section id="overall-dashboard-analysis-2" class="level3">
+<h3 class="anchored" data-anchor-id="overall-dashboard-analysis-2">Overall Dashboard Analysis</h3>
+<p>Oceanus Folk undergoes a clear shift after 2028, moving from a highly influenced and dynamic genre into a more stable but declining phase. Before the breakthrough, it relies heavily on Indie Folk and other genres for inspiration, which helps drive its growth and development. 2028 was the breakthrough turning point that briefly boosted its influence and visibility but sadly, it was short-lived. External influences and overall impact declined significantly and even the genre as a whole became less connected to other influences and less active in shaping the wider music landscape. With all the data set in place, it has come to a conclusion that Oceanus Folk has reached a point of maturity or saturation, where it no longer evolves as rapidly. Instead of continuing to grow, it settles into a quieter phase. While it does not disappear completely, its role shifts from being a leading influence to a more background presence in the music ecosystem.</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2026 IS428 VABITeam</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>Built with <a href="https://quarto.org">Quarto</a></p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
