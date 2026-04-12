@@ -14,7 +14,6 @@ website:
       - href: storyboard.qmd
         text: Storyboard
       - href : analysis.qmd
-        text: Analysis & Results
         menu:
           - text: Question 1
             file: question1_analysis.qmd
