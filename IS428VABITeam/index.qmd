@@ -3,5 +3,5 @@ title: "IS428VABITeam"
 format:
   html:
     include-in-header:
-      text: '<meta http-equiv="refresh" content="0; url=project%20proposal.html">'
+      text: '<meta http-equiv="refresh" content="0; url=project_overview.html">'
 ---
