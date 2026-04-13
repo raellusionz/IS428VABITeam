@@ -15,7 +15,5 @@ This guide explains how to use the IS428 VABITeam3 interactive dashboard.
 ## Accessing the Dashboard
 
 ## Accessing the Guide
-
-<iframe src="G2T3 User Guide.pdf" width="100%" height="900px" style="border:none;"></iframe>
 ---
 
