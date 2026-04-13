@@ -29,6 +29,7 @@ The albums (orange nodes), songs (light green nodes), and record labels (blue no
 Sailor is LyricalReferenceTo Drowned Harbor, InStyleOf The Saltwater Weavers and The Fiddle & The Fjord, and takes DirectSamples from Ivy Echos. Oceanus Records is the ProducerOf Sailor. Ivy Echos and The Fiddler & The Fjord are the two most heavily connected nodes. They act as primary nodes, meaning they either directly influenced Sailor or serve as connectors between many other songs and albums. The Saltwater Weavers and Drowned Harbor are secondary nodes with notable clusters of songs and albums connected to them via PerformerOf edges.
 
 <u>Looking at the 2nd Network Depth:</u>
+
 We can gain a better understanding of how Sailor has been influenced by the albums and songs relating to the 1st Network Depth. The graph is densely interconnected in the center, with many albums and songs connected to the 1st Network Depth nodes. This suggests that Sailor wasn't just influenced by the musical groups in the 1st Network Depth, but the entire ecosystem of works associated with them.
 
 ### People and Musical Groups Network Graph
