@@ -2,7 +2,7 @@
 title: "Question 3 Analysis"
 
 ---
-## What makes a rising star in the music industry?
+## What Makes a Rising Star in the Music Industry?
 
 ![](question3a_chart.png)
 
@@ -54,7 +54,7 @@ Across all four charts, a consistent profile of a rising star emerges: sustained
 ---
 
 
-## Who are the next oceanus folk rising stars?
+## Who are the Next Oceanus Folk Rising Stars?
 ![](question3b_chart.png)
 
 ### Prediction Score Bar Chart
