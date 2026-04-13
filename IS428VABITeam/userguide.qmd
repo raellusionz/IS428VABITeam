@@ -13,7 +13,11 @@ This guide explains how to use the IS428 VABITeam3 interactive dashboard.
 - No installation required
 
 ## Accessing the Dashboard
+Click this [link](tableau_dashboard.qmd) to access our dashboard within Netlify. <br>
+Click this [link](https://public.tableau.com/app/profile/dycia.chin/viz/G2T3TableauWorkbook/Story1) to access our dashboard on Tableau Public.
 
 ## Accessing the Guide
----
+
+Click this [link](G2T3_User_Guide.pdf) to access our user guide.
+
 

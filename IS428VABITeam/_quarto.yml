@@ -29,22 +29,15 @@ website:
           
       # - href: index.qmd
       #  text: Home
-      # - href: about.qmd
-      #  text: About
-      # - href: overview.qmd
-      #  text: Overview
-      # - href: prototypes.qmd
-      #  text: Prototypes
-     
-      # - href: userguide.qmd
-      #  text: User Guide
+
     right:
       - icon: github
         href: https://github.com/raellusionz/IS428VABITeam
         text: GitHub
       - text: Tableau Dashboard
+        href : https://public.tableau.com/app/profile/dycia.chin/viz/G2T3TableauWorkbook/Story1
   page-footer:
-    left: "© 2026 IS428 VABITeam"
+    left: "© 2026 IS428 VABI Team 3"
     right: "Built with [Quarto](https://quarto.org)"
 
 format:
@@ -53,4 +46,4 @@ format:
     css: styles.css
     toc: true
     page-layout: full
-    max-width: 1400px
+ 

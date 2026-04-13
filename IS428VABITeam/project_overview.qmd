@@ -31,9 +31,3 @@ Sailor Shift evolves from a highly influenced artist into a central industry for
 3. Python
 4. Quarto
 
-
-<!-- Describe the dataset(s) used — source, size, time period, key variables.
-
-| Dataset | Source | Records | Period |
-|---------|--------|---------|--------|
-| Dataset 1 | Source A | ~10,000 | 2020–2024 | -->
