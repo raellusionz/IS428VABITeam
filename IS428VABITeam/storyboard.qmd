@@ -18,10 +18,10 @@ Purpose: Profiling Sailor Shift's career, collaborations, and influence on the O
 
 | Dashboard | View | Key Metric | Chart Type |
 |---------|--------|---------|--------|
-1|Influences on Sailor|Influence edges by artist and genre, Direct and indirect influence edges|1 Bar Chart, 2 Network Graphs|
-|2|Sailor’s Collaborations|Collaboration frequency|1 Bar Chart, 1 Network Graph|
-|3|Sailor’s Influence on Others|Direct and indirect influence edges|1 Bar Chart, 1 Network Graph|
-|4|Sailor’s Influence on Oceanus Folk|Oceanus Folk genre change|1 Line Chart, 1 Network Graph|
+1|Influences on Sailor|Influence edges by artist and genre, Direct and indirect influence edges| Bar Chart,  Network Graph|
+|2|Sailor’s Collaborations|Collaboration frequency| Bar Chart,  Network Graph|
+|3|Sailor’s Influence on Others|Direct and indirect influence edges| Bar Chart,  Network Graph|
+|4|Sailor’s Influence on Oceanus Folk|Oceanus Folk genre change| Line Chart,  Network Graph|
 
 ### Dashboard Description
 Influence on Sailor: Mapping the artists, genres, and works that shaped Sailor's musical identity and creative direction
@@ -30,10 +30,12 @@ Sailor's Influence on Others: Tracing the direct and indirect effects of Sailor'
 Sailor's Influence on Oceanus Folk: Examining how Sailor's breakthrough transformed the Oceanus Folk genre itself and the artists, songs, and albums she inspired
 
 ### Key Questions Answered
-Who and what shaped Sailor's sound before, during, and after her breakthrough?
-Which songs or albums were she a performer of or lyricist of?
-How far did her influence travel directly and indirectly?
-How did her success transform the Oceanus Folk community?
+<ul>
+<li>Who and what shaped Sailor's sound before, during, and after her breakthrough?</li>
+<li>Which songs or albums were she a performer of or lyricist of?</li>
+<li>How far did her influence travel directly and indirectly?</li>
+<li>How did her success transform the Oceanus Folk community?</li>
+</ul>
 
 ---
 
@@ -42,9 +44,9 @@ Purpose: Tracing how a small island genre became a global musical force
 
 | Dashboard | View | Key Metric | Chart Type |
 |---------|--------|---------|--------|
-|5|Oceanus Folk Influence Spread|Frequency of influence edges over time by interaction type|Line chart, multi-line chart|
-|6|Oceanus Folk’s Footprint|Genre network reach, artist engagement, Outbound genre origins|Network graph, bar charts|
-|7|Oceanus Folk Forecast|Genre adoption pre vs post 2028, temporal influence dynamics|Grouped bar, line chart|
+|5|Oceanus Folk Influence Spread|Frequency of influence edges over time by interaction type|Line Chart, Multi-Line Chart|
+|6|Oceanus Folk’s Footprint|Genre network reach, artist engagement, Outbound genre origins|Network Graph, Bar Chart|
+|7|Oceanus Folk Forecast|Genre adoption pre vs post 2028, temporal influence dynamics|Grouped Bar, Line Chart|
 
 ### Dashboard Description
 Oceanus Folk Influence Spread: Tracking the rise, peak, and stabilisation of Oceanus Folk's influence frequency from 2000 to 2038, and breaking down how that influence flowed through distinct interaction mechanisms and identifying which genres absorbed Oceanus Folk's influence most strongly
@@ -52,11 +54,13 @@ Oceanus Folk's Footprint: Mapping which genres and individual songs Oceanus Folk
 Oceanus Folk Forecast: Projecting the genre's trajectory based on current momentum, collaboration density, and the pipeline of emerging artists carrying the Oceanus Folk sound forward. Charting how Sailor Shift's 2028 breakthrough reshaped Oceanus Folk's influence trajectory showing which genre dominated pre-2028 genre inspirations.
 
 ### Key Questions Answered
-Was Oceanus Folk's rise gradual or triggered by a single breakthrough moment?
-Which edge type drove the most influential connections?
-Which genres and artists were most shaped by Oceanus Folk?
-Which genres fed most strongly back into Oceanus Folk's own evolving sound?
-How did Sailor's 2028 breakthrough change the genre's relationship with external influences?
+<ul>
+<li>Was Oceanus Folk's rise gradual or triggered by a single breakthrough moment?</li>
+<li>Which edge type drove the most influential connections?</li>
+<li>Which genres and artists were most shaped by Oceanus Folk?</li>
+<li>Which genres fed most strongly back into Oceanus Folk's own evolving sound?</li>
+<li>How did Sailor's 2028 breakthrough change the genre's relationship with external influences?</li>
+</ul>
 
 
 ---
@@ -79,10 +83,12 @@ What Makes a Rising Star: Profiling Sailor Shift, Orla Seabloom, and Beatrice Al
 Predicting the Next Oceanus Folk Star: Applying the rising star benchmark to all post-2028 Oceanus Folk artists to identify the three most likely breakouts by 2045 with confidence across multiple analytical lenses
 Overall Trends in Music Industry: Placing Sailor's dominance and Oceanus Folk's rise in full industry context across four decades of genre growth, confirming the genre's measurable impact on the global music landscape
 
-### Key Question Answered
-What dimensions define a rising star across output, craft, and influence?
-Which three post-2028 Oceanus Folk artists are most likely to break out by 2045?
-How does Oceanus Folk's growth compare to all other genres across four decades?
+### Key Questions Answered
+<ul>
+<li>What dimensions define a rising star across output, craft, and influence?</li>
+<li>Which three post-2028 Oceanus Folk artists are most likely to break out by 2045?</li>
+<li>How does Oceanus Folk's growth compare to all other genres across four decades?</li>
+</ul>
 
 
 

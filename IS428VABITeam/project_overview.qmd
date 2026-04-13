@@ -22,6 +22,8 @@ Identify and evaluate future rising stars using data-driven indicators
 - mc1_nodes.csv
 - edges_prepped.csv (Refer to Data Preparation for more details)
 
+## Key Findings
+Sailor Shift evolves from a highly influenced artist into a central industry force, drawing from diverse sources while developing a distinct identity that enables sustained and structurally embedded influence beyond her 2028 breakthrough. Her impact extends beyond her own career, acting as a catalyst for the rise of Oceanus Folk, which grew from a niche genre into a widely adopted and highly visible peak before declining into a stable background influence that continues shaping the broader music ecosystem. The genre’s spread is strongest in Indie Folk and is driven by collective adoption rather than individual dominance, illustrating how breakthroughs create short-lived surges followed by stabilisation. At the same time, rising star analysis identifies Orla Seabloom, Beatrice Albright, and Daniel O’Connell as standouts, with success defined by sustained output, recognised work, creative ownership, breakout moments, and strategic timing. Overall, the project highlights that music evolution is network-driven, where influence spreads across interconnected layers, genres follow cycles of growth and saturation, and only a few artists convert momentum into long-term industry impact.
 
 ## Built With
 1. Tableau

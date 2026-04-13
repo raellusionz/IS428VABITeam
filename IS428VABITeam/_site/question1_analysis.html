@@ -91,12 +91,12 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./project proposal.html"> 
-<span class="menu-text">Project Proposal</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="./project_overview.html"> 
 <span class="menu-text">Project Overview</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./project proposal.html"> 
+<span class="menu-text">Project Proposal</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./data_preparation.html"> 
@@ -114,12 +114,21 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="./poster.html"> 
 <span class="menu-text">Poster</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./userguide.html"> 
+<span class="menu-text">User Guide</span></a>
+  </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
     <a class="nav-link" href="https://github.com/raellusionz/IS428VABITeam"> <i class="bi bi-github" role="img">
 </i> 
 <span class="menu-text">GitHub</span></a>
+  </li>  
+  <li class="nav-item">
+    <span class="nav-link">
+<span class="menu-text">Tableau Dashboard</span>
+    </span>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -201,15 +210,18 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="songs-and-albums-network-graph">Songs and Albums Network Graph</h3>
 <p>The albums (orange nodes), songs (light green nodes), and record labels (blue nodes) influencing Sailor’s music</p>
 <hr>
-<p>Looking at the 1st Network Depth: Sailor is LyricalReferenceTo Drowned Harbor, InStyleOf The Saltwater Weavers and The Fiddle &amp; The Fjord, and takes DirectSamples from Ivy Echos. Oceanus Records is the ProducerOf Sailor. Ivy Echos and The Fiddler &amp; The Fjord are the two most heavily connected nodes. They act as primary nodes, meaning they either directly influenced Sailor or serve as connectors between many other songs and albums. The Saltwater Weavers and Drowned Harbor are secondary nodes with notable clusters of songs and albums connected to them via PerformerOf edges.</p>
-<p>Looking at the 2nd Network Depth: We can gain a better understanding of how Sailor has been influenced by the albums and songs relating to the 1st Network Depth. The graph is densely interconnected in the center, with many albums and songs connected to the 1st Network Depth nodes. This suggests that Sailor wasn’t just influenced by the musical groups in the 1st Network Depth, but the entire ecosystem of works associated with them.</p>
+<p><u>Looking at the 1st Network Depth:</u></p>
+<p>Sailor is LyricalReferenceTo Drowned Harbor, InStyleOf The Saltwater Weavers and The Fiddle &amp; The Fjord, and takes DirectSamples from Ivy Echos. Oceanus Records is the ProducerOf Sailor. Ivy Echos and The Fiddler &amp; The Fjord are the two most heavily connected nodes. They act as primary nodes, meaning they either directly influenced Sailor or serve as connectors between many other songs and albums. The Saltwater Weavers and Drowned Harbor are secondary nodes with notable clusters of songs and albums connected to them via PerformerOf edges.</p>
+<p><u>Looking at the 2nd Network Depth:</u> We can gain a better understanding of how Sailor has been influenced by the albums and songs relating to the 1st Network Depth. The graph is densely interconnected in the center, with many albums and songs connected to the 1st Network Depth nodes. This suggests that Sailor wasn’t just influenced by the musical groups in the 1st Network Depth, but the entire ecosystem of works associated with them.</p>
 </section>
 <section id="people-and-musical-groups-network-graph" class="level3">
 <h3 class="anchored" data-anchor-id="people-and-musical-groups-network-graph">People and Musical Groups Network Graph</h3>
 <p>The musicians (pink nodes) and bands (dark green nodes) influencing Sailor’s music</p>
 <hr>
-<p>Looking at the 1st Network Depth: Its insights are the same as the Songs and Albums Network Graph.</p>
-<p>Looking at the 2nd Network Depth: We can gain a better understanding of who Sailor has been influenced by relating to the 1st Network Depth. We can see which musical group or persons InterpolatesFrom, is InStyleOf, or takes LyricalReferenceTo each of the 1st Network Depth nodes. This suggests that Sailor is implicitly absorbing the broader stylistic and lyrical tradition those artists represent and belong to. Therefore, Sailor’s musical identity is shaped not just by who she directly drew from, but by the entire relational web of artistic lineage surrounding the 1st Network Depth nodes, making the influences richer, more layered, and more interconnected.</p>
+<p><u>Looking at the 1st Network Depth:</u></p>
+<p>Its insights are the same as the Songs and Albums Network Graph.</p>
+<p><u>Looking at the 2nd Network Depth:</u></p>
+<p>We can gain a better understanding of who Sailor has been influenced by relating to the 1st Network Depth. We can see which musical group or persons InterpolatesFrom, is InStyleOf, or takes LyricalReferenceTo each of the 1st Network Depth nodes. This suggests that Sailor is implicitly absorbing the broader stylistic and lyrical tradition those artists represent and belong to. Therefore, Sailor’s musical identity is shaped not just by who she directly drew from, but by the entire relational web of artistic lineage surrounding the 1st Network Depth nodes, making the influences richer, more layered, and more interconnected.</p>
 </section>
 <section id="overall-dashboard-analysis" class="level3">
 <h3 class="anchored" data-anchor-id="overall-dashboard-analysis">Overall Dashboard Analysis</h3>
@@ -224,9 +236,12 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="collaborations-bar-chart">Collaborations Bar Chart</h3>
 <p>Yearly collaboration activity, with Ivy Echos membership (2023-2026) and breakthrough year marked</p>
 <hr>
-<p><strong>Pre-Breakthrough (2024–2027) : </strong> The collaboration counts are low, hovering mostly at 1 per year. LyricistOf activity begins in this period, suggesting she was developing her songwriting identity before her breakthrough.</p>
-<p><strong>Breakthrough Year (2028) : </strong> There is a sharp spike, with collaboration count jumping to 6. LyricistOf and PerformerOf both surge simultaneously. Her breakthrough had an immediate effect on her collaborative output.</p>
-<p><strong>Post-Breakthrough (2029–2040) : </strong> Collaboration volume sustains at a higher level, with around 4–6 per year compared to the near-zero pre-breakthrough baseline. PerformerOf (purple) becomes the dominant relationship type, suggesting Sailor’s post-breakthrough identity is primarily as a performer. LyricistOf (gold) remains consistently present, showing she maintained her songwriting role even as her performing profile grew. There is also no significant drop-off toward 2040, suggesting Sailor’s collaborative momentum has been sustained in the long-run.</p>
+<p><u>Pre-Breakthrough (2024–2027):</u></p>
+<p>The collaboration counts are low, hovering mostly at 1 per year. LyricistOf activity begins in this period, suggesting she was developing her songwriting identity before her breakthrough.</p>
+<p><u>Breakthrough Year (2028):</u></p>
+<p>There is a sharp spike, with collaboration count jumping to 6. LyricistOf and PerformerOf both surge simultaneously. Her breakthrough had an immediate effect on her collaborative output.</p>
+<p><u>Post-Breakthrough (2029–2040):</u></p>
+<p>Collaboration volume sustains at a higher level, with around 4–6 per year compared to the near-zero pre-breakthrough baseline. PerformerOf (purple) becomes the dominant relationship type, suggesting Sailor’s post-breakthrough identity is primarily as a performer. LyricistOf (gold) remains consistently present, showing she maintained her songwriting role even as her performing profile grew. There is also no significant drop-off toward 2040, suggesting Sailor’s collaborative momentum has been sustained in the long-run.</p>
 <p>By filtering through Target Notable, the chart adds a commercial dimension, separating influences that achieved recognition (True) from those that did not (False). This tells us whether Sailor deliberately collaborated with high-profile works or collaborated with under-the-radar influences that never topped the charts. Sailor mainly collaborated for songs or albums that top the charts. This shows that Sailor either actively sought out collaboration with top chart artists or that her growing reputation naturally attracted them.</p>
 </section>
 <section id="collaborations-network-graph" class="level3">
@@ -255,8 +270,10 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="sailors-influence-network-graph">Sailor’s Influence Network Graph</h3>
 <p>Who was shaped by those Sailor influenced first (Pink nodes: Person; Blue nodes: Record Label; Dark Green nodes: Musical Group)</p>
 <hr>
-<p><strong>Looking at the 1st Network Depth: </strong> The insights are the same as in the Direct Influence Bar Chart.</p>
-<p><strong>Looking at the 2nd Network Depth: </strong> We can gain a better understanding of who Sailor has indirectly influenced by relating to the 1st Network Depth. We can see which musical group or persons is a ProducerOf or MemberOf each of the 1st Network Depth nodes. These members or producers might not be directly aware of how Sailor shaped the music that shaped them.</p>
+<p><u>Looking at the 1st Network Depth:</u></p>
+<p>The insights are the same as in the Direct Influence Bar Chart.</p>
+<p><u>Looking at the 2nd Network Depth:</u></p>
+<p>We can gain a better understanding of who Sailor has indirectly influenced by relating to the 1st Network Depth. We can see which musical group or persons is a ProducerOf or MemberOf each of the 1st Network Depth nodes. These members or producers might not be directly aware of how Sailor shaped the music that shaped them.</p>
 </section>
 <section id="overall-dashboard-analysis-2" class="level3">
 <h3 class="anchored" data-anchor-id="overall-dashboard-analysis-2">Overall Dashboard Analysis</h3>
@@ -271,17 +288,22 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="oceanus-folk-line-chart">Oceanus Folk Line Chart</h3>
 <p>Genre output over time, peaking around Sailor’s breakthrough and Ivy Echos years.</p>
 <hr>
-<p><strong>Pre-2020 (Baseline Era): </strong> Oceanus Folk genre output for both songs and albums remains consistently low initially and slowly increases to around 40-50 songs yearly. This shows that the Oceanus Folk genre was a niche, slow-growing community before Sailor’s emergence. The occasional green spikes suggest songs were always slightly more active than albums in this genre, but neither showed sustained momentum.</p>
-<p><strong>Ivy Echos Period (2023–2026):</strong> There is a sudden surge in song output, reaching the peak of 105 songs. This shows that Sailor’s membership in Ivy Echos acted as a catalyst for the entire genre, not just her own career.</p>
-<p><strong>Breakthrough Year (2028) and Post-Breakthrough (2029–2039):</strong> The songs and albums output drops sharply after the Sailor’s breakthrough as she has moved away from Oceanus Folk into Indie Pop and Indie Folk. The genre loses its primary engine of growth and returns toward lower, more sustainable output levels. However, output does not fully return to pre-2020 baseline levels, suggesting Sailor’s influence left a permanent impact on the genre’s overall activity.</p>
+<p><u>Pre-2020 (Baseline Era):</u></p>
+<p>Oceanus Folk genre output for both songs and albums remains consistently low initially and slowly increases to around 40-50 songs yearly. This shows that the Oceanus Folk genre was a niche, slow-growing community before Sailor’s emergence. The occasional green spikes suggest songs were always slightly more active than albums in this genre, but neither showed sustained momentum.</p>
+<p><u>Ivy Echos Period (2023–2026):</u></p>
+<p>There is a sudden surge in song output, reaching the peak of 105 songs. This shows that Sailor’s membership in Ivy Echos acted as a catalyst for the entire genre, not just her own career.</p>
+<p><u>Breakthrough Year (2028) and Post-Breakthrough (2029–2039):</u></p>
+<p>The songs and albums output drops sharply after the Sailor’s breakthrough as she has moved away from Oceanus Folk into Indie Pop and Indie Folk. The genre loses its primary engine of growth and returns toward lower, more sustainable output levels. However, output does not fully return to pre-2020 baseline levels, suggesting Sailor’s influence left a permanent impact on the genre’s overall activity.</p>
 <p>By filtering through Source Notable, the chart adds a commercial dimension, separating influences that achieved recognition (True) from those that did not (False). This tells us whether Oceanus Folk genre consists of high-profile works or under-the-radar works that never topped the charts. Oceanus Folk genre songs or albums mainly top the charts. This shows that the Oceanus Folk genre is doing well and people enjoy listening to it.</p>
 </section>
 <section id="sailors-influence-on-oceanus-folk-network-graph" class="level3">
 <h3 class="anchored" data-anchor-id="sailors-influence-on-oceanus-folk-network-graph">Sailor’s Influence on Oceanus Folk Network Graph</h3>
 <p>The albums (orange nodes), songs (light green nodes), and people (dark green nodes: Musical Group; pink nodes: Person) which Sailor influenced.</p>
 <hr>
-<p>Looking at the 1st Network Depth: Cassian Storm is LyricalReferenceTo Sailor, The Hollow Monarchs and Cassette Future are InStyleOf Sailor, Claire Holmes and The Phantom Operators InterpolatesFrom Sailor and Copper Canyon Ghosts takes DirectSamples from Sailor. Copper Canyon Ghosts emerges as the second major hub, with a number of songs and albums that it is a PerformerOf</p>
-<p>Looking at the 2nd Network Depth: We can gain a better understanding of who Sailor has indirectly influenced in the Oceanus Folk community by relating to the 1st Network Depth. Daniel O’Connell and Beatrice Albright form a secondary influence tier, each connected to multiple songs and albums via PerformerOf edges. This indicates that they are active members of the community who have absorbed Sailor’s musical impact.</p>
+<p><u>Looking at the 1st Network Depth:</u></p>
+<p>Cassian Storm is LyricalReferenceTo Sailor, The Hollow Monarchs and Cassette Future are InStyleOf Sailor, Claire Holmes and The Phantom Operators InterpolatesFrom Sailor and Copper Canyon Ghosts takes DirectSamples from Sailor. Copper Canyon Ghosts emerges as the second major hub, with a number of songs and albums that it is a PerformerOf</p>
+<p><u>Looking at the 2nd Network Depth:</u></p>
+<p>We can gain a better understanding of who Sailor has indirectly influenced in the Oceanus Folk community by relating to the 1st Network Depth. Daniel O’Connell and Beatrice Albright form a secondary influence tier, each connected to multiple songs and albums via PerformerOf edges. This indicates that they are active members of the community who have absorbed Sailor’s musical impact.</p>
 <p>The graph features a rich diversity of edge types throughout - purple (MemberOf), pink (PerformerOf), orange (InStyleOf), red (InterpolatesFrom), green (LyricalReferenceTo) - highlighting that Sailor’s influence on the Oceanus Folk community operates across every possible relational dimension.</p>
 </section>
 <section id="overall-dashboard-analysis-3" class="level3">

@@ -91,12 +91,12 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./project proposal.html"> 
-<span class="menu-text">Project Proposal</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="./project_overview.html"> 
 <span class="menu-text">Project Overview</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./project proposal.html"> 
+<span class="menu-text">Project Proposal</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./data_preparation.html"> 
@@ -114,12 +114,21 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="./poster.html"> 
 <span class="menu-text">Poster</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./userguide.html"> 
+<span class="menu-text">User Guide</span></a>
+  </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
     <a class="nav-link" href="https://github.com/raellusionz/IS428VABITeam"> <i class="bi bi-github" role="img">
 </i> 
 <span class="menu-text">GitHub</span></a>
+  </li>  
+  <li class="nav-item">
+    <span class="nav-link">
+<span class="menu-text">Tableau Dashboard</span>
+    </span>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -209,7 +218,8 @@ ul.task-list li input[type="checkbox"] {
 <p>How does each artist score across all 5 rising star dimensions?</p>
 <hr>
 <p>The radar chart synthesises all five dimensions into a single visual. Sailor Shift’s polygon is the most balanced — strong across singles (100), craft (100), and influence (100), with moderate output volume (25) and notable ratio (54), confirming her position as the benchmark rising star who combines viral breakout potential, creative ownership, and broad industry connectivity. Orla Seabloom leads on output volume and notable ratio, demonstrating exceptional debut quality, but her lower craft ratio and network influence score suggest she is still building the infrastructure for a sustained career. Beatrice Albright presents the most balanced emerging profile — strong notable ratio, growing craft ownership, and moderate network influence — making her trajectory most comparable to Sailor’s early career arc. While Orla’s quality metrics are impressive, Beatrice’s balance across all five dimensions more closely mirrors the profile of an artist positioned for long-term rising star status.</p>
-<p>Explanation on the 5 dimensions: Output volume — Is this artist building a career, or did they just show up? Measures years of active releases. The purpose isn’t to reward prolific artists — it’s to filter out one-moment artists. Sustained output is the baseline signal of long-term commitment.</p>
+<p><u>Explanation on the 5 dimensions:</u></p>
+<p>Output volume — Is this artist building a career, or did they just show up? Measures years of active releases. The purpose isn’t to reward prolific artists — it’s to filter out one-moment artists. Sustained output is the baseline signal of long-term commitment.</p>
 <p>Notable ratio — When they release, does it land? Measures what proportion of works achieved recognition. A 100% notable ratio signals strong creative judgment. On its own it can be misleading — one lucky song scores perfectly — which is why it only means something when read alongside output volume.</p>
 <p>Singles and viral moments — Has this artist broken through publicly, not just critically? Notable works can stay inside an OF bubble. A viral single crosses a different threshold entirely — it’s the ignition event that moves an artist from “respected locally” to “known globally.” This dimension is most directly tied to Sailor’s own story.</p>
 <p>Craft depth — Does this artist own their creative identity, or are they executing someone else’s? Measures composer, lyricist, and producer credits beyond just performer credits. Artists who write and produce their own work have a distinct voice that persists over time. Artists with only performer credits are dependent on collaborators, making their trajectory far less predictable.</p>
@@ -230,7 +240,13 @@ ul.task-list li input[type="checkbox"] {
 <p>Who scores highest across all post-2028 Oceanus Folk artists?</p>
 <hr>
 <p>The prediction score bar immediately reveals a dramatic gap between the top 3 and the rest of the field. Orla Seabloom leads with 32, Beatrice Albright and Daniel O’Connell follow at 30, and every other post-2028 Oceanus Folk artist scores 5 or less. This is not a marginal prediction — the top 3 are categorically separated from the field by a factor of 6. The reference line at 26 marks the threshold above which an artist has demonstrated both sustained notable output and meaningful canon connections. Only three artists cross it.</p>
-<p>Why these three dimensions were chosen The formula uses Notable Works, Singles, and Influence Draw — and deliberately excludes Output Volume and Craft Ratio. Here is the reasoning for each decision: Notable Works × 3 — highest weight Notable works is the closest proxy to demonstrated market validation in the dataset. A work marked notable has already proven it resonated beyond just being released — it achieved recognition. The weight of 3 reflects that sustained quality output is the single strongest predictor of rising star status. One notable work could be luck. Multiple notable works across a career signals repeatable craft. An artist who consistently produces recognised work has already demonstrated the core requirement of stardom — the ability to connect with an audience. Singles × 2 — medium weight Singles represent intentional breakout attempts — the artist and their team believed a specific work had viral or radio potential and positioned it accordingly. A single is a strategic signal, not just an output metric. Weight of 2 reflects that singles matter but are secondary to overall notable output. A single can be released and fail. A notable single that succeeds is already captured by the Notable Works dimension. Singles here specifically rewards the strategic behaviour of attempting a breakout, which is a necessary step in the rising star trajectory even if the outcome is uncertain. Influence Draw × 2 — medium weight Influence draw measures how deeply an artist roots their work in the existing genre canon — through covers, interpolations, style references, lyrical references, and direct samples. For Oceanus Folk specifically, this signals genre authenticity and community belonging. Artists who reference the canon are signalling to existing fans and gatekeepers that they understand and respect the tradition. Weight of 2 reflects that genre authenticity is important for niche genre stardom but is not the primary driver of mainstream success. Why Output Volume and Craft Ratio were excluded Output Volume measures career infrastructure — how consistently an artist releases. This is important for the rising star profile (Dashboard 1) but is a leading indicator of future potential rather than evidence of current trajectory. An artist can release prolifically with zero notable works. Volume without quality does not predict stardom. Craft Ratio measures creative ownership — the percentage of performed works the artist also wrote. Again important for long-term sustainability but not directly predictive of near-term breakthrough. An artist can write all their own material and remain completely unknown. Craft ratio rewards process, not outcomes.</p>
+<p><u>Why these three dimensions were chosen?</u></p>
+<p>The formula uses Notable Works, Singles, and Influence Draw — and deliberately excludes Output Volume and Craft Ratio. Here is the reasoning for each decision:</p>
+<p>Notable Works × 3 — highest weight Notable works is the closest proxy to demonstrated market validation in the dataset. A work marked notable has already proven it resonated beyond just being released — it achieved recognition. The weight of 3 reflects that sustained quality output is the single strongest predictor of rising star status. One notable work could be luck. Multiple notable works across a career signals repeatable craft. An artist who consistently produces recognised work has already demonstrated the core requirement of stardom — the ability to connect with an audience.</p>
+<p>Singles × 2 — medium weight Singles represent intentional breakout attempts — the artist and their team believed a specific work had viral or radio potential and positioned it accordingly. A single is a strategic signal, not just an output metric. Weight of 2 reflects that singles matter but are secondary to overall notable output. A single can be released and fail. A notable single that succeeds is already captured by the Notable Works dimension. Singles here specifically rewards the strategic behaviour of attempting a breakout, which is a necessary step in the rising star trajectory even if the outcome is uncertain.</p>
+<p>Influence Draw × 2 — medium weight Influence draw measures how deeply an artist roots their work in the existing genre canon — through covers, interpolations, style references, lyrical references, and direct samples. For Oceanus Folk specifically, this signals genre authenticity and community belonging. Artists who reference the canon are signalling to existing fans and gatekeepers that they understand and respect the tradition. Weight of 2 reflects that genre authenticity is important for niche genre stardom but is not the primary driver of mainstream success.</p>
+<p><u>Why Output Volume and Craft Ratio were excluded?</u></p>
+<p>Output Volume measures career infrastructure — how consistently an artist releases. This is important for the rising star profile (Dashboard 1) but is a leading indicator of future potential rather than evidence of current trajectory. An artist can release prolifically with zero notable works. Volume without quality does not predict stardom. Craft Ratio measures creative ownership — the percentage of performed works the artist also wrote. Again important for long-term sustainability but not directly predictive of near-term breakthrough. An artist can write all their own material and remain completely unknown. Craft ratio rewards process, not outcomes.</p>
 </section>
 <section id="rising-star-scatter-plot" class="level3">
 <h3 class="anchored" data-anchor-id="rising-star-scatter-plot">Rising Star Scatter Plot</h3>
