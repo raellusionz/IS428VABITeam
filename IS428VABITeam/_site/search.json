@@ -28,25 +28,11 @@
     "text": "Accessing the Dashboard\nClick this link to access our dashboard within Netlify.  Click this link to access our dashboard on Tableau Public."
   },
   {
-    "objectID": "userguide.html#dashboard-features",
-    "href": "userguide.html#dashboard-features",
+    "objectID": "userguide.html#accessing-the-guide",
+    "href": "userguide.html#accessing-the-guide",
     "title": "User Guide",
-    "section": "Dashboard Features",
-    "text": "Dashboard Features\n\n1. Filters Panel\n\n\n\nFilters Panel\n\n\nUse the left-hand panel to filter data by:\n\nDate Range — Select a start and end date\nCategory — Choose one or multiple categories\nRegion — Filter by geographic region\n\n\n\n2. Main Chart Area\n\n\n\nMain Chart\n\n\n\nHover over any data point to see detailed tooltips\nClick a bar/point to drill down into that segment\nUse the legend to show/hide specific series\n\n\n\n3. Summary Cards\n\n\n\nSummary Cards\n\n\nThe top row shows key metrics that update dynamically based on your filter selections.\n\n\n4. Export\n\nClick the Download button to export the current view as PNG or CSV"
-  },
-  {
-    "objectID": "userguide.html#troubleshooting",
-    "href": "userguide.html#troubleshooting",
-    "title": "User Guide",
-    "section": "Troubleshooting",
-    "text": "Troubleshooting\n\n\n\n\n\n\n\nIssue\nSolution\n\n\n\n\nDashboard not loading\nRefresh the page or clear browser cache\n\n\nFilters not responding\nTry resetting filters using the Reset button\n\n\nCharts appear blank\nCheck your internet connection"
-  },
-  {
-    "objectID": "userguide.html#contact",
-    "href": "userguide.html#contact",
-    "title": "User Guide",
-    "section": "Contact",
-    "text": "Contact\nFor questions or feedback, contact the team at is428vabiteam@smu.edu.sg"
+    "section": "Accessing the Guide",
+    "text": "Accessing the Guide\nClick this link to access our user guide."
   },
   {
     "objectID": "project proposal.html",
@@ -102,7 +88,7 @@
     "href": "analysis.html",
     "title": "Analysis & Results",
     "section": "",
-    "text": "Insights into Sailor Shift, Oceanus Folk, and Future Rising Stars in the Industry Through a series of visual analytics using Tableau, Gephi, and Python, we have uncovered insights into Sailor Shift’s career, how the influence of Oceanus Folk has spread through the musical world, and the future rising stars in the industry.\n\nLinks to Each Question’s Analysis and Findings\nQuestion 1 Analysis  Question 2 Analysis  Question 3 Analysis"
+    "text": "Through a series of visual analytics using Tableau, Gephi, and Python, we have uncovered insights into Sailor Shift’s career, how the influence of Oceanus Folk has spread through the musical world, and the future rising stars in the industry.\n\n\n\nQuestion 1 Analysis \nQuestion 2 Analysis \nQuestion 3 Analysis"
   },
   {
     "objectID": "prototypes.html",
@@ -175,41 +161,6 @@
     "text": "Sailor’s Influence On Broader Oceanus Folk Community\n\n\nOceanus Folk Line Chart\nGenre output over time, peaking around Sailor’s breakthrough and Ivy Echos years.\n\nPre-2020 (Baseline Era):\nOceanus Folk genre output for both songs and albums remains consistently low initially and slowly increases to around 40-50 songs yearly. This shows that the Oceanus Folk genre was a niche, slow-growing community before Sailor’s emergence. The occasional green spikes suggest songs were always slightly more active than albums in this genre, but neither showed sustained momentum.\nIvy Echos Period (2023–2026):\nThere is a sudden surge in song output, reaching the peak of 105 songs. This shows that Sailor’s membership in Ivy Echos acted as a catalyst for the entire genre, not just her own career.\nBreakthrough Year (2028) and Post-Breakthrough (2029–2039):\nThe songs and albums output drops sharply after the Sailor’s breakthrough as she has moved away from Oceanus Folk into Indie Pop and Indie Folk. The genre loses its primary engine of growth and returns toward lower, more sustainable output levels. However, output does not fully return to pre-2020 baseline levels, suggesting Sailor’s influence left a permanent impact on the genre’s overall activity.\nBy filtering through Source Notable, the chart adds a commercial dimension, separating influences that achieved recognition (True) from those that did not (False). This tells us whether Oceanus Folk genre consists of high-profile works or under-the-radar works that never topped the charts. Oceanus Folk genre songs or albums mainly top the charts. This shows that the Oceanus Folk genre is doing well and people enjoy listening to it.\n\n\nSailor’s Influence on Oceanus Folk Network Graph\nThe albums (orange nodes), songs (light green nodes), and people (dark green nodes: Musical Group; pink nodes: Person) which Sailor influenced.\n\nLooking at the 1st Network Depth:\nCassian Storm is LyricalReferenceTo Sailor, The Hollow Monarchs and Cassette Future are InStyleOf Sailor, Claire Holmes and The Phantom Operators InterpolatesFrom Sailor and Copper Canyon Ghosts takes DirectSamples from Sailor. Copper Canyon Ghosts emerges as the second major hub, with a number of songs and albums that it is a PerformerOf\nLooking at the 2nd Network Depth:\nWe can gain a better understanding of who Sailor has indirectly influenced in the Oceanus Folk community by relating to the 1st Network Depth. Daniel O’Connell and Beatrice Albright form a secondary influence tier, each connected to multiple songs and albums via PerformerOf edges. This indicates that they are active members of the community who have absorbed Sailor’s musical impact.\nThe graph features a rich diversity of edge types throughout - purple (MemberOf), pink (PerformerOf), orange (InStyleOf), red (InterpolatesFrom), green (LyricalReferenceTo) - highlighting that Sailor’s influence on the Oceanus Folk community operates across every possible relational dimension.\n\n\nOverall Dashboard Analysis\nSailor’s role in Oceanus Folk reflects her influence on the genre’s trajectory and identity. Rather than simply contributing to its growth, she acts as a pivotal force that reshapes how the genre evolves, leaving behind benefits that persist even after she switched her genre focus elsewhere. The patterns suggest that her impact is enduring, creating momentum that other artists continue to build upon while redefining the creative direction of the space. This positions Sailor not just as a key artist within Oceanus Folk, but as someone whose presence reconfigures the genre’s long-term development and legacy."
   },
   {
-    "objectID": "data_preparation.html",
-    "href": "data_preparation.html",
-    "title": "Data Preparation",
-    "section": "",
-    "text": "The dataset used for this analysis is drawn from the VAST 2025 Mini Challenge 1 (MC1), a synthetic music industry knowledge graph modelling relationship among songs, albums, musical groups, and record labels. It was sourced from two origins: a crowdsourced repository of musical influence, and a journalist-compiled record of chart performance."
-  },
-  {
-    "objectID": "data_preparation.html#dataset-overview",
-    "href": "data_preparation.html#dataset-overview",
-    "title": "Data Preparation",
-    "section": "",
-    "text": "The dataset used for this analysis is drawn from the VAST 2025 Mini Challenge 1 (MC1), a synthetic music industry knowledge graph modelling relationship among songs, albums, musical groups, and record labels. It was sourced from two origins: a crowdsourced repository of musical influence, and a journalist-compiled record of chart performance."
-  },
-  {
-    "objectID": "data_preparation.html#graph-schema",
-    "href": "data_preparation.html#graph-schema",
-    "title": "Data Preparation",
-    "section": "Graph Schema",
-    "text": "Graph Schema\n\nNode Variables\n\n\n\n\n\n\n\n\n\nVariables\nType\nApplicable Node Types\nDescription\n\n\n\n\nNode Type\nString\nAll\nCategorical type of the node\n\n\nname\nString\nAll\nFull name of the person, group, label, song, or album\n\n\nstage_name\nString\nPerson\nArtist/stage name if different from legal name (near-complete nulls, ~97–99%)\n\n\ngenre\nString\nSong, Album\nMusical genre of the work\n\n\nrelease_date\nInteger (year)\nSong, Album\nYear the work was released\n\n\nwritten_date\nInteger (year)\nSong, Album\nYear the work was written\n\n\nnotable\nBoolean\nSong, Album\nWhether the work appeared on a top record chart\n\n\nnotoriety_date\nInteger (year)\nSong, Album\nYear the work first appeared on a top chart (only present if notable = True)\n\n\nsingle\nBoolean\nSong\nWhether the song was released as a standalone single rather than as part of an album\n\n\n\n\n\nEdge Variables\n\n\n\n\n\n\n\n\n\nEdge Type\nSource\nTarget\nDescription\n\n\n\n\nPerformerOf\nPerson / MusicalGroup\nSong / Album\nSource node performed the target work\n\n\nComposerOf\nPerson\nSong / Album\nSource node composed the target work\n\n\nLyricistOf\nPerson\nSong / Album\nSource node wrote lyrics for the target work\n\n\nProducerOf\nPerson / RecordLabel\nSong / Album / Person / MusicalGroup\nSource node participated in the production of the target\n\n\nRecordedOf\nSong / Album\nRecordLabel\nTarget label aided in recording the source work\n\n\nDistributedBy\nSong / Album\nRecordLabel\nTarget label aided in distributing the source work\n\n\nMemberOf\nPerson\nMusicalGroup\nSource node is / was a member of the target group\n\n\nInStyleOf\nSong / Album\nSong / Album / Person / MusicalGroup\nSource node was performed at least partly in the style of the target\n\n\nInterpolatesFrom\nSong / Album\nSong / Album\nSource node interpolated a melody from the target\n\n\nCoverOf\nSong / Album\nSong / Album\nSource node is a cover version of the target\n\n\nLyricalReferenceTo\nSong / Album\nSong / Album\nSource node makes a lyrical reference to the target\n\n\nDirectlySamples\nSong / Album\nSong / Album\nSource node directly reuses an audio recording from the target via sampling"
-  },
-  {
-    "objectID": "data_preparation.html#cleaning-and-preparation-pipeline",
-    "href": "data_preparation.html#cleaning-and-preparation-pipeline",
-    "title": "Data Preparation",
-    "section": "Cleaning and Preparation Pipeline",
-    "text": "Cleaning and Preparation Pipeline\nThe raw graph was exported as separate CSVs for nodes (mc1_nodes.csv) and edges (mc1_edges.csv) and processed through the following pipeline, producing a final enriched edge table edges_prepped.csv with 37,857 rows and 23 columns.  Step 1: Data Loading  The node list, edge list, and raw JSON graph were loaded and inspected for structure and field coverage. Step 2: Node–Edge Join  The raw edge list contained only source and target node IDs with no contextual information. Node attributes were joined onto the edge table twice via pandas left merge — once for the source endpoint and once for the target — producing a flat, denormalised table where each row carries full metadata about both connected entities. Step 3: Type Casting  Date columns were coerced from mixed-type floats to numeric. Boolean fields (notable, single) had nulls filled with False, as the absence of a positive label in this context implies the attribute does not apply. Step 4: Year Derivation  Unified source_year and target_year columns were created using release_date as the primary source, falling back to written_date when release information was absent. Both are stored as nullable Int64 to correctly preserve missing values as NaN rather than converting them to zero. Step 5: Integer Conversion  Remaining float year values (e.g. 2026.0) were cleaned to proper integers using pandas Int64 dtype across all date columns. Step 6: Column Pruning  Four columns were dropped: stage_name (source and target) due to near-complete nulls, and written_date (source and target) as their values were already subsumed by the derived year columns. Step 7: Column Reordering  The final 23 columns were reordered for readability: edge metadata first, then source node attributes, then target node attributes."
-  },
-  {
-    "objectID": "poster.html",
-    "href": "poster.html",
-    "title": "Project Poster",
-    "section": "",
-    "text": "Our project poster summarises the motivation, approach, and key findings of this project."
-  },
-  {
     "objectID": "project_overview.html",
     "href": "project_overview.html",
     "title": "Oceanus Folk: Then-and-Now",
@@ -238,11 +189,53 @@
     "text": "Dataset\n\nmc1_edges.csv\nmc1_nodes.csv\nedges_prepped.csv (Refer to Data Preparation for more details)"
   },
   {
+    "objectID": "project_overview.html#key-findings",
+    "href": "project_overview.html#key-findings",
+    "title": "Oceanus Folk: Then-and-Now",
+    "section": "Key Findings",
+    "text": "Key Findings\nSailor Shift evolves from a highly influenced artist into a central industry force, drawing from diverse sources while developing a distinct identity that enables sustained and structurally embedded influence beyond her 2028 breakthrough. Her impact extends beyond her own career, acting as a catalyst for the rise of Oceanus Folk, which grew from a niche genre into a widely adopted and highly visible peak before declining into a stable background influence that continues shaping the broader music ecosystem. The genre’s spread is strongest in Indie Folk and is driven by collective adoption rather than individual dominance, illustrating how breakthroughs create short-lived surges followed by stabilisation. At the same time, rising star analysis identifies Orla Seabloom, Beatrice Albright, and Daniel O’Connell as standouts, with success defined by sustained output, recognised work, creative ownership, breakout moments, and strategic timing. Overall, the project highlights that music evolution is network-driven, where influence spreads across interconnected layers, genres follow cycles of growth and saturation, and only a few artists convert momentum into long-term industry impact."
+  },
+  {
     "objectID": "project_overview.html#built-with",
     "href": "project_overview.html#built-with",
     "title": "Oceanus Folk: Then-and-Now",
     "section": "Built With",
     "text": "Built With\n\nTableau\nGephi\nPython\nQuarto"
+  },
+  {
+    "objectID": "poster.html",
+    "href": "poster.html",
+    "title": "Project Poster",
+    "section": "",
+    "text": "Our project poster summarises the motivation, approach, and key findings of this project."
+  },
+  {
+    "objectID": "data_preparation.html",
+    "href": "data_preparation.html",
+    "title": "Data Preparation",
+    "section": "",
+    "text": "The dataset used for this analysis is drawn from the VAST 2025 Mini Challenge 1 (MC1), a synthetic music industry knowledge graph modelling relationship among songs, albums, musical groups, and record labels. It was sourced from two origins: a crowdsourced repository of musical influence, and a journalist-compiled record of chart performance."
+  },
+  {
+    "objectID": "data_preparation.html#dataset-overview",
+    "href": "data_preparation.html#dataset-overview",
+    "title": "Data Preparation",
+    "section": "",
+    "text": "The dataset used for this analysis is drawn from the VAST 2025 Mini Challenge 1 (MC1), a synthetic music industry knowledge graph modelling relationship among songs, albums, musical groups, and record labels. It was sourced from two origins: a crowdsourced repository of musical influence, and a journalist-compiled record of chart performance."
+  },
+  {
+    "objectID": "data_preparation.html#graph-schema",
+    "href": "data_preparation.html#graph-schema",
+    "title": "Data Preparation",
+    "section": "Graph Schema",
+    "text": "Graph Schema\n\nNode Variables\n\n\n\n\n\n\n\n\n\nVariables\nType\nApplicable Node Types\nDescription\n\n\n\n\nNode Type\nString\nAll\nCategorical type of the node\n\n\nname\nString\nAll\nFull name of the person, group, label, song, or album\n\n\nstage_name\nString\nPerson\nArtist/stage name if different from legal name (near-complete nulls, ~97–99%)\n\n\ngenre\nString\nSong, Album\nMusical genre of the work\n\n\nrelease_date\nInteger (year)\nSong, Album\nYear the work was released\n\n\nwritten_date\nInteger (year)\nSong, Album\nYear the work was written\n\n\nnotable\nBoolean\nSong, Album\nWhether the work appeared on a top record chart\n\n\nnotoriety_date\nInteger (year)\nSong, Album\nYear the work first appeared on a top chart (only present if notable = True)\n\n\nsingle\nBoolean\nSong\nWhether the song was released as a standalone single rather than as part of an album\n\n\n\n\n\nEdge Variables\n\n\n\n\n\n\n\n\n\nEdge Type\nSource\nTarget\nDescription\n\n\n\n\nPerformerOf\nPerson / MusicalGroup\nSong / Album\nSource node performed the target work\n\n\nComposerOf\nPerson\nSong / Album\nSource node composed the target work\n\n\nLyricistOf\nPerson\nSong / Album\nSource node wrote lyrics for the target work\n\n\nProducerOf\nPerson / RecordLabel\nSong / Album / Person / MusicalGroup\nSource node participated in the production of the target\n\n\nRecordedOf\nSong / Album\nRecordLabel\nTarget label aided in recording the source work\n\n\nDistributedBy\nSong / Album\nRecordLabel\nTarget label aided in distributing the source work\n\n\nMemberOf\nPerson\nMusicalGroup\nSource node is / was a member of the target group\n\n\nInStyleOf\nSong / Album\nSong / Album / Person / MusicalGroup\nSource node was performed at least partly in the style of the target\n\n\nInterpolatesFrom\nSong / Album\nSong / Album\nSource node interpolated a melody from the target\n\n\nCoverOf\nSong / Album\nSong / Album\nSource node is a cover version of the target\n\n\nLyricalReferenceTo\nSong / Album\nSong / Album\nSource node makes a lyrical reference to the target\n\n\nDirectlySamples\nSong / Album\nSong / Album\nSource node directly reuses an audio recording from the target via sampling"
+  },
+  {
+    "objectID": "data_preparation.html#cleaning-and-preparation-pipeline",
+    "href": "data_preparation.html#cleaning-and-preparation-pipeline",
+    "title": "Data Preparation",
+    "section": "Cleaning and Preparation Pipeline",
+    "text": "Cleaning and Preparation Pipeline\nThe raw graph was exported as separate CSVs for nodes (mc1_nodes.csv) and edges (mc1_edges.csv) and processed through the following pipeline, producing a final enriched edge table edges_prepped.csv with 37,857 rows and 23 columns.  Step 1: Data Loading  The node list, edge list, and raw JSON graph were loaded and inspected for structure and field coverage. Step 2: Node–Edge Join  The raw edge list contained only source and target node IDs with no contextual information. Node attributes were joined onto the edge table twice via pandas left merge — once for the source endpoint and once for the target — producing a flat, denormalised table where each row carries full metadata about both connected entities. Step 3: Type Casting  Date columns were coerced from mixed-type floats to numeric. Boolean fields (notable, single) had nulls filled with False, as the absence of a positive label in this context implies the attribute does not apply. Step 4: Year Derivation  Unified source_year and target_year columns were created using release_date as the primary source, falling back to written_date when release information was absent. Both are stored as nullable Int64 to correctly preserve missing values as NaN rather than converting them to zero. Step 5: Integer Conversion  Remaining float year values (e.g. 2026.0) were cleaned to proper integers using pandas Int64 dtype across all date columns. Step 6: Column Pruning  Four columns were dropped: stage_name (source and target) due to near-complete nulls, and written_date (source and target) as their values were already subsumed by the derived year columns. Step 7: Column Reordering  The final 23 columns were reordered for readability: edge metadata first, then source node attributes, then target node attributes."
   },
   {
     "objectID": "question3_analysis.html",
@@ -308,90 +301,6 @@
     "text": "A visual analytics and storytelling project designed to trace the rise of Sailor Shift, map the global diffusion of Oceanus Folk, and identify the next generation of breakout artists through interactive dashboards built on a music knowledge graph collected by journalist Silas Reed."
   },
   {
-    "objectID": "storyboard.html#section-1-the-sailor-shift-journey",
-    "href": "storyboard.html#section-1-the-sailor-shift-journey",
-    "title": "Oceanus Folk: Then-and-Now Storyboard",
-    "section": "Section 1: The Sailor Shift Journey",
-    "text": "Section 1: The Sailor Shift Journey\nPurpose: Profiling Sailor Shift’s career, collaborations, and influence on the Oceanus Folk community\n\n\n\n\n\n\n\n\n\nDashboard\nView\nKey Metric\nChart Type\n\n\n\n\n1\nInfluences on Sailor\nInfluence edges by artist and genre, Direct and indirect influence edges\nBar Chart, Network Graph\n\n\n2\nSailor’s Collaborations\nCollaboration frequency\nBar Chart, Network Graph\n\n\n3\nSailor’s Influence on Others\nDirect and indirect influence edges\nBar Chart, Network Graph\n\n\n4\nSailor’s Influence on Oceanus Folk\nOceanus Folk genre change\nLine Chart, Network Graph\n\n\n\n\nDashboard Description\nInfluence on Sailor: Mapping the artists, genres, and works that shaped Sailor’s musical identity and creative direction Sailor’s Collaborations: Visualising which albums and songs Sailor has worked on directly and how frequently Sailor’s Influence on Others: Tracing the direct and indirect effects of Sailor’s work on other artists, showing how her collaborations seeded influence beyond her immediate network Sailor’s Influence on Oceanus Folk: Examining how Sailor’s breakthrough transformed the Oceanus Folk genre itself and the artists, songs, and albums she inspired\n\n\nKey Questions Answered\n\n\nWho and what shaped Sailor’s sound before, during, and after her breakthrough?\n\n\nWhich songs or albums were she a performer of or lyricist of?\n\n\nHow far did her influence travel directly and indirectly?\n\n\nHow did her success transform the Oceanus Folk community?"
-  },
-  {
-    "objectID": "storyboard.html#section-2-the-rise-of-oceanus-folk",
-    "href": "storyboard.html#section-2-the-rise-of-oceanus-folk",
-    "title": "Oceanus Folk: Then-and-Now Storyboard",
-    "section": "Section 2: The Rise of Oceanus Folk",
-    "text": "Section 2: The Rise of Oceanus Folk\nPurpose: Tracing how a small island genre became a global musical force\n\n\n\n\n\n\n\n\n\nDashboard\nView\nKey Metric\nChart Type\n\n\n\n\n5\nOceanus Folk Influence Spread\nFrequency of influence edges over time by interaction type\nLine Chart, Multi-Line Chart\n\n\n6\nOceanus Folk’s Footprint\nGenre network reach, artist engagement, Outbound genre origins\nNetwork Graph, Bar Chart\n\n\n7\nOceanus Folk Forecast\nGenre adoption pre vs post 2028, temporal influence dynamics\nGrouped Bar, Line Chart\n\n\n\n\nDashboard Description\nOceanus Folk Influence Spread: Tracking the rise, peak, and stabilisation of Oceanus Folk’s influence frequency from 2000 to 2038, and breaking down how that influence flowed through distinct interaction mechanisms and identifying which genres absorbed Oceanus Folk’s influence most strongly Oceanus Folk’s Footprint: Mapping which genres and individual songs Oceanus Folk reached through a network graph, ranking the artists most engaged with Oceanus Folk-inspired works, and uncovering which genre is the greatest source of inspiration feeding back into Oceanus Folk itself Oceanus Folk Forecast: Projecting the genre’s trajectory based on current momentum, collaboration density, and the pipeline of emerging artists carrying the Oceanus Folk sound forward. Charting how Sailor Shift’s 2028 breakthrough reshaped Oceanus Folk’s influence trajectory showing which genre dominated pre-2028 genre inspirations.\n\n\nKey Questions Answered\n\n\nWas Oceanus Folk’s rise gradual or triggered by a single breakthrough moment?\n\n\nWhich edge type drove the most influential connections?\n\n\nWhich genres and artists were most shaped by Oceanus Folk?\n\n\nWhich genres fed most strongly back into Oceanus Folk’s own evolving sound?\n\n\nHow did Sailor’s 2028 breakthrough change the genre’s relationship with external influences?"
-  },
-  {
-    "objectID": "storyboard.html#section-3-the-next-generation",
-    "href": "storyboard.html#section-3-the-next-generation",
-    "title": "Oceanus Folk: Then-and-Now Storyboard",
-    "section": "Section 3: The Next Generation",
-    "text": "Section 3: The Next Generation\nPurpose: Building a rising star profile and predicting who breaks out next\n\n\n\n\n\n\n\n\n\nDashboard\nView\nKey Metric\nChart Type\n\n\n\n\n8\nWhat Makes a Rising Star\n5-dimension normalised profile across 3 benchmark artists\nRadar Chart, Line Chart, Bar Chart\n\n\n9\nPredicting the Next Oceanus Folk Star\nComposite prediction score, career timing, influence gap\nBar Chart, Scatter Plot, Gantt Chart\n\n\n10\nOverall Trends in Music Industry\nCumulative genre growth, industry-wide artist ranking\nMulti-line Chart, Ranked Bar Chart\n\n\n\n\nDashboard Description:\nWhat Makes a Rising Star: Profiling Sailor Shift, Orla Seabloom, and Beatrice Albright across five dimensions to construct a data-driven benchmark template of what artistic breakout looks like Predicting the Next Oceanus Folk Star: Applying the rising star benchmark to all post-2028 Oceanus Folk artists to identify the three most likely breakouts by 2045 with confidence across multiple analytical lenses Overall Trends in Music Industry: Placing Sailor’s dominance and Oceanus Folk’s rise in full industry context across four decades of genre growth, confirming the genre’s measurable impact on the global music landscape\n\n\nKey Questions Answered\n\n\nWhat dimensions define a rising star across output, craft, and influence?\n\n\nWhich three post-2028 Oceanus Folk artists are most likely to break out by 2045?\n\n\nHow does Oceanus Folk’s growth compare to all other genres across four decades?"
-  },
-  {
-    "objectID": "project_overview.html#key-fin",
-    "href": "project_overview.html#key-fin",
-    "title": "Oceanus Folk: Then-and-Now",
-    "section": "Key Fin",
-    "text": "Key Fin\nSailor Shift evolves from a highly influenced artist into a central industry force, drawing from diverse sources while developing a distinct identity that enables sustained and structurally embedded influence beyond her 2028 breakthrough. Her impact extends beyond her own career, acting as a catalyst for the rise of Oceanus Folk, which grew from a niche genre into a widely adopted and highly visible peak before declining into a stable background influence that continues shaping the broader music ecosystem. The genre’s spread is strongest in Indie Folk and is driven by collective adoption rather than individual dominance, illustrating how breakthroughs create short-lived surges followed by stabilisation. At the same time, rising star analysis identifies Orla Seabloom, Beatrice Albright, and Daniel O’Connell as standouts, with success defined by sustained output, recognised work, creative ownership, breakout moments, and strategic timing. Overall, the project highlights that music evolution is network-driven, where influence spreads across interconnected layers, genres follow cycles of growth and saturation, and only a few artists convert momentum into long-term industry impact."
-  },
-  {
-    "objectID": "question3_analysis.html#explanation-on-the-5-dimensions",
-    "href": "question3_analysis.html#explanation-on-the-5-dimensions",
-    "title": "Question 3 Analysis",
-    "section": "Explanation on the 5 dimensions:",
-    "text": "Explanation on the 5 dimensions:\nOutput volume — Is this artist building a career, or did they just show up? Measures years of active releases. The purpose isn’t to reward prolific artists — it’s to filter out one-moment artists. Sustained output is the baseline signal of long-term commitment.\nNotable ratio — When they release, does it land? Measures what proportion of works achieved recognition. A 100% notable ratio signals strong creative judgment. On its own it can be misleading — one lucky song scores perfectly — which is why it only means something when read alongside output volume.\nSingles and viral moments — Has this artist broken through publicly, not just critically? Notable works can stay inside an OF bubble. A viral single crosses a different threshold entirely — it’s the ignition event that moves an artist from “respected locally” to “known globally.” This dimension is most directly tied to Sailor’s own story.\nCraft depth — Does this artist own their creative identity, or are they executing someone else’s? Measures composer, lyricist, and producer credits beyond just performer credits. Artists who write and produce their own work have a distinct voice that persists over time. Artists with only performer credits are dependent on collaborators, making their trajectory far less predictable.\nInfluence draw — Is this artist genuinely part of the OF tradition, or just adjacent to it? Measures how deliberately an artist references or draws from existing OF works. Without this dimension the framework would identify any rising star in any genre. This is what makes the scoring OF-specific — rewarding artists who are consciously carrying the tradition forward.\nTogether, the five dimensions cross-check each other across three career phases: craft depth and influence draw describe the foundation built before anyone is paying attention; output volume and notable ratio describe the momentum of the build-up; singles capture the ignition event that converts momentum into mainstream recognition. A high overall score requires strength across all three phases simultaneously — which is rare, and exactly what makes it a reliable filter for predicting the next OF star rather than just identifying who is good right now.\n\nOverall Dashboard Analysis\nAcross all four charts, a consistent profile of a rising star emerges: sustained output over multiple years (not a single burst), a high proportion of recognised works, creative ownership through self-writing, and deliberate roots in the genre canon. Sailor Shift scores highest on craft depth, singles output, and influence draw — the three dimensions most associated with long-term career sustainability. Orla Seabloom scores highest on raw quality metrics but has yet to demonstrate the sustained output that would confirm her as a rising star rather than a debut phenomenon. Beatrice Albright’s trajectory most closely mirrors Sailor’s early career shape, making her the most analytically credible comparison subject."
-  },
-  {
-    "objectID": "project_overview.html#key-findings",
-    "href": "project_overview.html#key-findings",
-    "title": "Oceanus Folk: Then-and-Now",
-    "section": "Key Findings",
-    "text": "Key Findings\nSailor Shift evolves from a highly influenced artist into a central industry force, drawing from diverse sources while developing a distinct identity that enables sustained and structurally embedded influence beyond her 2028 breakthrough. Her impact extends beyond her own career, acting as a catalyst for the rise of Oceanus Folk, which grew from a niche genre into a widely adopted and highly visible peak before declining into a stable background influence that continues shaping the broader music ecosystem. The genre’s spread is strongest in Indie Folk and is driven by collective adoption rather than individual dominance, illustrating how breakthroughs create short-lived surges followed by stabilisation. At the same time, rising star analysis identifies Orla Seabloom, Beatrice Albright, and Daniel O’Connell as standouts, with success defined by sustained output, recognised work, creative ownership, breakout moments, and strategic timing. Overall, the project highlights that music evolution is network-driven, where influence spreads across interconnected layers, genres follow cycles of growth and saturation, and only a few artists convert momentum into long-term industry impact."
-  },
-  {
-    "objectID": "userguide.html#open-full-pdf",
-    "href": "userguide.html#open-full-pdf",
-    "title": "User Guide",
-    "section": "Open Full PDF",
-    "text": "Open Full PDF"
-  },
-  {
-    "objectID": "userguide.html#accessing-the",
-    "href": "userguide.html#accessing-the",
-    "title": "User Guide",
-    "section": "Accessing the",
-    "text": "Accessing the"
-  },
-  {
-    "objectID": "userguide.html#accessing-the-guide",
-    "href": "userguide.html#accessing-the-guide",
-    "title": "User Guide",
-    "section": "Accessing the Guide",
-    "text": "Accessing the Guide\nClick this link to access our user guide."
-  },
-  {
-    "objectID": "userguide.html#open-full",
-    "href": "userguide.html#open-full",
-    "title": "User Guide",
-    "section": "Open Full",
-    "text": "Open Full"
-  },
-  {
-    "objectID": "userguide.html#open-full-pdf-guide",
-    "href": "userguide.html#open-full-pdf-guide",
-    "title": "User Guide",
-    "section": "Open Full PDF Guide",
-    "text": "Open Full PDF Guide"
-  },
-  {
-    "objectID": "userguide.html#accessing-the-guide-1",
-    "href": "userguide.html#accessing-the-guide-1",
-    "title": "User Guide",
-    "section": "Accessing the Guide",
-    "text": "Accessing the Guide"
-  },
-  {
     "objectID": "storyboard.html#dashboard-description",
     "href": "storyboard.html#dashboard-description",
     "title": "Oceanus Folk: Then-and-Now Storyboard",
@@ -432,5 +341,12 @@
     "title": "Oceanus Folk: Then-and-Now Storyboard",
     "section": "Key Questions Answered",
     "text": "Key Questions Answered\n\n\nWhat dimensions define a rising star across output, craft, and influence?\n\n\nWhich three post-2028 Oceanus Folk artists are most likely to break out by 2045?\n\n\nHow does Oceanus Folk’s growth compare to all other genres across four decades?"
+  },
+  {
+    "objectID": "analysis.html#insights-into-sailor-shift-oceanus-folk-and-future-rising-stars-in-the-industry",
+    "href": "analysis.html#insights-into-sailor-shift-oceanus-folk-and-future-rising-stars-in-the-industry",
+    "title": "Analysis & Results",
+    "section": "",
+    "text": "Through a series of visual analytics using Tableau, Gephi, and Python, we have uncovered insights into Sailor Shift’s career, how the influence of Oceanus Folk has spread through the musical world, and the future rising stars in the industry.\n\n\n\nQuestion 1 Analysis \nQuestion 2 Analysis \nQuestion 3 Analysis"
   }
 ]

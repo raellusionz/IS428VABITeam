@@ -2,11 +2,12 @@
 title: "Analysis & Results"
 ---
 
-Insights into Sailor Shift, Oceanus Folk, and Future Rising Stars in the Industry
+## Insights into Sailor Shift, Oceanus Folk, and Future Rising Stars in the Industry
+
 Through a series of visual analytics using Tableau, Gephi, and Python, we have uncovered insights into Sailor Shift’s career, how the influence of Oceanus Folk has spread through the musical world, and the future rising stars in the industry. 
 
 ### Links to Each Question's Analysis and Findings
 
-[Question 1 Analysis](question1_analysis.qmd) <br>
-[Question 2 Analysis](question2_analysis.qmd) <br>
-[Question 3 Analysis](question3_analysis.qmd) <br>
+- [Question 1 Analysis](question1_analysis.qmd) <br>
+- [Question 2 Analysis](question2_analysis.qmd) <br>
+- [Question 3 Analysis](question3_analysis.qmd) <br>

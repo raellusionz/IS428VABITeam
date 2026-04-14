@@ -6,7 +6,7 @@ title: "Question 1 Analysis"
 
 ![](question1a_chart.png)
 
-### What did Sailor draw from Bar Chart
+### Influence Bar Chart
 Breakdown of influence sources by type
 
 ---

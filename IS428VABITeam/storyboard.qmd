@@ -9,9 +9,11 @@ The dashboards follow a deliberate narrative arc moving from the individual, to 
 ![](user_flow.png)
 
 # Dashboard Story Flow Structure
-The Sailor Shift Journey: Explore Sailor's influences, collaborations, and the ripple effects of her rise 
-The Rise of Oceanus Folk: Track how the genre spread, who it touched, and where it is heading 
-The Next Generation: Benchmark what a rising star looks like and predict who carries the Oceanus Folk legacy forward
+<ul>
+<li> **The Sailor Shift Journey:** Explore Sailor's influences, collaborations, and the ripple effects of her rise </li>
+<li> **The Rise of Oceanus Folk:** Track how the genre spread, who it touched, and where it is heading </li>
+<li> **The Next Generation:** Benchmark what a rising star looks like and predict who carries the Oceanus Folk legacy forward</li>
+</ul>
 
 # Section 1: The Sailor Shift Journey
 Purpose: Profiling Sailor Shift's career, collaborations, and influence on the Oceanus Folk community
