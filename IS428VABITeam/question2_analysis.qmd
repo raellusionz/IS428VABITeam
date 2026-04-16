@@ -52,7 +52,10 @@ How does Oceanus Folk spread its influence across different genres and songs, an
 
 
 The Influence Network Chart depicts how Oceanus Folk was able to spread itself into other genres and individual works, with Oceanus Folk sitting at the center of the network. The genre that stands out most in the chart is Indie Folk which has noticeably more links due to the darker node, suggesting that it absorbs a larger share of the influence. This likely happened due to Oceanus Folk sharing similar acoustic styles and themes with Indie Folk, allowing its elements to easily spread the genre. Other genres, like Synthwave or Dream Pop are influenced by Oceanus Folk but only in small ways over overall style. 
+
+
 The Influence Network Chart is also made up of big and small nodes. The smaller nodes, which represent individual songs, tend to appear more frequently, suggesting influence happens gradually at the track level rather than through major genre-wide shifts.
+
 
 Instead of reshaping entire genres, Oceanus Folk influences genres through individual songs, accumulating influence and building its impact over time. The genre spreads widely, but it tends to take hold strongly in genres that had already aligned with its sound, rather than transforming completely different ones.
 
@@ -72,6 +75,7 @@ Which genres contribute most to the formation of Oceanus Folk, and what does thi
 ---
 
 The Origin of Influence Chart flips the perspective and looks at where Oceanus Folk comes from, and here the pattern is much more concentrated. Indie Folk can be seen dominating the analysis with far more connections than any other genre. This suggests that Oceanus Folk is built on a strong core foundation and likely inheriting its acoustic textures, storytelling style, and overall aesthetic from Indie Folk.
+
 However, genres like Synthwave or Psychedelic Rock still show some possible influence to Oceanus Folk, but at lower levels. This probably happened due to Oceanus Folk taking some inspirations from the genre’s elements such as atmospheric layers or experimental sounds, rather than shaping the genre’s core identity. However, the sharp drop from Indie Folk also proves that Oceanus Folk likely took almost all its inspirations from a single primary source.
 
 In contrast to the first chart, Oceanus Folk draws from a narrow base but spreads outward much more widely, suggesting it takes a clear, established sound and adapts it across different contexts, rather than constantly reinventing itself from multiple influences.
@@ -95,6 +99,7 @@ How do the genres influencing Oceanus Folk change over time, and what does this 
 ---
 
 The Temporal Genre Dynamics Line Chart depicts how genres that once influenced Oceanus Folk had changed over time, especially during the 2028 breakthrough. Before 2028, Indie Folk clearly dominated, consistently showing the highest number of influence connections and capturing the peak around 2023. This suggests that Oceanus Folk was heavily reliant on Indie Folk as its core inspiration during its early and peak phases. Other genres like Synthwave and Dream Pop appear, but at much lower levels, indicating they played supporting roles rather than shaping the genre.
+
 However, after 2028, there is a noticeable drop across all genres. The lines flatten significantly, showing that Oceanus Folk becomes less dependent on external genre influences. This likely reflects a shift where the genre matures and develops its own identity instead of drawing heavily from others. However, the decline may also suggest a decline in innovation, as fewer new influences are being integrated. Overall, the chart highlights a transition from strong external inspiration to a more self-contained but less dynamic phase.
 
 
@@ -103,7 +108,7 @@ How genre influences evolved following Sailor Shift’s Breakthrough?
 
 ---
 
-Inspiration Shift Stacked Bar Chart compares how different genres influence Oceanus Folk before and after 2028. Before 2028, Indie Folk dominated the influence for Oceanus Folk with significantly higher connections than any other genre during its rise. However, after 2028, the overall number of connections drops sharply across nearly all genres. Even the genre Indie Folk that influenced Oceanus Folk sees a major decline, suggesting that its influence weakened significantly in the post-breakthrough period. While some genres depicts minimal increases in adoption after 2028, they are relatively small and do not compensate enough for the overall decline. The variation in the bar charts also suggests that Oceanus Folk lost much of its external inspiration after its peak. Rather than continuously evolving through new influences, it became more static and no longer actively shaped by other genres, reducing impact over time.
+Inspiration Shift Stacked Bar Chart compares how different genres influence Oceanus Folk before and after 2028. Before 2028, Indie Folk dominated the influence for Oceanus Folk with significantly higher connections than any other genre during its rise. However, after 2028, the overall number of connections drops sharply across nearly all genres. Even the genre Indie Folk that influenced Oceanus Folk sees a major decline, suggesting that its influence weakened significantly in the post-breakthrough period. While some genres depict minimal increases in adoption after 2028, they are relatively small and do not compensate enough for the overall decline. The variation in the bar charts also suggests that Oceanus Folk lost much of its external inspiration after its peak. Rather than continuously evolving through new influences, it became more static and no longer actively shaped by other genres, reducing impact over time.
 
 ### Temporal Dynamics of Influence Line Chart
 How does Oceanus Folk’s influence change after 2028, and what explains the rise and decline in its popularity over time?
